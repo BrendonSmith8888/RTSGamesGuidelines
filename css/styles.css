@@ -23,6 +23,11 @@ img{
     width: 90%;
 }
 
+img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
 li{
     cursor: pointer;
     display: flex;
@@ -30,11 +35,6 @@ li{
     list-style: none;
     margin-bottom:5%;
     margin-top:5%;
-}
-
-li:hover{
-    transform: scale(1.1);
-    transition: 1s;
 }
 
 #aoeList{
@@ -76,4 +76,27 @@ li:hover{
     flex-direction: column;
     font-size: 1.4vw;
     text-align: center;
+}
+
+#hommList{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-bottom:5%;
+    margin-top:5%;
+}
+
+#hommListStyle{
+    justify-content: center;
+}
+
+#hommA1{
+    height: 30%;
+    width: 20%;
+}
+
+#hommA2{
+    height: 30%;
+    width: 50%;
 }
