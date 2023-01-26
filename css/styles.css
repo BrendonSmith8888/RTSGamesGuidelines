@@ -1,5 +1,4 @@
 a {
-    color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1vw;
     font-weight: bold;
@@ -18,32 +17,144 @@ body{
     text-align: center;
 }
 
-img{
-    height: 100%;
-    width: 90%;
+p{
+    text-align: justify;
 }
 
-img:hover{
+#egyptBuilding{
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9vw;
+    font-weight: bold;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#grid{
+    background-color: black;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    padding: 5px;
+}
+
+#gridCostHeading{
+    background-color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.9vw;
+    font-weight: bold;
+    grid-column: 7/10;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#gridHeading{
+    background-color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.9vw;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#gridSubHeading{
+    background-color: antiquewhite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 0.9vw;
+    font-weight: bold;
+    padding: 5px 0;
+    text-align: center;  
+}
+
+#indeximg{
+    height: 90%;
+    width: 100%;
+}
+
+#indexli:hover{
     transform: scale(1.1);
     transition: 1s;
 }
 
-li{
+#indexli{
+    background-color: black;
     cursor: pointer;
     display: flex;
     flex-direction: row;
+    height: 8vh;
     list-style: none;
+    justify-content: center;
     margin-bottom:5%;
     margin-top:5%;
+    width: 40vw;
 }
 
-#aoeList{
+#aoeCPImage1{
+    height: 90%;
+    width: 94%;
+}
+
+#aoeCPImage2{
+    height: 120%;
+    width: 75%;
+}
+
+#aoeCPImage3{
+    height: 100%;
+    width: 100%;
+}
+
+#aoeCPList{
+    align-items: center;
+    background-color: black;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+#aoeCPList1{
     cursor: pointer;
     display: flex;
     flex-direction: row;
     list-style: none;
+    justify-content: center;
     margin-bottom:5%;
-    margin-top:5%;
+}
+
+#aoeCPList2{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    margin-bottom:20%;
+}
+
+#aoeCPList3{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    margin-bottom:5%;
+}
+
+#aoeCPList1:hover{
+    transform: scale(1.1);
+    transition: 1s; 
+}
+
+#aoeCPList2:hover{
+    transform: scale(1.1);
+    transition: 1s; 
+}
+
+#aoeCPList3:hover{
+    transform: scale(1.1);
+    transition: 1s; 
 }
 
 #dowList{
@@ -72,9 +183,9 @@ li{
 }
 
 #gamesList{
+    align-items: center;
     display: flex;
     flex-direction: column;
-    font-size: 1.4vw;
     text-align: center;
 }
 
