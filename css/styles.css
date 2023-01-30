@@ -21,8 +21,31 @@ p{
     text-align: justify;
 }
 
+#buildingsTable{
+    background-color: black;
+    border: 1px solid black;
+}
+
+th{
+    background-color: antiquewhite;
+    font-size: 0.9vw;
+}
+
+th, td{
+    border: 1px solid black;
+}
+
 #egyptBuilding{
     background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9vw;
+    font-weight: bold;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#greekBuilding{
+    background-color: blue;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9vw;
     font-weight: bold;
