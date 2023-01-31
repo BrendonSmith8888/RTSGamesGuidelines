@@ -1,25 +1,22 @@
-/* const filter = () => 
+function filterText()
 {
-  let input, filter, table, tr, td, i, txtValue;
-
-  input = document.getElementById("userInput");
+    input = document.getElementById("userInput");
   filter = input.value.toUpperCase();
   table = document.getElementById("buildingsTable");
-  tr = table.getElementsByTagName("tr");
+  tr = table.getElementsByTagName("egyptBuildings");
 
   for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td");
-    for (j = 0; j < td.length; j++)
-    {
-        cell = tr[i].getElementsByTagName("td")[j];
-        if (cell) 
-        {
-            if(cell.innerHTML.toUpperCase().indexOf(filter)>-1)
-            {
-                tr[i].style.display="";
-                break;
-            }
-        }
+    let firstCol = tds[0].innerHTML.toUpperCase();
+    let secondCol = tds[1].innerHTML.toUpperCase();
+    if (
+      firstCol.indexOf(filter) > -1 ||
+      secondCol.indexOf(filter) > -1
+    ) {
+      tr[i].style.display = "";
+    } else {
+      tr[i].style.display = "none";
     }
   }
-} */
+}
+
+document.querySelector("userInput").addEventListener("keyup", buildingsTable, false);

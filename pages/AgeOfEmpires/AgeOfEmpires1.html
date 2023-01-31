@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,1087 +8,2568 @@
     <title>Age of Empires I</title>
     <link rel="stylesheet" href="../../css/styles.css">
 </head>
+
 <body>
     <h1>Age of Empires I</h1>
     <p>Description of my experience with Age of Empires I</p>
     <h2>Stats Section</h2>
     <h3>Buildings</h3>
-    <input type="text" id="userInput" onkeyup="filterText()" placeholder="Search for factions or buildings" title="Type in building name or faction">
+    <input type="text" id="userInput" placeholder="Search for Factions or Buildings"
+        title="Type in building name or faction">
     <br>
     <table id="buildingsTable">
-        <tr>
-            <th>Faction</th>
-            <th>Building</th>
-            <th>Hit Points</th>
-            <th>Attack Strength</th>
-            <th>Armored Piercing Range</th>
-            <th>Range</th>
-            <th colspan="3">Cost</th>
-            <th>Upgrade</th>
-            <th>Hit Points</th>
-            <th>Attack Strength</th>
-            <th>Armored Piercing Range</th>
-            <th>Range</th>
-            <th>Cost</th>
-            <th>Upgrade</th>
-            <th>Hit Points</th>
-            <th>Attack Strength</th>
-            <th>Armored Piercing Range</th>
-            <th>Range</th>
-            <th>Cost</th>
-            <th>Upgrade</th>
-            <th>Hit Points</th>
-            <th>Attack Strength</th>
-            <th>Armored Piercing Range</th>
-            <th>Range</th>
-            <th>Cost</th>
-        </tr>
-        <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th>Gold</th>
-            <th>Stone</th>
-            <th>Wood</th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th>Stone</th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th>Stone</th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th>Stone</th>
-        </tr>
-        <tr>
-            <td id="egyptBuilding">Egyptian</td>
-            <td id="egyptBuilding">Town Center</td>
-            <td id="egyptBuilding">600+120</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding">200</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-        </tr>
-        <tr>
-            <td id="egyptBuilding">Egyptian</td>
-            <td id="egyptBuilding">House</td>
-            <td id="egyptBuilding">72+18</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding">30</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-        </tr>
-        <tr>
-            <td id="egyptBuilding">Egyptian</td>
-            <td id="egyptBuilding">Barracks</td>
-            <td id="egyptBuilding">350+70</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding">125</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-        </tr>
-        <tr>
-            <td id="egyptBuilding">Egyptian</td>
-            <td id="egyptBuilding">Granery</td>
-            <td id="egyptBuilding">350+70</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding">120</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-        </tr>
-        <tr>
-            <td id="egyptBuilding">Egyptian</td>
-            <td id="egyptBuilding">Storage Pit</td>
-            <td id="egyptBuilding">350+70</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding">120</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-        </tr>
-        <tr>
-            <td id="egyptBuilding">Egyptian</td>
-            <td id="egyptBuilding">Dock</td>
-            <td id="egyptBuilding">350+70</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding">100</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-        </tr>
-        <tr>
-            <td id="egyptBuilding">Egyptian</td>
-            <td id="egyptBuilding">Watch Tower</td>
-            <td id="egyptBuilding">100</td>
-            <td id="egyptBuilding">3+1</td>
-            <td id="egyptBuilding">3</td>
-            <td id="egyptBuilding">5+3</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding">150</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding">Sentry Tower</td>
-            <td id="egyptBuilding">150</td>
-            <td id="egyptBuilding">3+1</td>
-            <td id="egyptBuilding">3</td>
-            <td id="egyptBuilding">5+3</td>
-            <td id="egyptBuilding">150</td>
-            <td id="egyptBuilding">Guard Tower</td>
-            <td id="egyptBuilding">240</td>
-            <td id="egyptBuilding">6+1</td>
-            <td id="egyptBuilding">5</td>
-            <td id="egyptBuilding">7+3</td>
-            <td id="egyptBuilding">150</td>
-            <td id="egyptBuilding">Ballista Tower</td>
-            <td id="egyptBuilding">240+48</td>
-            <td id="egyptBuilding">20+1</td>
-            <td id="egyptBuilding">5</td>
-            <td id="egyptBuilding">7+3</td>
-            <td id="egyptBuilding">150</td>
-        </tr>
-        <tr>
-            <td id="egyptBuilding">Egyptian</td>
-            <td id="egyptBuilding">Small Wall</td>
-            <td id="egyptBuilding">200</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding">5</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding">Medium Wall</td>
-            <td id="egyptBuilding">300</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding">5</td>
-            <td id="egyptBuilding">Fortified Wall</td>
-            <td id="egyptBuilding">480</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding">5</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding">/td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-        </tr>
-        <tr>
-            <td id="egyptBuilding">Egyptian</td>
-            <td id="egyptBuilding">Archery Range</td>
-            <td id="egyptBuilding">350+70</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding">150</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-        </tr>
-        <tr>
-            <td id="egyptBuilding">Egyptian</td>
-            <td id="egyptBuilding">Stable</td>
-            <td id="egyptBuilding">350+70</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding">150</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-        </tr>
-        <tr>
-            <td id="egyptBuilding">Egyptian</td>
-            <td id="egyptBuilding">Market</td>
-            <td id="egyptBuilding">350+70</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding">150</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-        </tr>
-        <tr>
-            <td id="egyptBuilding">Egyptian</td>
-            <td id="egyptBuilding">Farm</td>
-            <td id="egyptBuilding">50+10</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding">75</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-        </tr>
-        <tr>
-            <td id="egyptBuilding">Egyptian</td>
-            <td id="egyptBuilding">Government Center</td>
-            <td id="egyptBuilding">350+70</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding">175</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-        </tr>
-        <tr>
-            <td id="egyptBuilding">Egyptian</td>
-            <td id="egyptBuilding">Temple</td>
-            <td id="egyptBuilding">350+70</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding">200</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-        </tr>
-        <tr>
-            <td id="egyptBuilding">Greek</td>
-            <td id="egyptBuilding">Siege Workshop</td>
-            <td id="egyptBuilding">350+70</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding">200</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-        </tr>
-        <tr>
-            <td id="egyptBuilding">Greek</td>
-            <td id="egyptBuilding">Academy</td>
-            <td id="egyptBuilding">350+70</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding">150</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-        </tr>
-        <tr>
-            <td id="egyptBuilding">Greek</td>
-            <td id="egyptBuilding">Wonder</td>
-            <td id="egyptBuilding">500+100</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding">1000</td>
-            <td id="egyptBuilding">1000</td>
-            <td id="egyptBuilding">1000</td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-            <td id="egyptBuilding"></td>
-        </tr>
-        <tr>
-            <td id="greekBuilding">Greek</td>
-            <td id="greekBuilding">Town Center</td>
-            <td id="greekBuilding">600+120</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding">200</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-        </tr>
-        <tr>
-            <td id="greekBuilding">Greek</td>
-            <td id="greekBuilding">House</td>
-            <td id="greekBuilding">72+18</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding">30</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-        </tr>
-        <tr>
-            <td id="greekBuilding">Greek</td>
-            <td id="greekBuilding">Barracks</td>
-            <td id="greekBuilding">350+70</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding">125</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-        </tr>
-        <tr>
-            <td id="greekBuilding">Greek</td>
-            <td id="greekBuilding">Granery</td>
-            <td id="greekBuilding">350+70</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding">120</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-        </tr>
-        <tr>
-            <td id="greekBuilding">Greek</td>
-            <td id="greekBuilding">Storage Pit</td>
-            <td id="greekBuilding">350+70</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding">120</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-        </tr>
-        <tr>
-            <td id="greekBuilding">Greek</td>
-            <td id="greekBuilding">Dock</td>
-            <td id="greekBuilding">350+70</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding">100</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-        </tr>
-        <tr>
-            <td id="greekBuilding">Greek</td>
-            <td id="greekBuilding">Watch Tower</td>
-            <td id="greekBuilding">100</td>
-            <td id="greekBuilding">3+1</td>
-            <td id="greekBuilding">3</td>
-            <td id="greekBuilding">5+3</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding">150</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding">Sentry Tower</td>
-            <td id="greekBuilding">150</td>
-            <td id="greekBuilding">3+1</td>
-            <td id="greekBuilding">3</td>
-            <td id="greekBuilding">5+3</td>
-            <td id="greekBuilding">150</td>
-            <td id="greekBuilding">Guard Tower</td>
-            <td id="greekBuilding">240</td>
-            <td id="greekBuilding">6+1</td>
-            <td id="greekBuilding">5</td>
-            <td id="greekBuilding">7+3</td>
-            <td id="greekBuilding">150</td>
-            <td id="greekBuilding">Ballista Tower</td>
-            <td id="greekBuilding">240+48</td>
-            <td id="greekBuilding">20+1</td>
-            <td id="greekBuilding">5</td>
-            <td id="greekBuilding">7+3</td>
-            <td id="greekBuilding">150</td>
-        </tr>
-        <tr>
-            <td id="greekBuilding">Greek</td>
-            <td id="greekBuilding">Small Wall</td>
-            <td id="greekBuilding">200</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding">5</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding">Medium Wall</td>
-            <td id="greekBuilding">300</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding">5</td>
-            <td id="greekBuilding">Fortified Wall</td>
-            <td id="greekBuilding">480</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding">5</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding">/td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-        </tr>
-        <tr>
-            <td id="greekBuilding">Greek</td>
-            <td id="greekBuilding">Archery Range</td>
-            <td id="greekBuilding">350+70</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding">150</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-        </tr>
-        <tr>
-            <td id="greekBuilding">Greek</td>
-            <td id="greekBuilding">Stable</td>
-            <td id="greekBuilding">350+70</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding">150</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-        </tr>
-        <tr>
-            <td id="greekBuilding">Greek</td>
-            <td id="greekBuilding">Market</td>
-            <td id="greekBuilding">350+70</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding">150</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-        </tr>
-        <tr>
-            <td id="greekBuilding">Greek</td>
-            <td id="greekBuilding">Farm</td>
-            <td id="greekBuilding">50+10</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding">75</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-        </tr>
-        <tr>
-            <td id="greekBuilding">Greek</td>
-            <td id="greekBuilding">Government Center</td>
-            <td id="greekBuilding">350+70</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding">175</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-        </tr>
-        <tr>
-            <td id="greekBuilding">Greek</td>
-            <td id="greekBuilding">Temple</td>
-            <td id="greekBuilding">350+70</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding">200</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-        </tr>
-        <tr>
-            <td id="greekBuilding">Greek</td>
-            <td id="greekBuilding">Siege Workshop</td>
-            <td id="greekBuilding">350+70</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding">200</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-        </tr>
-        <tr>
-            <td id="greekBuilding">Greek</td>
-            <td id="greekBuilding">Academy</td>
-            <td id="greekBuilding">350+70</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding">150</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-        </tr>
-        <tr>
-            <td id="greekBuilding">Greek</td>
-            <td id="greekBuilding">Wonder</td>
-            <td id="greekBuilding">500+100</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding">1000</td>
-            <td id="greekBuilding">1000</td>
-            <td id="greekBuilding">1000</td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-            <td id="greekBuilding"></td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Faction</th>
+                <th>Building</th>
+                <th>Hit Points</th>
+                <th>Attack Strength</th>
+                <th>Armored Piercing Range</th>
+                <th>Range</th>
+                <th colspan="3">Cost</th>
+                <th>Upgrade</th>
+                <th>Hit Points</th>
+                <th>Attack Strength</th>
+                <th>Armored Piercing Range</th>
+                <th>Range</th>
+                <th>Cost</th>
+                <th>Upgrade</th>
+                <th>Hit Points</th>
+                <th>Attack Strength</th>
+                <th>Armored Piercing Range</th>
+                <th>Range</th>
+                <th>Cost</th>
+                <th>Upgrade</th>
+                <th>Hit Points</th>
+                <th>Attack Strength</th>
+                <th>Armored Piercing Range</th>
+                <th>Range</th>
+                <th>Cost</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Gold</td>
+                <td>Stone</td>
+                <td>Wood</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Stone</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Stone</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Stone</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="egyptBuilding">Egyptian</td>
+                <td id="egyptBuilding">Town Center</td>
+                <td id="egyptBuilding">600+120</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding">200</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+            </tr>
+            <tr>
+                <td id="egyptBuilding">Egyptian</td>
+                <td id="egyptBuilding">House</td>
+                <td id="egyptBuilding">75+15</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding">30</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+            </tr>
+            <tr>
+                <td id="egyptBuilding">Egyptian</td>
+                <td id="egyptBuilding">Barracks</td>
+                <td id="egyptBuilding">350+70</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding">125</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+            </tr>
+            <tr>
+                <td id="egyptBuilding">Egyptian</td>
+                <td id="egyptBuilding">Granery</td>
+                <td id="egyptBuilding">350+70</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding">120</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+            </tr>
+            <tr>
+                <td id="egyptBuilding">Egyptian</td>
+                <td id="egyptBuilding">Storage Pit</td>
+                <td id="egyptBuilding">350+70</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding">120</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+            </tr>
+            <tr>
+                <td id="egyptBuilding">Egyptian</td>
+                <td id="egyptBuilding">Dock</td>
+                <td id="egyptBuilding">350+70</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding">100</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+            </tr>
+            <tr>
+                <td id="egyptBuilding">Egyptian</td>
+                <td id="egyptBuilding">Watch Tower</td>
+                <td id="egyptBuilding">100</td>
+                <td id="egyptBuilding">3+1</td>
+                <td id="egyptBuilding">3</td>
+                <td id="egyptBuilding">5+3</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding">150</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding">Sentry Tower</td>
+                <td id="egyptBuilding">150</td>
+                <td id="egyptBuilding">3+1</td>
+                <td id="egyptBuilding">3</td>
+                <td id="egyptBuilding">5+3</td>
+                <td id="egyptBuilding">150</td>
+                <td id="egyptBuilding">Guard Tower</td>
+                <td id="egyptBuilding">240</td>
+                <td id="egyptBuilding">6+1</td>
+                <td id="egyptBuilding">5</td>
+                <td id="egyptBuilding">7+3</td>
+                <td id="egyptBuilding">150</td>
+                <td id="egyptBuilding">Ballista Tower</td>
+                <td id="egyptBuilding">240+48</td>
+                <td id="egyptBuilding">20+1</td>
+                <td id="egyptBuilding">5</td>
+                <td id="egyptBuilding">7+3</td>
+                <td id="egyptBuilding">150</td>
+            </tr>
+            <tr>
+                <td id="egyptBuilding">Egyptian</td>
+                <td id="egyptBuilding">Small Wall</td>
+                <td id="egyptBuilding">200</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding">5</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding">Medium Wall</td>
+                <td id="egyptBuilding">300</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding">5</td>
+                <td id="egyptBuilding">Fortified Wall</td>
+                <td id="egyptBuilding">480</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding">5</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding">/td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+            </tr>
+            <tr>
+                <td id="egyptBuilding">Egyptian</td>
+                <td id="egyptBuilding">Archery Range</td>
+                <td id="egyptBuilding">350+70</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding">150</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+            </tr>
+            <tr>
+                <td id="egyptBuilding">Egyptian</td>
+                <td id="egyptBuilding">Stable</td>
+                <td id="egyptBuilding">350+70</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding">150</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+            </tr>
+            <tr>
+                <td id="egyptBuilding">Egyptian</td>
+                <td id="egyptBuilding">Market</td>
+                <td id="egyptBuilding">350+70</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding">150</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+            </tr>
+            <tr>
+                <td id="egyptBuilding">Egyptian</td>
+                <td id="egyptBuilding">Farm</td>
+                <td id="egyptBuilding">50+10</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding">75</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+            </tr>
+            <tr>
+                <td id="egyptBuilding">Egyptian</td>
+                <td id="egyptBuilding">Government Center</td>
+                <td id="egyptBuilding">350+70</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding">175</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+            </tr>
+            <tr>
+                <td id="egyptBuilding">Egyptian</td>
+                <td id="egyptBuilding">Temple</td>
+                <td id="egyptBuilding">350+70</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding">200</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+            </tr>
+            <tr>
+                <td id="egyptBuilding">Egyptian</td>
+                <td id="egyptBuilding">Siege Workshop</td>
+                <td id="egyptBuilding">350+70</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding">200</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+            </tr>
+            <tr>
+                <td id="egyptBuilding">Egyptian</td>
+                <td id="egyptBuilding">Academy</td>
+                <td id="egyptBuilding">350+70</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding">150</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+            </tr>
+            <tr>
+                <td id="egyptBuilding">Egyptian</td>
+                <td id="egyptBuilding">Wonder</td>
+                <td id="egyptBuilding">500+100</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding">1000</td>
+                <td id="egyptBuilding">1000</td>
+                <td id="egyptBuilding">1000</td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+                <td id="egyptBuilding"></td>
+            </tr>
+            <tr>
+                <td id="greekBuilding">Greek</td>
+                <td id="greekBuilding">Town Center</td>
+                <td id="greekBuilding">600+120</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding">200</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+            </tr>
+            <tr>
+                <td id="greekBuilding">Greek</td>
+                <td id="greekBuilding">House</td>
+                <td id="greekBuilding">75+15</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding">30</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+            </tr>
+            <tr>
+                <td id="greekBuilding">Greek</td>
+                <td id="greekBuilding">Barracks</td>
+                <td id="greekBuilding">350+70</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding">125</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+            </tr>
+            <tr>
+                <td id="greekBuilding">Greek</td>
+                <td id="greekBuilding">Granery</td>
+                <td id="greekBuilding">350+70</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding">120</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+            </tr>
+            <tr>
+                <td id="greekBuilding">Greek</td>
+                <td id="greekBuilding">Storage Pit</td>
+                <td id="greekBuilding">350+70</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding">120</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+            </tr>
+            <tr>
+                <td id="greekBuilding">Greek</td>
+                <td id="greekBuilding">Dock</td>
+                <td id="greekBuilding">350+70</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding">100</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+            </tr>
+            <tr>
+                <td id="greekBuilding">Greek</td>
+                <td id="greekBuilding">Watch Tower</td>
+                <td id="greekBuilding">100</td>
+                <td id="greekBuilding">3+1</td>
+                <td id="greekBuilding">3</td>
+                <td id="greekBuilding">5+3</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding">150</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding">Sentry Tower</td>
+                <td id="greekBuilding">150</td>
+                <td id="greekBuilding">3+1</td>
+                <td id="greekBuilding">3</td>
+                <td id="greekBuilding">5+3</td>
+                <td id="greekBuilding">150</td>
+                <td id="greekBuilding">Guard Tower</td>
+                <td id="greekBuilding">240</td>
+                <td id="greekBuilding">6+1</td>
+                <td id="greekBuilding">5</td>
+                <td id="greekBuilding">7+3</td>
+                <td id="greekBuilding">150</td>
+                <td id="greekBuilding">Ballista Tower</td>
+                <td id="greekBuilding">240+48</td>
+                <td id="greekBuilding">20+1</td>
+                <td id="greekBuilding">5</td>
+                <td id="greekBuilding">7+3</td>
+                <td id="greekBuilding">150</td>
+            </tr>
+            <tr>
+                <td id="greekBuilding">Greek</td>
+                <td id="greekBuilding">Small Wall</td>
+                <td id="greekBuilding">200</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding">5</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding">Medium Wall</td>
+                <td id="greekBuilding">300</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding">5</td>
+                <td id="greekBuilding">Fortified Wall</td>
+                <td id="greekBuilding">480</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding">5</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding">/td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+            </tr>
+            <tr>
+                <td id="greekBuilding">Greek</td>
+                <td id="greekBuilding">Archery Range</td>
+                <td id="greekBuilding">350+70</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding">150</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+            </tr>
+            <tr>
+                <td id="greekBuilding">Greek</td>
+                <td id="greekBuilding">Stable</td>
+                <td id="greekBuilding">350+70</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding">150</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+            </tr>
+            <tr>
+                <td id="greekBuilding">Greek</td>
+                <td id="greekBuilding">Market</td>
+                <td id="greekBuilding">350+70</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding">150</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+            </tr>
+            <tr>
+                <td id="greekBuilding">Greek</td>
+                <td id="greekBuilding">Farm</td>
+                <td id="greekBuilding">50+10</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding">75</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+            </tr>
+            <tr>
+                <td id="greekBuilding">Greek</td>
+                <td id="greekBuilding">Government Center</td>
+                <td id="greekBuilding">350+70</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding">175</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+            </tr>
+            <tr>
+                <td id="greekBuilding">Greek</td>
+                <td id="greekBuilding">Temple</td>
+                <td id="greekBuilding">350+70</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding">200</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+            </tr>
+            <tr>
+                <td id="greekBuilding">Greek</td>
+                <td id="greekBuilding">Siege Workshop</td>
+                <td id="greekBuilding">350+70</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding">200</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+            </tr>
+            <tr>
+                <td id="greekBuilding">Greek</td>
+                <td id="greekBuilding">Academy</td>
+                <td id="greekBuilding">350+70</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding">150</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+            </tr>
+            <tr>
+                <td id="greekBuilding">Greek</td>
+                <td id="greekBuilding">Wonder</td>
+                <td id="greekBuilding">500+100</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding">1000</td>
+                <td id="greekBuilding">1000</td>
+                <td id="greekBuilding">1000</td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+                <td id="greekBuilding"></td>
+            </tr>
+            <tr>
+                <td id="BabylonianBuilding">Babylonian</td>
+                <td id="BabylonianBuilding">Town Center</td>
+                <td id="BabylonianBuilding">600</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding">200</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+            </tr>
+            <tr>
+                <td id="BabylonianBuilding">Babylonian</td>
+                <td id="BabylonianBuilding">House</td>
+                <td id="BabylonianBuilding">75</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding">30</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+            </tr>
+            <tr>
+                <td id="BabylonianBuilding">Babylonian</td>
+                <td id="BabylonianBuilding">Barracks</td>
+                <td id="BabylonianBuilding">350</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding">125</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+            </tr>
+            <tr>
+                <td id="BabylonianBuilding">Babylonian</td>
+                <td id="BabylonianBuilding">Granery</td>
+                <td id="BabylonianBuilding">350</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding">120</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+            </tr>
+            <tr>
+                <td id="BabylonianBuilding">Babylonian</td>
+                <td id="BabylonianBuilding">Storage Pit</td>
+                <td id="BabylonianBuilding">350</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding">120</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+            </tr>
+            <tr>
+                <td id="BabylonianBuilding">Babylonian</td>
+                <td id="BabylonianBuilding">Dock</td>
+                <td id="BabylonianBuilding">350</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding">100</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+            </tr>
+            <tr>
+                <td id="BabylonianBuilding">Babylonian</td>
+                <td id="BabylonianBuilding">Watch Tower</td>
+                <td id="BabylonianBuilding">240</td>
+                <td id="BabylonianBuilding">3+1</td>
+                <td id="BabylonianBuilding">3</td>
+                <td id="BabylonianBuilding">5+3</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding">150</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding">Sentry Tower</td>
+                <td id="BabylonianBuilding">355</td>
+                <td id="BabylonianBuilding">4+1</td>
+                <td id="BabylonianBuilding">4</td>
+                <td id="BabylonianBuilding">6+3</td>
+                <td id="BabylonianBuilding">150</td>
+                <td id="BabylonianBuilding">Guard Tower</td>
+                <td id="BabylonianBuilding">460</td>
+                <td id="BabylonianBuilding">6+1</td>
+                <td id="BabylonianBuilding">5</td>
+                <td id="BabylonianBuilding">7+3</td>
+                <td id="BabylonianBuilding">150</td>
+                <td id="BabylonianBuilding">Ballista Tower</td>
+                <td id="BabylonianBuilding">460</td>
+                <td id="BabylonianBuilding">20+1</td>
+                <td id="BabylonianBuilding">5</td>
+                <td id="BabylonianBuilding">7+3</td>
+                <td id="BabylonianBuilding">150</td>
+            </tr>
+            <tr>
+                <td id="BabylonianBuilding">Babylonian</td>
+                <td id="BabylonianBuilding">Small Wall</td>
+                <td id="BabylonianBuilding">384</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding">5</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding">Medium Wall</td>
+                <td id="BabylonianBuilding">576</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding">5</td>
+                <td id="BabylonianBuilding">Fortified Wall</td>
+                <td id="BabylonianBuilding">768</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding">5</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding">/td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+            </tr>
+            <tr>
+                <td id="BabylonianBuilding">Babylonian</td>
+                <td id="BabylonianBuilding">Archery Range</td>
+                <td id="BabylonianBuilding">350</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding">150</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+            </tr>
+            <tr>
+                <td id="BabylonianBuilding">Babylonian</td>
+                <td id="BabylonianBuilding">Stable</td>
+                <td id="BabylonianBuilding">350</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding">150</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+            </tr>
+            <tr>
+                <td id="BabylonianBuilding">Babylonian</td>
+                <td id="BabylonianBuilding">Market</td>
+                <td id="BabylonianBuilding">350</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding">150</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+            </tr>
+            <tr>
+                <td id="BabylonianBuilding">Babylonian</td>
+                <td id="BabylonianBuilding">Farm</td>
+                <td id="BabylonianBuilding">50</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding">75</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+            </tr>
+            <tr>
+                <td id="BabylonianBuilding">Babylonian</td>
+                <td id="BabylonianBuilding">Government Center</td>
+                <td id="BabylonianBuilding">350</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding">175</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+            </tr>
+            <tr>
+                <td id="BabylonianBuilding">Babylonian</td>
+                <td id="BabylonianBuilding">Temple</td>
+                <td id="BabylonianBuilding">350</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding">200</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+            </tr>
+            <tr>
+                <td id="BabylonianBuilding">Babylonian</td>
+                <td id="BabylonianBuilding">Siege Workshop</td>
+                <td id="BabylonianBuilding">350</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding">200</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+            </tr>
+            <tr>
+                <td id="BabylonianBuilding">Babylonian</td>
+                <td id="BabylonianBuilding">Academy</td>
+                <td id="BabylonianBuilding">350</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding">150</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+            </tr>
+            <tr>
+                <td id="BabylonianBuilding">Babylonian</td>
+                <td id="BabylonianBuilding">Wonder</td>
+                <td id="BabylonianBuilding">500+100</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding">1000</td>
+                <td id="BabylonianBuilding">1000</td>
+                <td id="BabylonianBuilding">1000</td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+                <td id="BabylonianBuilding"></td>
+            </tr>
+            <tr>
+                <td id="YamatoBuilding">Yamato</td>
+                <td id="YamatoBuilding">Town Center</td>
+                <td id="YamatoBuilding">600+120</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding">200</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+            </tr>
+            <tr>
+                <td id="YamatoBuilding">Yamato</td>
+                <td id="YamatoBuilding">House</td>
+                <td id="YamatoBuilding">75+15</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding">30</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+            </tr>
+            <tr>
+                <td id="YamatoBuilding">Yamato</td>
+                <td id="YamatoBuilding">Barracks</td>
+                <td id="YamatoBuilding">350+70</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding">125</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+            </tr>
+            <tr>
+                <td id="YamatoBuilding">Yamato</td>
+                <td id="YamatoBuilding">Granery</td>
+                <td id="YamatoBuilding">350+70</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding">120</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+            </tr>
+            <tr>
+                <td id="YamatoBuilding">Yamato</td>
+                <td id="YamatoBuilding">Storage Pit</td>
+                <td id="YamatoBuilding">350+70</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding">120</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+            </tr>
+            <tr>
+                <td id="YamatoBuilding">Yamato</td>
+                <td id="YamatoBuilding">Dock</td>
+                <td id="YamatoBuilding">350+70</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding">100</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+            </tr>
+            <tr>
+                <td id="YamatoBuilding">Yamato</td>
+                <td id="YamatoBuilding">Watch Tower</td>
+                <td id="YamatoBuilding">100</td>
+                <td id="YamatoBuilding">3+1</td>
+                <td id="YamatoBuilding">3</td>
+                <td id="YamatoBuilding">5+3</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding">150</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding">Sentry Tower</td>
+                <td id="YamatoBuilding">150</td>
+                <td id="YamatoBuilding">3+1</td>
+                <td id="YamatoBuilding">3</td>
+                <td id="YamatoBuilding">5+3</td>
+                <td id="YamatoBuilding">150</td>
+                <td id="YamatoBuilding">Guard Tower</td>
+                <td id="YamatoBuilding">240</td>
+                <td id="YamatoBuilding">6+1</td>
+                <td id="YamatoBuilding">5</td>
+                <td id="YamatoBuilding">7+3</td>
+                <td id="YamatoBuilding">150</td>
+                <td id="YamatoBuilding">Ballista Tower</td>
+                <td id="YamatoBuilding">240+48</td>
+                <td id="YamatoBuilding">20+1</td>
+                <td id="YamatoBuilding">5</td>
+                <td id="YamatoBuilding">7+3</td>
+                <td id="YamatoBuilding">150</td>
+            </tr>
+            <tr>
+                <td id="YamatoBuilding">Yamato</td>
+                <td id="YamatoBuilding">Small Wall</td>
+                <td id="YamatoBuilding">200</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding">5</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding">Medium Wall</td>
+                <td id="YamatoBuilding">300</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding">5</td>
+                <td id="YamatoBuilding">Fortified Wall</td>
+                <td id="YamatoBuilding">480</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding">5</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding">/td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+            </tr>
+            <tr>
+                <td id="YamatoBuilding">Yamato</td>
+                <td id="YamatoBuilding">Archery Range</td>
+                <td id="YamatoBuilding">350+70</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding">150</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+            </tr>
+            <tr>
+                <td id="YamatoBuilding">Yamato</td>
+                <td id="YamatoBuilding">Stable</td>
+                <td id="YamatoBuilding">350+70</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding">150</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+            </tr>
+            <tr>
+                <td id="YamatoBuilding">Yamato</td>
+                <td id="YamatoBuilding">Market</td>
+                <td id="YamatoBuilding">350+70</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding">150</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+            </tr>
+            <tr>
+                <td id="YamatoBuilding">Yamato</td>
+                <td id="YamatoBuilding">Farm</td>
+                <td id="YamatoBuilding">50+10</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding">75</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+            </tr>
+            <tr>
+                <td id="YamatoBuilding">Yamato</td>
+                <td id="YamatoBuilding">Government Center</td>
+                <td id="YamatoBuilding">350+70</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding">175</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+            </tr>
+            <tr>
+                <td id="YamatoBuilding">Yamato</td>
+                <td id="YamatoBuilding">Temple</td>
+                <td id="YamatoBuilding">350+70</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding">200</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+            </tr>
+            <tr>
+                <td id="YamatoBuilding">Yamato</td>
+                <td id="YamatoBuilding">Siege Workshop</td>
+                <td id="YamatoBuilding">350+70</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding">200</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+            </tr>
+            <tr>
+                <td id="YamatoBuilding">Yamato</td>
+                <td id="YamatoBuilding">Academy</td>
+                <td id="YamatoBuilding">350+70</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding">150</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+            </tr>
+            <tr>
+                <td id="YamatoBuilding">Yamato</td>
+                <td id="YamatoBuilding">Wonder</td>
+                <td id="YamatoBuilding">500+100</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding">1000</td>
+                <td id="YamatoBuilding">1000</td>
+                <td id="YamatoBuilding">1000</td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+                <td id="YamatoBuilding"></td>
+            </tr>
+            <tr>
+                <td id="HittiteBuilding">Hittite</td>
+                <td id="HittiteBuilding">Town Center</td>
+                <td id="HittiteBuilding">600</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding">200</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+            </tr>
+            <tr>
+                <td id="HittiteBuilding">Hittite</td>
+                <td id="HittiteBuilding">House</td>
+                <td id="HittiteBuilding">75</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding">30</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+            </tr>
+            <tr>
+                <td id="HittiteBuilding">Hittite</td>
+                <td id="HittiteBuilding">Barracks</td>
+                <td id="HittiteBuilding">350</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding">125</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+            </tr>
+            <tr>
+                <td id="HittiteBuilding">Hittite</td>
+                <td id="HittiteBuilding">Granery</td>
+                <td id="HittiteBuilding">350</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding">120</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+            </tr>
+            <tr>
+                <td id="HittiteBuilding">Hittite</td>
+                <td id="HittiteBuilding">Storage Pit</td>
+                <td id="HittiteBuilding">350</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding">120</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+            </tr>
+            <tr>
+                <td id="HittiteBuilding">Hittite</td>
+                <td id="HittiteBuilding">Dock</td>
+                <td id="HittiteBuilding">350</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding">100</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+            </tr>
+            <tr>
+                <td id="HittiteBuilding">Hittite</td>
+                <td id="HittiteBuilding">Watch Tower</td>
+                <td id="HittiteBuilding">125</td>
+                <td id="HittiteBuilding">3</td>
+                <td id="HittiteBuilding">3</td>
+                <td id="HittiteBuilding">5+2</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding">150</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding">Sentry Tower</td>
+                <td id="HittiteBuilding">185</td>
+                <td id="HittiteBuilding">4</td>
+                <td id="HittiteBuilding">3</td>
+                <td id="HittiteBuilding">6+2</td>
+                <td id="HittiteBuilding">150</td>
+                <td id="HittiteBuilding">Guard Tower</td>
+                <td id="HittiteBuilding">240</td>
+                <td id="HittiteBuilding">6+1</td>
+                <td id="HittiteBuilding">5</td>
+                <td id="HittiteBuilding">7+3</td>
+                <td id="HittiteBuilding">150</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+            </tr>
+            <tr>
+                <td id="HittiteBuilding">Hittite</td>
+                <td id="HittiteBuilding">Small Wall</td>
+                <td id="HittiteBuilding">200</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding">5</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding">Medium Wall</td>
+                <td id="HittiteBuilding">300</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding">5</td>
+                <td id="HittiteBuilding">Fortified Wall</td>
+                <td id="HittiteBuilding">400</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding">5</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding">/td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+            </tr>
+            <tr>
+                <td id="HittiteBuilding">Hittite</td>
+                <td id="HittiteBuilding">Archery Range</td>
+                <td id="HittiteBuilding">350</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding">150</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+            </tr>
+            <tr>
+                <td id="HittiteBuilding">Hittite</td>
+                <td id="HittiteBuilding">Stable</td>
+                <td id="HittiteBuilding">350</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding">150</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+            </tr>
+            <tr>
+                <td id="HittiteBuilding">Hittite</td>
+                <td id="HittiteBuilding">Market</td>
+                <td id="HittiteBuilding">350</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding">150</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+            </tr>
+            <tr>
+                <td id="HittiteBuilding">Hittite</td>
+                <td id="HittiteBuilding">Farm</td>
+                <td id="HittiteBuilding">50</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding">75</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+            </tr>
+            <tr>
+                <td id="HittiteBuilding">Hittite</td>
+                <td id="HittiteBuilding">Government Center</td>
+                <td id="HittiteBuilding">350</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding">175</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+            </tr>
+            <tr>
+                <td id="HittiteBuilding">Hittite</td>
+                <td id="HittiteBuilding">Temple</td>
+                <td id="HittiteBuilding">350</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding">200</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+            </tr>
+            <tr>
+                <td id="HittiteBuilding">Hittite</td>
+                <td id="HittiteBuilding">Siege Workshop</td>
+                <td id="HittiteBuilding">350</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding">200</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+            </tr>
+            <tr>
+                <td id="HittiteBuilding">Hittite</td>
+                <td id="HittiteBuilding">Academy</td>
+                <td id="HittiteBuilding">350</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding">150</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+            </tr>
+            <tr>
+                <td id="HittiteBuilding">Hittite</td>
+                <td id="HittiteBuilding">Wonder</td>
+                <td id="HittiteBuilding">500+100</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding">1000</td>
+                <td id="HittiteBuilding">1000</td>
+                <td id="HittiteBuilding">1000</td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+                <td id="HittiteBuilding"></td>
+            </tr>
+        </tbody>
     </table>
     <h3>Units</h3>
     <h2>Video Sections</h2>
     <h2>Campaign Guidelines</h2>
+
+
     <script>
-        function filterText()
-        {
-            let input, filter, table, tr, td, i, txtValue;
+        function filterText(event) {
+            /* let input = document.getElementById("userInput"); */
+            let filter = event.target.value.toUpperCase();
+            let rows = document.querySelector("#buildingsTable tbody").rows;
+            /* let table = document.getElementById("buildingsTable"); */
+            /* let tr = table.getElementsByID("egyptBuildings"); */
 
-            input = document.getElementById("userInput");
-            filter = input.value.toUpperCase();
-            table = document.getElementById("buildingsTable");
-            tr = table.getElementsByTagName("tr");
-
-            for (i = 0; i < tr.length; i++) 
-            {
-                td = tr[i].getElementsByTagName("td");
-                for (let j = 0; j < td.length; j++)
-                {
-                    cell = tr[i].getElementsByTagName("td")[j];
-                    if (cell) 
-                    {
-                        if(cell.innerText.toUpperCase().indexOf(filter)>-1)
-                        {
-                            tr[i].style.display="";
-                            break;
-                        }
-                    }
+            for (let i = 0; i < tr.length; i++) {
+                let firstCol = rows[i].cells[0].textContent.toUpperCase();
+                let secondCol = rows[i].cells[1].textContent.toUpperCase();
+                if(firstCol.indexOf(filter)>-1 || secondCol.indexOf(filter)>-1){
+                    rows[i].style.display="";
+                }
+                else{
+                    rows[i].style.display="none";
                 }
             }
         }
+        document.querySelector("#userInput").addEventListener("keyup", filterText, false);
     </script>
 </body>
+
 </html>
