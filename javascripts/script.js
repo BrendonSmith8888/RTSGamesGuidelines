@@ -1,22 +1,20 @@
-function filterText()
-{
-    input = document.getElementById("userInput");
+function filterTable() {
+  let input, filter, table, tr, td, td1, i;
+  input = document.getElementById("userInput");
   filter = input.value.toUpperCase();
   table = document.getElementById("buildingsTable");
-  tr = table.getElementsByTagName("egyptBuildings");
+  tr = table.getElementsByTagName("tr");
 
   for (i = 0; i < tr.length; i++) {
-    let firstCol = tds[0].innerHTML.toUpperCase();
-    let secondCol = tds[1].innerHTML.toUpperCase();
-    if (
-      firstCol.indexOf(filter) > -1 ||
-      secondCol.indexOf(filter) > -1
-    ) {
-      tr[i].style.display = "";
-    } else {
-      tr[i].style.display = "none";
+    td = tr[i].getElementsByTagName("td")[0];
+    td1 = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      if((td.innerHTML.toUpperCase().indexOf(filter)>-1)||(td1.innerHTML.toUpperCase().indexOf(filter)>-1)){
+        tr[i].style.display = "";
+      }
+      else {
+        tr[i].style.display = "none";
+      }
     }
   }
 }
-
-document.querySelector("userInput").addEventListener("keyup", buildingsTable, false);
