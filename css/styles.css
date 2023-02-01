@@ -147,7 +147,7 @@ td{
 
 #aoeCPList{
     align-items: center;
-    background-color: black;
+    /* background-color: black; */
     cursor: pointer;
     display: flex;
     flex-direction: column;
