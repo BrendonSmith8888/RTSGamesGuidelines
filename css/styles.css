@@ -29,6 +29,15 @@ td{
     font-weight: bold;
 }
 
+#aoe1a {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1vw;
+    font-weight: bold;
+    margin-bottom: 3%;
+    text-decoration: none;
+}
+
 #aoe1HPa {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -43,26 +52,31 @@ td{
     transition: 1s;
 }
 
-#buildingsTable{
+#aoe1buildingsTable{
     background-color: black;
     border: 1px solid black;
 }
 
-#mainHeading{
+#aoe1unitsTable{
+    background-color: black;
+    border: 1px solid black;
+}
+
+#aoe1mainHeading{
     background-color: antiquewhite;
     border: 1px solid black;
     font-size: 0.9vw;
     font-weight: bold;
 }
 
-#subHeading{
+#aoe1subHeading{
     background-color: antiquewhite;
     border: 1px solid black;
     font-size: 0.9vw;
     font-weight: bold;
 }
 
-#BabylonianBuilding{
+#Babylonian{
     background-color: green;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9vw;
@@ -71,7 +85,7 @@ td{
     text-align: center;
 }
 
-#EgyptBuilding{
+#Egypt{
     background-color: red;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9vw;
@@ -80,7 +94,7 @@ td{
     text-align: center;
 }
 
-#GreekBuilding{
+#Greek{
     background-color: blue;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9vw;
@@ -89,7 +103,7 @@ td{
     text-align: center;
 }
 
-#HittiteBuilding{
+#Hittite{
     background-color: orangered;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9vw;
@@ -98,7 +112,7 @@ td{
     text-align: center;
 }
 
-#YamatoBuilding{
+#Yamato{
     background-color: yellow;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9vw;
