@@ -14,38 +14,49 @@
     <h2>Stats Section</h2>
     <h3>Buildings</h3>
     <a id="aoe1a" href="#Units">Scroll Down to Units Stats</a>
-    <input type="text" id="userBuildingInput" onkeyup="filterTable()" placeholder="Search for Factions or Buildings">
+    <a id="aoe1a" href="#Technology">Scroll Down to Technology Stats</a>
+    <input type="text" id="userBuildingInput" onkeyup="filterTable()" placeholder="Search for Factions, Age or Buildings">
     <br>
     <table id="aoe1buildingsTable" aria-label="Buildings Stats Table for each Faction">
         <thead>
             <tr>
                 <th id="aoe1mainHeading">Faction</th>
+                <th id="aoe1mainHeading">Age</th>
+                <th id="aoe1mainHeading">Image</th>
                 <th id="aoe1mainHeading">Building</th>
                 <th id="aoe1mainHeading">Hit Points</th>
                 <th id="aoe1mainHeading">Attack Strength</th>
-                <th id="aoe1mainHeading">Armored Piercing Range</th>
+                <th id="aoe1mainHeading">Pierce Armor</th>
                 <th id="aoe1mainHeading">Range</th>
                 <th colspan="3" id="aoe1mainHeading">Cost</th>
+                <th id="aoe1mainHeading">Age</th>
+                <th id="aoe1mainHeading">Image</th>
                 <th id="aoe1mainHeading">Upgrade</th>
                 <th id="aoe1mainHeading">Hit Points</th>
                 <th id="aoe1mainHeading">Attack Strength</th>
-                <th id="aoe1mainHeading">Armored Piercing Range</th>
+                <th id="aoe1mainHeading">Pierce Armor</th>
                 <th id="aoe1mainHeading">Range</th>
                 <th id="aoe1mainHeading">Cost</th>
+                <th id="aoe1mainHeading">Age</th>
+                <th id="aoe1mainHeading">Image</th>
                 <th id="aoe1mainHeading">Upgrade</th>
                 <th id="aoe1mainHeading">Hit Points</th>
                 <th id="aoe1mainHeading">Attack Strength</th>
-                <th id="aoe1mainHeading">Armored Piercing Range</th>
+                <th id="aoe1mainHeading">Pierce Armor</th>
                 <th id="aoe1mainHeading">Range</th>
                 <th id="aoe1mainHeading">Cost</th>
+                <th id="aoe1mainHeading">Age</th>
+                <th id="aoe1mainHeading">Image</th>
                 <th id="aoe1mainHeading">Upgrade</th>
                 <th id="aoe1mainHeading">Hit Points</th>
                 <th id="aoe1mainHeading">Attack Strength</th>
-                <th id="aoe1mainHeading">Armored Piercing Range</th>
+                <th id="aoe1mainHeading">Pierce Armor</th>
                 <th id="aoe1mainHeading">Range</th>
                 <th id="aoe1mainHeading">Cost</th>
             </tr>
             <tr>
+                <th id="aoe1subHeading"></th>
+                <th id="aoe1subHeading"></th>
                 <th id="aoe1subHeading"></th>
                 <th id="aoe1subHeading"></th>
                 <th id="aoe1subHeading"></th>
@@ -60,13 +71,19 @@
                 <th id="aoe1subHeading"></th>
                 <th id="aoe1subHeading"></th>
                 <th id="aoe1subHeading"></th>
-                <th id="aoe1subHeading">Stone</th>
-                <th id="aoe1subHeading"></th>
-                <th id="aoe1subHeading"></th>
-                <th id="aoe1subHeading"></th>
                 <th id="aoe1subHeading"></th>
                 <th id="aoe1subHeading"></th>
                 <th id="aoe1subHeading">Stone</th>
+                <th id="aoe1subHeading"></th>
+                <th id="aoe1subHeading"></th>
+                <th id="aoe1subHeading"></th>
+                <th id="aoe1subHeading"></th>
+                <th id="aoe1subHeading"></th>
+                <th id="aoe1subHeading"></th>
+                <th id="aoe1subHeading"></th>
+                <th id="aoe1subHeading">Stone</th>
+                <th id="aoe1subHeading"></th>
+                <th id="aoe1subHeading"></th>
                 <th id="aoe1subHeading"></th>
                 <th id="aoe1subHeading"></th>
                 <th id="aoe1subHeading"></th>
@@ -78,6 +95,8 @@
         <tbody>
             <tr>
                 <td id="Egypt">Egyptian</td>
+                <td id="Egypt">Bronze</td>
+                <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/TownCenter.PNG" alt="Town Center Image"></td>
                 <td id="Egypt">Town Center</td>
                 <td id="Egypt">600+120</td>
                 <td id="Egypt"></td>
@@ -104,9 +123,17 @@
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
             </tr>
             <tr>
                 <td id="Egypt">Egyptian</td>
+                <td id="Egypt">Stone</td>
+                <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/House.PNG" alt="House Image"></td>
                 <td id="Egypt">House</td>
                 <td id="Egypt">75+15</td>
                 <td id="Egypt"></td>
@@ -133,9 +160,17 @@
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
             </tr>
             <tr>
                 <td id="Egypt">Egyptian</td>
+                <td id="Egypt">Stone</td>
+                <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Barracks.PNG" alt="Barracks Image"></td>
                 <td id="Egypt">Barracks</td>
                 <td id="Egypt">350+70</td>
                 <td id="Egypt"></td>
@@ -162,10 +197,18 @@
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
             </tr>
             <tr>
                 <td id="Egypt">Egyptian</td>
-                <td id="Egypt">Granery</td>
+                <td id="Egypt">Stone</td>
+                <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Granary.PNG" alt="Granary Image"></td>
+                <td id="Egypt">Granary</td>
                 <td id="Egypt">350+70</td>
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
@@ -191,9 +234,17 @@
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
             </tr>
             <tr>
                 <td id="Egypt">Egyptian</td>
+                <td id="Egypt">Stone</td>
+                <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/StoragePit.PNG" alt="Storage Pit Image"></td>
                 <td id="Egypt">Storage Pit</td>
                 <td id="Egypt">350+70</td>
                 <td id="Egypt"></td>
@@ -220,9 +271,17 @@
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
             </tr>
             <tr>
                 <td id="Egypt">Egyptian</td>
+                <td id="Egypt">Stone</td>
+                <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Dock.PNG" alt="Dock Image"></td>
                 <td id="Egypt">Dock</td>
                 <td id="Egypt">350+70</td>
                 <td id="Egypt"></td>
@@ -249,29 +308,43 @@
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
             </tr>
             <tr>
                 <td id="Egypt">Egyptian</td>
+                <td id="Egypt">Tool</td>
+                <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/WatchTower.PNG" alt="Watch Tower Image"></td>
                 <td id="Egypt">Watch Tower</td>
-                <td id="Egypt">100</td>
+                <td id="Egypt">100+25</td>
                 <td id="Egypt">3+1</td>
                 <td id="Egypt">3</td>
                 <td id="Egypt">5+3</td>
                 <td id="Egypt"></td>
                 <td id="Egypt">150</td>
                 <td id="Egypt"></td>
+                <td id="Egypt">Bronze</td>
+                <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/SentryTower.PNG" alt="Sentry Tower Image"></td>
                 <td id="Egypt">Sentry Tower</td>
-                <td id="Egypt">150</td>
+                <td id="Egypt">185+37</td>
                 <td id="Egypt">3+1</td>
                 <td id="Egypt">3</td>
                 <td id="Egypt">5+3</td>
                 <td id="Egypt">150</td>
+                <td id="Egypt">Iron</td>
+                <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/GuardTower.PNG" alt="Guard Tower Image"></td>
                 <td id="Egypt">Guard Tower</td>
-                <td id="Egypt">240</td>
+                <td id="Egypt">240+48</td>
                 <td id="Egypt">6+1</td>
                 <td id="Egypt">5</td>
                 <td id="Egypt">7+3</td>
                 <td id="Egypt">150</td>
+                <td id="Egypt">Iron</td>
+                <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/BallistaTower.PNG" alt="Ballista Tower Image"></td>
                 <td id="Egypt">Ballista Tower</td>
                 <td id="Egypt">240+48</td>
                 <td id="Egypt">20+1</td>
@@ -281,26 +354,34 @@
             </tr>
             <tr>
                 <td id="Egypt">Egyptian</td>
+                <td id="Egypt">Tool</td>
+                <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/SmallWall.PNG" alt="Small Wall Image"></td>
                 <td id="Egypt">Small Wall</td>
-                <td id="Egypt">200</td>
+                <td id="Egypt">200+40</td>
                 <td id="Egypt"></td>
-                <td id="Egypt"></td>
+                <td id="Egypt">3</td>
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
                 <td id="Egypt">5</td>
                 <td id="Egypt"></td>
+                <td id="Egypt">Bronze</td>
+                <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/MediumWall.PNG" alt="Medium Wall Image"></td>
                 <td id="Egypt">Medium Wall</td>
-                <td id="Egypt">300</td>
+                <td id="Egypt">300+60</td>
                 <td id="Egypt"></td>
-                <td id="Egypt"></td>
+                <td id="Egypt">4</td>
                 <td id="Egypt"></td>
                 <td id="Egypt">5</td>
+                <td id="Egypt">Iron</td>
+                <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/FortifiedWall.PNG" alt="Fortified Wall Image"></td>
                 <td id="Egypt">Fortified Wall</td>
-                <td id="Egypt">480</td>
-                <td id="Egypt"></td>
-                <td id="Egypt"></td>
+                <td id="Egypt">400+80</td>
                 <td id="Egypt"></td>
                 <td id="Egypt">5</td>
+                <td id="Egypt"></td>
+                <td id="Egypt">5</td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
@@ -310,6 +391,8 @@
             </tr>
             <tr>
                 <td id="Egypt">Egyptian</td>
+                <td id="Egypt">Tool</td>
+                <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/ArcheryRange.PNG" alt="Archery Range Image"></td>
                 <td id="Egypt">Archery Range</td>
                 <td id="Egypt">350+70</td>
                 <td id="Egypt"></td>
@@ -336,9 +419,17 @@
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
             </tr>
             <tr>
                 <td id="Egypt">Egyptian</td>
+                <td id="Egypt">Tool</td>
+                <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Stable.PNG" alt="Stable Image"></td>
                 <td id="Egypt">Stable</td>
                 <td id="Egypt">350+70</td>
                 <td id="Egypt"></td>
@@ -365,9 +456,17 @@
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
             </tr>
             <tr>
                 <td id="Egypt">Egyptian</td>
+                <td id="Egypt">Tool</td>
+                <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Market.PNG" alt="Market Image"></td>
                 <td id="Egypt">Market</td>
                 <td id="Egypt">350+70</td>
                 <td id="Egypt"></td>
@@ -394,9 +493,17 @@
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
             </tr>
             <tr>
                 <td id="Egypt">Egyptian</td>
+                <td id="Egypt">Tool</td>
+                <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Farm.PNG" alt="Farm Image"></td>
                 <td id="Egypt">Farm</td>
                 <td id="Egypt">50+10</td>
                 <td id="Egypt"></td>
@@ -423,9 +530,17 @@
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
             </tr>
             <tr>
                 <td id="Egypt">Egyptian</td>
+                <td id="Egypt">Bronze</td>
+                <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/GovernmentCenter.PNG" alt="Government Center Image"></td>
                 <td id="Egypt">Government Center</td>
                 <td id="Egypt">350+70</td>
                 <td id="Egypt"></td>
@@ -452,9 +567,17 @@
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
             </tr>
             <tr>
                 <td id="Egypt">Egyptian</td>
+                <td id="Egypt">Bronze</td>
+                <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Temple.PNG" alt="Temple Image"></td>
                 <td id="Egypt">Temple</td>
                 <td id="Egypt">350+70</td>
                 <td id="Egypt"></td>
@@ -481,9 +604,17 @@
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
             </tr>
             <tr>
                 <td id="Egypt">Egyptian</td>
+                <td id="Egypt">Bronze</td>
+                <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/SiegeWorkshop.PNG" alt="Siege Workshop Image"></td>
                 <td id="Egypt">Siege Workshop</td>
                 <td id="Egypt">350+70</td>
                 <td id="Egypt"></td>
@@ -510,9 +641,17 @@
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
             </tr>
             <tr>
                 <td id="Egypt">Egyptian</td>
+                <td id="Egypt">Bronze</td>
+                <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Academy.PNG" alt="Academy Image"></td>
                 <td id="Egypt">Academy</td>
                 <td id="Egypt">350+70</td>
                 <td id="Egypt"></td>
@@ -539,9 +678,17 @@
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
             </tr>
             <tr>
                 <td id="Egypt">Egyptian</td>
+                <td id="Egypt">Iron</td>
+                <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Wonder.PNG" alt="Wonder Image"></td>
                 <td id="Egypt">Wonder</td>
                 <td id="Egypt">500+100</td>
                 <td id="Egypt"></td>
@@ -550,6 +697,12 @@
                 <td id="Egypt">1000</td>
                 <td id="Egypt">1000</td>
                 <td id="Egypt">1000</td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
+                <td id="Egypt"></td>
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
                 <td id="Egypt"></td>
@@ -658,7 +811,7 @@
             </tr>
             <tr>
                 <td id="Greek">Greek</td>
-                <td id="Greek">Granery</td>
+                <td id="Greek">Granary</td>
                 <td id="Greek">350+70</td>
                 <td id="Greek"></td>
                 <td id="Greek"></td>
@@ -1151,7 +1304,7 @@
             </tr>
             <tr>
                 <td id="Babylonian">Babylonian</td>
-                <td id="Babylonian">Granery</td>
+                <td id="Babylonian">Granary</td>
                 <td id="Babylonian">350</td>
                 <td id="Babylonian"></td>
                 <td id="Babylonian"></td>
@@ -1644,7 +1797,7 @@
             </tr>
             <tr>
                 <td id="Yamato">Yamato</td>
-                <td id="Yamato">Granery</td>
+                <td id="Yamato">Granary</td>
                 <td id="Yamato">350+70</td>
                 <td id="Yamato"></td>
                 <td id="Yamato"></td>
@@ -2137,7 +2290,7 @@
             </tr>
             <tr>
                 <td id="Hittite">Hittite</td>
-                <td id="Hittite">Granery</td>
+                <td id="Hittite">Granary</td>
                 <td id="Hittite">350</td>
                 <td id="Hittite"></td>
                 <td id="Hittite"></td>
@@ -2544,11 +2697,13 @@
         </tbody>
     </table>
     <h3 id="Units">Units</h3>
-    <input type="text" id="userUnitInput" onkeyup="filterUnit()" placeholder="Search for Factions, Units or Buildings Required">
+    <input type="text" id="userUnitInput" onkeyup="filterUnit()" placeholder="Search for Factions, Age, Units or Buildings Required">
     <br>
     <table id="aoe1unitsTable" aria-label="Units Stats Table for each Faction">
         <tr>
             <th id="aoe1mainHeading">Faction</th>
+            <th id="aoe1mainHeading">Age</th>
+            <th id="aoe1mainHeading">Image</th>
             <th id="aoe1mainHeading">Unit</th>
             <th id="aoe1mainHeading">Hit Points</th>
             <th id="aoe1mainHeading">Attack Strength</th>
@@ -2557,6 +2712,8 @@
             <th id="aoe1mainHeading">Range</th>
             <th id="aoe1mainHeading">Faith</th>
             <th colspan="4" id="aoe1mainHeading">Cost</th>
+            <th id="aoe1mainHeading">Age</th>
+            <th id="aoe1mainHeading">Image</th>
             <th id="aoe1mainHeading">Upgrade</th>
             <th id="aoe1mainHeading">Hit Points</th>
             <th id="aoe1mainHeading">Attack Strength</th>
@@ -2564,6 +2721,8 @@
             <th id="aoe1mainHeading">Pierced Armor</th>
             <th id="aoe1mainHeading">Range</th>
             <th colspan="3" id="aoe1mainHeading">Cost</th>
+            <th id="aoe1mainHeading">Age</th>
+            <th id="aoe1mainHeading">Image</th>
             <th id="aoe1mainHeading">Upgrade</th>
             <th id="aoe1mainHeading">Hit Points</th>
             <th id="aoe1mainHeading">Attack Strength</th>
@@ -2571,6 +2730,8 @@
             <th id="aoe1mainHeading">Pierced Armor</th>
             <th id="aoe1mainHeading">Range</th>
             <th colspan="3" id="aoe1mainHeading">Cost</th>
+            <th id="aoe1mainHeading">Age</th>
+            <th id="aoe1mainHeading">Image</th>
             <th id="aoe1mainHeading">Upgrade</th>
             <th id="aoe1mainHeading">Hit Points</th>
             <th id="aoe1mainHeading">Attack Strength</th>
@@ -2589,6 +2750,8 @@
             <th id="aoe1subHeading"></th>
             <th id="aoe1subHeading"></th>
             <th id="aoe1subHeading"></th>
+            <th id="aoe1subHeading"></th>
+            <th id="aoe1subHeading"></th>
             <th id="aoe1subHeading">Food</th>
             <th id="aoe1subHeading">Gold</th>
             <th id="aoe1subHeading">Stone</th>
@@ -2599,18 +2762,24 @@
             <th id="aoe1subHeading"></th>
             <th id="aoe1subHeading"></th>
             <th id="aoe1subHeading"></th>
-            <th id="aoe1subHeading">Food</th>
-            <th id="aoe1subHeading">Gold</th>
-            <th id="aoe1subHeading">Wood</th>
-            <th id="aoe1subHeading"></th>
-            <th id="aoe1subHeading"></th>
-            <th id="aoe1subHeading"></th>
-            <th id="aoe1subHeading"></th>
             <th id="aoe1subHeading"></th>
             <th id="aoe1subHeading"></th>
             <th id="aoe1subHeading">Food</th>
             <th id="aoe1subHeading">Gold</th>
             <th id="aoe1subHeading">Wood</th>
+            <th id="aoe1subHeading"></th>
+            <th id="aoe1subHeading"></th>
+            <th id="aoe1subHeading"></th>
+            <th id="aoe1subHeading"></th>
+            <th id="aoe1subHeading"></th>
+            <th id="aoe1subHeading"></th>
+            <th id="aoe1subHeading"></th>
+            <th id="aoe1subHeading"></th>
+            <th id="aoe1subHeading">Food</th>
+            <th id="aoe1subHeading">Gold</th>
+            <th id="aoe1subHeading">Wood</th>
+            <th id="aoe1subHeading"></th>
+            <th id="aoe1subHeading"></th>
             <th id="aoe1subHeading"></th>
             <th id="aoe1subHeading"></th>
             <th id="aoe1subHeading"></th>
@@ -2623,6 +2792,8 @@
         </tr>
         <tr>
             <td id="Egypt">Egyptian</td>
+            <td id="Egypt">Stone</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/Villager.PNG" alt="Villager Image"></td>
             <td id="Egypt">Villager</td>
             <td id="Egypt">65</td>
             <td id="Egypt">3</td>
@@ -2660,10 +2831,18 @@
             <td id="Egypt"></td>
             <td id="Egypt"></td>
             <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
             <td id="Egypt">Town Center</td>
         </tr>
         <tr>
             <td id="Egypt">Egyptian</td>
+            <td id="Egypt">Stone</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/Clubman.PNG" alt="Clubman Image"></td>
             <td id="Egypt">Clubman</td>
             <td id="Egypt">40</td>
             <td id="Egypt">3+7</td>
@@ -2675,6 +2854,8 @@
             <td id="Egypt">0</td>
             <td id="Egypt">0</td>
             <td id="Egypt">0</td>
+            <td id="Egypt">Tool</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/Axeman.PNG" alt="Axeman Image"></td>
             <td id="Egypt">Axeman</td>
             <td id="Egypt">50</td>
             <td id="Egypt">5+7</td>
@@ -2701,10 +2882,16 @@
             <td id="Egypt"></td>
             <td id="Egypt"></td>
             <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
             <td id="Egypt">Barracks</td>
         </tr>
         <tr>
             <td id="Egypt">Egyptian</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/ShortSwordsman.PNG" alt="Short Swordsman Image"></td>
             <td id="Egypt">Short Swordsman</td>
             <td id="Egypt">60</td>
             <td id="Egypt">7+7</td>
@@ -2742,10 +2929,18 @@
             <td id="Egypt"></td>
             <td id="Egypt"></td>
             <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
             <td id="Egypt">Barracks</td>
         </tr>
         <tr>
             <td id="Egypt">Egyptian</td>
+            <td id="Egypt">Tool</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/Slinger.PNG" alt="Slinger Image"></td>
             <td id="Egypt">Slinger</td>
             <td id="Egypt">25</td>
             <td id="Egypt">2+1</td>
@@ -2783,10 +2978,18 @@
             <td id="Egypt"></td>
             <td id="Egypt"></td>
             <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
             <td id="Egypt">Barracks</td>
         </tr>
         <tr>
             <td id="Egypt">Egyptian</td>
+            <td id="Egypt">Stone</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/FishingBoat.PNG" alt="Fishing Boat Image"></td>
             <td id="Egypt">Fishing Boat</td>
             <td id="Egypt">45</td>
             <td id="Egypt">0</td>
@@ -2798,6 +3001,8 @@
             <td id="Egypt">0</td>
             <td id="Egypt">0</td>
             <td id="Egypt">50</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/FishingShip.PNG" alt="Fishing Ship Image"></td>
             <td id="Egypt">Fishing Ship</td>
             <td id="Egypt">75</td>
             <td id="Egypt">0</td>
@@ -2824,10 +3029,16 @@
             <td id="Egypt"></td>
             <td id="Egypt"></td>
             <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
             <td id="Egypt">Docks</td>
         </tr>
         <tr>
             <td id="Egypt">Egyptian</td>
+            <td id="Egypt">Stone</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/TradeBoat.PNG" alt="Trade Boat Image"></td>
             <td id="Egypt">Trade Boat</td>
             <td id="Egypt">120</td>
             <td id="Egypt">0</td>
@@ -2839,6 +3050,8 @@
             <td id="Egypt">0</td>
             <td id="Egypt">0</td>
             <td id="Egypt">100</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/MerchantShip.PNG" alt="Merchant Ship Image"></td>
             <td id="Egypt">Merchant Ship</td>
             <td id="Egypt">200</td>
             <td id="Egypt">0</td>
@@ -2865,10 +3078,16 @@
             <td id="Egypt"></td>
             <td id="Egypt"></td>
             <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
             <td id="Egypt">Docks</td>
         </tr>
         <tr>
             <td id="Egypt">Egyptian</td>
+            <td id="Egypt">Tool</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/LightTransport.PNG" alt="Light Transport Image"></td>
             <td id="Egypt">Light Transport</td>
             <td id="Egypt">150</td>
             <td id="Egypt">0</td>
@@ -2880,6 +3099,8 @@
             <td id="Egypt">0</td>
             <td id="Egypt">0</td>
             <td id="Egypt">150</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/HeavyTransport.PNG" alt="Heavy Transport Image"></td>
             <td id="Egypt">Heavy Transport</td>
             <td id="Egypt">200</td>
             <td id="Egypt">0</td>
@@ -2906,10 +3127,16 @@
             <td id="Egypt"></td>
             <td id="Egypt"></td>
             <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
             <td id="Egypt">Docks</td>
         </tr>
         <tr>
             <td id="Egypt">Egyptian</td>
+            <td id="Egypt">Tool</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/ScoutShip.PNG" alt="Scout Ship Image"></td>
             <td id="Egypt">Scout Ship</td>
             <td id="Egypt">120</td>
             <td id="Egypt">5+1</td>
@@ -2921,6 +3148,8 @@
             <td id="Egypt">0</td>
             <td id="Egypt">0</td>
             <td id="Egypt">135</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/WarGalley.PNG" alt="War Galley Image"></td>
             <td id="Egypt">War Galley</td>
             <td id="Egypt">160</td>
             <td id="Egypt">8+1</td>
@@ -2930,6 +3159,8 @@
             <td id="Egypt">0</td>
             <td id="Egypt">0</td>
             <td id="Egypt">135</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/Trireme.PNG" alt="Trireme Image"></td>
             <td id="Egypt">Trireme</td>
             <td id="Egypt">200</td>
             <td id="Egypt">12+1</td>
@@ -2947,10 +3178,14 @@
             <td id="Egypt"></td>
             <td id="Egypt"></td>
             <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
             <td id="Egypt">Docks</td>
         </tr>
         <tr>
             <td id="Egypt">Egyptian</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/CatapultTrireme.PNG" alt="Catapult Trireme Image"></td>
             <td id="Egypt">Catapult Trireme</td>
             <td id="Egypt">135</td>
             <td id="Egypt">35</td>
@@ -2962,6 +3197,8 @@
             <td id="Egypt">50</td>
             <td id="Egypt">0</td>
             <td id="Egypt">135</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/Juggernaut.PNG" alt="Juggernaut Image"></td>
             <td id="Egypt">Juggernaut</td>
             <td id="Egypt">200</td>
             <td id="Egypt">35+1</td>
@@ -2988,10 +3225,14 @@
             <td id="Egypt"></td>
             <td id="Egypt"></td>
             <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
             <td id="Egypt">Docks</td>
         </tr>
         <tr>
             <td id="Egypt">Egyptian</td>
+            <td id="Egypt">Tool</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/Bowman.PNG" alt="Bowman Image"></td>
             <td id="Egypt">Bowman</td>
             <td id="Egypt">35</td>
             <td id="Egypt">3+1</td>
@@ -3029,10 +3270,18 @@
             <td id="Egypt"></td>
             <td id="Egypt"></td>
             <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
             <td id="Egypt">Archery Range</td>
         </tr>
         <tr>
             <td id="Egypt">Egyptian</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/ImprovedBowman.PNG" alt="Improved Bowman Image"></td>
             <td id="Egypt">Improved Bowman</td>
             <td id="Egypt">40</td>
             <td id="Egypt">4+1</td>
@@ -3044,6 +3293,8 @@
             <td id="Egypt">20</td>
             <td id="Egypt">0</td>
             <td id="Egypt">0</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/CompositeBowman.PNG" alt="Composite Bowman Image"></td>
             <td id="Egypt">Composite Bowman</td>
             <td id="Egypt">45</td>
             <td id="Egypt">5+1</td>
@@ -3070,10 +3321,16 @@
             <td id="Egypt"></td>
             <td id="Egypt"></td>
             <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
             <td id="Egypt">Archery Range</td>
         </tr>
         <tr>
             <td id="Egypt">Egyptian</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/ChariotArcher.PNG" alt="Chariot Archer Image"></td>
             <td id="Egypt">Chariot Archer</td>
             <td id="Egypt">80+16</td>
             <td id="Egypt">4+1</td>
@@ -3111,10 +3368,18 @@
             <td id="Egypt"></td>
             <td id="Egypt"></td>
             <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
             <td id="Egypt">Archery Range</td>
         </tr>
         <tr>
             <td id="Egypt">Egyptian</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/ElephantArcher.PNG" alt="Elephant Archer Image"></td>
             <td id="Egypt">Elephant Archer</td>
             <td id="Egypt">600</td>
             <td id="Egypt">6+1</td>
@@ -3152,10 +3417,18 @@
             <td id="Egypt"></td>
             <td id="Egypt"></td>
             <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
             <td id="Egypt">Archery Range</td>
         </tr>
         <tr>
             <td id="Egypt">Egyptian</td>
+            <td id="Egypt">Tool</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/Scout.PNG" alt="Scout Image"></td>
             <td id="Egypt">Scout</td>
             <td id="Egypt">60+9</td>
             <td id="Egypt">3+7</td>
@@ -3193,10 +3466,18 @@
             <td id="Egypt"></td>
             <td id="Egypt"></td>
             <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
             <td id="Egypt">Stables</td>
         </tr>
         <tr>
             <td id="Egypt">Egyptian</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/Chariot.PNG" alt="Chariot Image"></td>
             <td id="Egypt">Chariot</td>
             <td id="Egypt">115+37</td>
             <td id="Egypt">7+7</td>
@@ -3208,6 +3489,8 @@
             <td id="Egypt">0</td>
             <td id="Egypt">0</td>
             <td id="Egypt">60</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/ScytheChariot.PNG" alt="Scythe Chariot Image"></td>
             <td id="Egypt">Scythe Chariot</td>
             <td id="Egypt">184</td>
             <td id="Egypt">9+7</td>
@@ -3234,10 +3517,16 @@
             <td id="Egypt"></td>
             <td id="Egypt"></td>
             <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
             <td id="Egypt">Stables</td>
         </tr>
         <tr>
             <td id="Egypt">Egyptian</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/WarElephant.PNG" alt="War Elephant Image"></td>
             <td id="Egypt">War Elephant</td>
             <td id="Egypt">600</td>
             <td id="Egypt">15</td>
@@ -3275,10 +3564,18 @@
             <td id="Egypt"></td>
             <td id="Egypt"></td>
             <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
             <td id="Egypt">Stables</td>
         </tr>
         <tr>
             <td id="Egypt">Egyptian</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/CamelRider.PNG" alt="Camel Rider Image"></td>
             <td id="Egypt">Camel Rider</td>
             <td id="Egypt">143</td>
             <td id="Egypt">6+7</td>
@@ -3316,10 +3613,18 @@
             <td id="Egypt"></td>
             <td id="Egypt"></td>
             <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
             <td id="Egypt">Stables</td>
         </tr>
         <tr>
             <td id="Egypt">Egyptian</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/Priest.PNG" alt="Priest Image"></td>
             <td id="Egypt">Priest</td>
             <td id="Egypt">25+25</td>
             <td id="Egypt">0</td>
@@ -3357,10 +3662,18 @@
             <td id="Egypt"></td>
             <td id="Egypt"></td>
             <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
             <td id="Egypt">Temple</td>
         </tr>
         <tr>
             <td id="Egypt">Egyptian</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/StoneThrower.PNG" alt="Stone Thrower Image"></td>
             <td id="Egypt">Stone Thrower</td>
             <td id="Egypt">75</td>
             <td id="Egypt">50+1</td>
@@ -3398,10 +3711,18 @@
             <td id="Egypt"></td>
             <td id="Egypt"></td>
             <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
             <td id="Egypt">Siege Workshop</td>
         </tr>
         <tr>
             <td id="Egypt">Egyptian</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Units/Hoplite.PNG" alt="Hoplite Image"></td>
             <td id="Egypt">Hoplite</td>
             <td id="Egypt">120</td>
             <td id="Egypt">17+7</td>
@@ -3413,6 +3734,12 @@
             <td id="Egypt">40</td>
             <td id="Egypt">0</td>
             <td id="Egypt">0</td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
+            <td id="Egypt"></td>
             <td id="Egypt"></td>
             <td id="Egypt"></td>
             <td id="Egypt"></td>
@@ -5761,7 +6088,7 @@
             <td id="Yamato">0</td>
             <td id="Yamato">Centurion</td>
             <td id="Yamato">160</td>
-            <td id="Yamato">30+7</td>Villager
+            <td id="Yamato">30+7</td>
             <td id="Yamato">8+6</td>
             <td id="Yamato">0+2</td>
             <td id="Yamato">0</td>
@@ -6598,6 +6925,291 @@
             <td id="Hittite"></td>
             <td id="Hittite">Academy</td>
         </tr>                                                                       
+    </table>
+    <h3 id="Technology">Technology</h3>
+    <input type="text" id="userTechnologyInput" onkeyup="filterTechnology()" placeholder="Search for Factions, Age, Technology or Buildings Required">
+    <br>
+    <table id="aoe1technologyTable" aria-label="Technology Stats Table for each Faction">
+        <tr>
+            <th id="aoe1mainHeading">Faction</th>
+            <th id="aoe1mainHeading">Age</th>
+            <th id="aoe1mainHeading">Image</th>
+            <th id="aoe1mainHeading">Technology</th>
+            <th id="aoe1mainHeading">Building Required</th>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Afterlife.PNG" alt="Afterlife Image"></td>
+            <td id="Egypt">Afterlife</td>
+            <td id="Egypt">Temple</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Alchemy.PNG" alt="Alchemy Image"></td>
+            <td id="Egypt">Alchemy</td>
+            <td id="Egypt">Government Center</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Architecture.PNG" alt="Architecture Image"></td>
+            <td id="Egypt">Architecture</td>
+            <td id="Egypt">Government Center</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Aristocracy.PNG" alt="Aristocracy Image"></td>
+            <td id="Egypt">Aristocracy</td>
+            <td id="Egypt">Government Center</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Artisanship.PNG" alt="Artisanship Image"></td>
+            <td id="Egypt">Artisanship</td>
+            <td id="Egypt">Market</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Astrology.PNG" alt="Astrology Image"></td>
+            <td id="Egypt">Astrology</td>
+            <td id="Egypt">Temple</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Ballistics.PNG" alt="Ballistics Image"></td>
+            <td id="Egypt">Ballistics</td>
+            <td id="Egypt">Government Center</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/ChainMailArchers.PNG" alt="Chain Mail Archers Image"></td>
+            <td id="Egypt">Chain Mail Archers</td>
+            <td id="Egypt">Storage Pit</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/ChainMailCavalry.PNG" alt="Chain Mail Cavalry Image"></td>
+            <td id="Egypt">Chain Mail Cavalry</td>
+            <td id="Egypt">Storage Pit</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/ChainMailInfantry.PNG" alt="Chain Mail Infantry Image"></td>
+            <td id="Egypt">Chain Mail Infantry</td>
+            <td id="Egypt">Storage Pit</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Coinage.PNG" alt="Coinage Image"></td>
+            <td id="Egypt">Coinage</td>
+            <td id="Egypt">Market</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Craftmanship.PNG" alt="Craftmanship Image"></td>
+            <td id="Egypt">Craftmanship</td>
+            <td id="Egypt">Market</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Tool</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Domestication.PNG" alt="Domestication Image"></td>
+            <td id="Egypt">Domestication</td>
+            <td id="Egypt">Market</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Engineering.PNG" alt="Engineering Image"></td>
+            <td id="Egypt">Engineering</td>
+            <td id="Egypt">Government Center</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Fanaticism.PNG" alt="Fanaticism Image"></td>
+            <td id="Egypt">Fanaticism</td>
+            <td id="Egypt">Temple</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Tool</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/GoldMining.PNG" alt="Gold Mining Image"></td>
+            <td id="Egypt">Gold Mining</td>
+            <td id="Egypt">Storage Pit</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Irrigation.PNG" alt="Irrigation Image"></td>
+            <td id="Egypt">Irrigation</td>
+            <td id="Egypt">Market</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Tool</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/LeatherArmorArchers.PNG" alt="Leather Armor Archers Image"></td>
+            <td id="Egypt">Leather Armor Archers</td>
+            <td id="Egypt">Storage Pit</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Tool</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/LeatherArmorCavalry.PNG" alt="Leather Armor Cavalry Image"></td>
+            <td id="Egypt">Leather Armor Cavalry</td>
+            <td id="Egypt">Storage Pit</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Tool</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/LeatherArmorInfantry.PNG" alt="Leather Armor Infantry Image"></td>
+            <td id="Egypt">Leather Armor Infantry</td>
+            <td id="Egypt">Storage Pit</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Logistics.PNG" alt="Logistics Image"></td>
+            <td id="Egypt">Logistics</td>
+            <td id="Egypt">Government Center</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Medicine.PNG" alt="Medicine Image"></td>
+            <td id="Egypt">Medicine</td>
+            <td id="Egypt">Temple</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Metallurgy.PNG" alt="Metallurgy Image"></td>
+            <td id="Egypt">Metallurgy</td>
+            <td id="Egypt">Storage Pit</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Metalworking.PNG" alt="Metalworking Image"></td>
+            <td id="Egypt">Metalworking</td>
+            <td id="Egypt">Storage Pit</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Monotheism.PNG" alt="Monotheism Image"></td>
+            <td id="Egypt">Monotheism</td>
+            <td id="Egypt">Temple</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Mysticism.PNG" alt="Mysticism Image"></td>
+            <td id="Egypt">Mysticism</td>
+            <td id="Egypt">Temple</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Nobility.PNG" alt="Nobility Image"></td>
+            <td id="Egypt">Nobility</td>
+            <td id="Egypt">Government Center</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Plow.PNG" alt="Plow Image"></td>
+            <td id="Egypt">Plow</td>
+            <td id="Egypt">Market</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Polytheism.PNG" alt="Polytheism Image"></td>
+            <td id="Egypt">Polytheism</td>
+            <td id="Egypt">Temple</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Sacrifice.PNG" alt="Sacrifice Image"></td>
+            <td id="Egypt">Sacrifice</td>
+            <td id="Egypt">Temple</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/ScaleArmorArchers.PNG" alt="Scale Armor Archers Image"></td>
+            <td id="Egypt">Scale Armor Archers</td>
+            <td id="Egypt">Storage Pit</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/ScaleArmorCavalry.PNG" alt="Scale Armor Cavalry Image"></td>
+            <td id="Egypt">Scale Armor Cavalry</td>
+            <td id="Egypt">Storage Pit</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/ScaleArmorInfantry.PNG" alt="Scale Armor Infantry Image"></td>
+            <td id="Egypt">Scale Armor Infantry</td>
+            <td id="Egypt">Storage Pit</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Tool</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/StoneMining.PNG" alt="Stone Mining Image"></td>
+            <td id="Egypt">Stone Mining</td>
+            <td id="Egypt">Market</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Tool</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Toolworking.PNG" alt="Toolworking Image"></td>
+            <td id="Egypt">Toolworking</td>
+            <td id="Egypt">Storage Pit</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Wheel.PNG" alt="Wheel Image"></td>
+            <td id="Egypt">Wheel</td>
+            <td id="Egypt">Government Center</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Tool</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Woodworking.PNG" alt="Woodworking Image"></td>
+            <td id="Egypt">Woodworking</td>
+            <td id="Egypt">Storage Pit</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Bronze</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Writing.PNG" alt="Writing Image"></td>
+            <td id="Egypt">Writing</td>
+            <td id="Egypt">Government Center</td>
+        </tr>
+        <tr>
+            <td id="Egypt">Egypt</td>
+            <td id="Egypt">Iron</td>
+            <td id="Egypt"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Technology/Zealotry.PNG" alt="Zealotry Image"></td>
+            <td id="Egypt">Zealotry</td>
+            <td id="Egypt">Temple</td>
+        </tr>
     </table>
 </body>
 
