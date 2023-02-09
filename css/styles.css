@@ -18,6 +18,13 @@ body{
     text-align: center;
 }
 
+iframe{
+    height: 75vh;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    width: 80vw;
+}
+
 p{
     text-align: justify;
 }
@@ -36,6 +43,18 @@ td{
     font-weight: bold;
     margin-bottom: 3%;
     text-decoration: none;
+}
+
+#aoe1campaignbody{
+    align-items: center;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2vw;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 #aoe1HPa {
@@ -90,7 +109,7 @@ td{
     text-align: center;
 }
 
-#Egypt{
+#Egyptian{
     background-color: red;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9vw;
@@ -119,6 +138,15 @@ td{
 
 #Yamato{
     background-color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9vw;
+    font-weight: bold;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#Technology{
+    background-color: green;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9vw;
     font-weight: bold;
