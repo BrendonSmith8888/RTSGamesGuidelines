@@ -245,6 +245,23 @@ td{
     transition: 1s; 
 }
 
+#aoe1C1RevealledMaps{
+    height: 50%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    width: 50%;
+}
+
+#aoe1C1RevealledMaps:hover{
+    transform: scale(1.2);
+    transition: 1s; 
+}
+
+#aoe1ObjectivesList{
+    text-align: left;
+    width: 80%;
+}
+
 #dowList{
     align-items: center;
     cursor: pointer;

@@ -53,10 +53,10 @@ function filterUnit() {
     td6 = tr[i].getElementsByTagName("td")[27];
     td7 = tr[i].getElementsByTagName("td")[36];
     td8 = tr[i].getElementsByTagName("td")[38];
-    td9 = tr[i].getElementsByTagName("td")[47];
+    td9 = tr[i].getElementsByTagName("td")[46];
     if (td) {
       if (
-        td.innerHTML.toUpperCase().indexOf(filter) > -1 ||
+        td.innerHTML.toUpperCase().indexOf(filter) > -1  ||
         td1.innerHTML.toUpperCase().indexOf(filter) > -1 ||
         td2.innerHTML.toUpperCase().indexOf(filter) > -1 ||
         td3.innerHTML.toUpperCase().indexOf(filter) > -1 ||
@@ -65,7 +65,7 @@ function filterUnit() {
         td6.innerHTML.toUpperCase().indexOf(filter) > -1 ||
         td7.innerHTML.toUpperCase().indexOf(filter) > -1 ||
         td8.innerHTML.toUpperCase().indexOf(filter) > -1 ||
-        td9.innerHTML.toUpperCase().indexOf(filter) > -1
+        td9.innerHTML.toUpperCase().indexOf(filter) > -1 
       ) {
         tr[i].style.display = "";
       } else {
