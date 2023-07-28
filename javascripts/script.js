@@ -2,7 +2,7 @@ function filterTable() {
   let input, filter, table, tr, td, td1, td2, td3, td4, td5, td6, td7, td8, i;
   input = document.getElementById("userBuildingInput");
   filter = input.value.toUpperCase();
-  table = document.getElementById("aoe1buildingsTable");
+  table = document.getElementById("buildingsTable");
   tr = table.getElementsByTagName("tr");
 
   for (i = 0; i < tr.length; i++) {

@@ -36,7 +36,7 @@ td{
     font-weight: bold;
 }
 
-#aoe1a {
+#aoea {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1vw;
@@ -45,7 +45,7 @@ td{
     text-decoration: none;
 }
 
-#aoe1campaignbody{
+#aoecampaignbody{
     align-items: center;
     background-color: antiquewhite;
     display: flex;
@@ -57,7 +57,7 @@ td{
     text-align: center;
 }
 
-#aoe1HPa {
+#aoeHPa {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2vw;
@@ -66,12 +66,12 @@ td{
     text-decoration: none;
 }
 
-#aoe1HPa:hover{
+#aoeHPa:hover{
     transform: scale(1.1);
     transition: 1s;
 }
 
-#aoe1buildingsTable{
+#aoebuildingsTable{
     background-color: black;
     border: 1px solid black;
 }
@@ -138,6 +138,16 @@ td{
 
 #Yamato{
     background-color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9vw;
+    font-weight: bold;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#Celts{
+    background-color: green;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9vw;
     font-weight: bold;
@@ -245,24 +255,24 @@ td{
     transition: 1s; 
 }
 
-#aoe1C1RevealledMaps{
+#aoeRevealledMaps{
     height: 50%;
     margin-bottom: 3%;
     margin-top: 3%;
     width: 50%;
 }
 
-#aoe1C1RevealledMaps:hover{
+#aoeRevealledMaps:hover{
     transform: scale(1.2);
     transition: 1s; 
 }
 
-#aoe1ObjectivesList{
+#aoeObjectivesList{
     text-align: left;
     width: 80%;
 }
 
-#aoe1TechnologyImage{
+#aoeTechnologyImage{
     width: 95%;
 }
 

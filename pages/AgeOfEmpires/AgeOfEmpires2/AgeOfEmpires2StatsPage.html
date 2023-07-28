@@ -5,55 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Age of Empires I Stats Page</title>
+    <title>Age of Empires II Stats Page</title>
     <link rel="stylesheet" href="../../../css/styles.css">
     <script src="../../../javascripts/script.js"></script>
 </head>
 
 <body id="aoestatsbody">
     <h2>Stats Section</h2>
-    <a id="aoea" href="../AgeOfEmpires1/AgeOfEmpires1HomePage.html">Age of Empires 1 - Home Page</a>
+    <a id="aoea" href="../AgeOfEmpires2/AgeOfEmpires2HomePage.html">Age of Empires 2 - Home Page</a>
     <h3 id="Buildings">Buildings</h3>
     <a id="aoea" href="#Units">Scroll Down to Units Stats</a>
     <a id="aoea" href="#TechnologyHeader">Scroll Down to Technology Stats</a>
-    <input type="text" id="userBuildingInput" onkeyup="filterTable()" placeholder="Search for Factions, Age or Buildings">
+    <input type="text" id="userBuildingInput" onkeyup="filterTable()" placeholder="Search for Civilisation">
     <br>
     <table id="aoebuildingsTable" aria-label="Buildings Stats Table for each Faction">
         <thead>
             <tr>
-                <th id="aoemainHeading">Faction</th>
-                <th id="aoemainHeading">Age</th>
-                <th id="aoemainHeading">Image</th>
+                <th id="aoemainHeading">Civilization</th>
                 <th id="aoemainHeading">Building</th>
+                <th id="aoemainHeading">Image</th>
+                <th colspan="2" id="aoemainHeading">Age</th>
                 <th id="aoemainHeading">Hit Points</th>
-                <th id="aoemainHeading">Attack Strength</th>
-                <th id="aoemainHeading">Pierce Armor</th>
+                <th colspan="2" id="aoemainHeading">Armor</th>
+                <th colspan="2" id="aoemainHeading">Attack Strength</th>
+                <th id="aoemainHeading">Garrison</th>
+                <th id="aoemainHeading">Population</th>
                 <th id="aoemainHeading">Range</th>
                 <th colspan="3" id="aoemainHeading">Cost</th>
-                <th id="aoemainHeading">Age</th>
-                <th id="aoemainHeading">Image</th>
-                <th id="aoemainHeading">Upgrade</th>
-                <th id="aoemainHeading">Hit Points</th>
-                <th id="aoemainHeading">Attack Strength</th>
-                <th id="aoemainHeading">Pierce Armor</th>
-                <th id="aoemainHeading">Range</th>
-                <th id="aoemainHeading">Cost</th>
-                <th id="aoemainHeading">Age</th>
-                <th id="aoemainHeading">Image</th>
-                <th id="aoemainHeading">Upgrade</th>
-                <th id="aoemainHeading">Hit Points</th>
-                <th id="aoemainHeading">Attack Strength</th>
-                <th id="aoemainHeading">Pierce Armor</th>
-                <th id="aoemainHeading">Range</th>
-                <th id="aoemainHeading">Cost</th>
-                <th id="aoemainHeading">Age</th>
-                <th id="aoemainHeading">Image</th>
-                <th id="aoemainHeading">Upgrade</th>
-                <th id="aoemainHeading">Hit Points</th>
-                <th id="aoemainHeading">Attack Strength</th>
-                <th id="aoemainHeading">Pierce Armor</th>
-                <th id="aoemainHeading">Range</th>
-                <th id="aoemainHeading">Cost</th>
+                <th id="aoemainHeading">Requirements</th>
+                <th id="aoemainHeading">Resources</th>
             </tr>
             <tr>
                 <th id="aoesubHeading"></th>
@@ -62,3182 +42,580 @@
                 <th id="aoesubHeading"></th>
                 <th id="aoesubHeading"></th>
                 <th id="aoesubHeading"></th>
+                <th id="aoesubHeading">Normal</th>
+                <th id="aoesubHeading">Pierced</th>
+                <th id="aoesubHeading">Attack</th>
+                <th id="aoesubHeading">No. of Shots</th>
+                <th id="aoesubHeading">Max</th>
                 <th id="aoesubHeading"></th>
                 <th id="aoesubHeading"></th>
                 <th id="aoesubHeading">Gold</th>
                 <th id="aoesubHeading">Stone</th>
                 <th id="aoesubHeading">Wood</th>
                 <th id="aoesubHeading"></th>
-                <th id="aoesubHeading"></th>
-                <th id="aoesubHeading"></th>
-                <th id="aoesubHeading"></th>
-                <th id="aoesubHeading"></th>
-                <th id="aoesubHeading"></th>
-                <th id="aoesubHeading"></th>
-                <th id="aoesubHeading">Stone</th>
-                <th id="aoesubHeading"></th>
-                <th id="aoesubHeading"></th>
-                <th id="aoesubHeading"></th>
-                <th id="aoesubHeading"></th>
-                <th id="aoesubHeading"></th>
-                <th id="aoesubHeading"></th>
-                <th id="aoesubHeading"></th>
-                <th id="aoesubHeading">Stone</th>
-                <th id="aoesubHeading"></th>
-                <th id="aoesubHeading"></th>
-                <th id="aoesubHeading"></th>
-                <th id="aoesubHeading"></th>
-                <th id="aoesubHeading"></th>
-                <th id="aoesubHeading"></th>
-                <th id="aoesubHeading"></th>
-                <th id="aoesubHeading">Stone</th>
+                <th id="aoesubHeading">Food</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td id="Egyptian">Egyptian</td>
-                <td id="Egyptian">Bronze</td>
-                <td id="Egyptian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/TownCenter.PNG" alt="Town Center Image"></td>
-                <td id="Egyptian">Town Center</td>
-                <td id="Egyptian">600+120</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">200</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-            </tr>
-            <tr>
-                <td id="Egyptian">Egyptian</td>
-                <td id="Egyptian">Stone</td>
-                <td id="Egyptian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/House.PNG" alt="House Image"></td>
-                <td id="Egyptian">House</td>
-                <td id="Egyptian">75+15</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">30</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-            </tr>
-            <tr>
-                <td id="Egyptian">Egyptian</td>
-                <td id="Egyptian">Stone</td>
-                <td id="Egyptian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Barracks.PNG" alt="Barracks Image"></td>
-                <td id="Egyptian">Barracks</td>
-                <td id="Egyptian">350+70</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">125</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-            </tr>
-            <tr>
-                <td id="Egyptian">Egyptian</td>
-                <td id="Egyptian">Stone</td>
-                <td id="Egyptian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Granary.PNG" alt="Granary Image"></td>
-                <td id="Egyptian">Granary</td>
-                <td id="Egyptian">350+70</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">120</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-            </tr>
-            <tr>
-                <td id="Egyptian">Egyptian</td>
-                <td id="Egyptian">Stone</td>
-                <td id="Egyptian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/StoragePit.PNG" alt="Storage Pit Image"></td>
-                <td id="Egyptian">Storage Pit</td>
-                <td id="Egyptian">350+70</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">120</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-            </tr>
-            <tr>
-                <td id="Egyptian">Egyptian</td>
-                <td id="Egyptian">Stone</td>
-                <td id="Egyptian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Dock.PNG" alt="Dock Image"></td>
-                <td id="Egyptian">Dock</td>
-                <td id="Egyptian">350+70</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">100</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-            </tr>
-            <tr>
-                <td id="Egyptian">Egyptian</td>
-                <td id="Egyptian">Tool</td>
-                <td id="Egyptian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/WatchTower.PNG" alt="Watch Tower Image"></td>
-                <td id="Egyptian">Watch Tower</td>
-                <td id="Egyptian">125+25</td>
-                <td id="Egyptian">3+1</td>
-                <td id="Egyptian">3</td>
-                <td id="Egyptian">5+3</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">150</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">Bronze</td>
-                <td id="Egyptian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/SentryTower.PNG" alt="Sentry Tower Image"></td>
-                <td id="Egyptian">Sentry Tower</td>
-                <td id="Egyptian">185+37</td>
-                <td id="Egyptian">3+1</td>
-                <td id="Egyptian">3</td>
-                <td id="Egyptian">5+3</td>
-                <td id="Egyptian">150</td>
-                <td id="Egyptian">Iron</td>
-                <td id="Egyptian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/GuardTower.PNG" alt="Guard Tower Image"></td>
-                <td id="Egyptian">Guard Tower</td>
-                <td id="Egyptian">240+48</td>
-                <td id="Egyptian">6+1</td>
-                <td id="Egyptian">5</td>
-                <td id="Egyptian">7+3</td>
-                <td id="Egyptian">150</td>
-                <td id="Egyptian">Iron</td>
-                <td id="Egyptian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/BallistaTower.PNG" alt="Ballista Tower Image"></td>
-                <td id="Egyptian">Ballista Tower</td>
-                <td id="Egyptian">240+48</td>
-                <td id="Egyptian">20+1</td>
-                <td id="Egyptian">5</td>
-                <td id="Egyptian">7+3</td>
-                <td id="Egyptian">150</td>
-            </tr>
-            <tr>
-                <td id="Egyptian">Egyptian</td>
-                <td id="Egyptian">Tool</td>
-                <td id="Egyptian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/SmallWall.PNG" alt="Small Wall Image"></td>
-                <td id="Egyptian">Small Wall</td>
-                <td id="Egyptian">200+40</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">3</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">5</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">Bronze</td>
-                <td id="Egyptian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/MediumWall.PNG" alt="Medium Wall Image"></td>
-                <td id="Egyptian">Medium Wall</td>
-                <td id="Egyptian">300+60</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">4</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">5</td>
-                <td id="Egyptian">Iron</td>
-                <td id="Egyptian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/FortifiedWall.PNG" alt="Fortified Wall Image"></td>
-                <td id="Egyptian">Fortified Wall</td>
-                <td id="Egyptian">400+80</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">5</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">5</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-            </tr>
-            <tr>
-                <td id="Egyptian">Egyptian</td>
-                <td id="Egyptian">Tool</td>
-                <td id="Egyptian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/ArcheryRange.PNG" alt="Archery Range Image"></td>
-                <td id="Egyptian">Archery Range</td>
-                <td id="Egyptian">350+70</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">150</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-            </tr>
-            <tr>
-                <td id="Egyptian">Egyptian</td>
-                <td id="Egyptian">Tool</td>
-                <td id="Egyptian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Stable.PNG" alt="Stable Image"></td>
-                <td id="Egyptian">Stable</td>
-                <td id="Egyptian">350+70</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">150</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-            </tr>
-            <tr>
-                <td id="Egyptian">Egyptian</td>
-                <td id="Egyptian">Tool</td>
-                <td id="Egyptian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Market.PNG" alt="Market Image"></td>
-                <td id="Egyptian">Market</td>
-                <td id="Egyptian">350+70</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">150</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-            </tr>
-            <tr>
-                <td id="Egyptian">Egyptian</td>
-                <td id="Egyptian">Tool</td>
-                <td id="Egyptian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Farm.PNG" alt="Farm Image"></td>
-                <td id="Egyptian">Farm</td>
-                <td id="Egyptian">50+10</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">75-15</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-            </tr>
-            <tr>
-                <td id="Egyptian">Egyptian</td>
-                <td id="Egyptian">Bronze</td>
-                <td id="Egyptian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/GovernmentCenter.PNG" alt="Government Center Image"></td>
-                <td id="Egyptian">Government Center</td>
-                <td id="Egyptian">350+70</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">175</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-            </tr>
-            <tr>
-                <td id="Egyptian">Egyptian</td>
-                <td id="Egyptian">Bronze</td>
-                <td id="Egyptian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Temple.PNG" alt="Temple Image"></td>
-                <td id="Egyptian">Temple</td>
-                <td id="Egyptian">350+70</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">200</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-            </tr>
-            <tr>
-                <td id="Egyptian">Egyptian</td>
-                <td id="Egyptian">Bronze</td>
-                <td id="Egyptian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/SiegeWorkshop.PNG" alt="Siege Workshop Image"></td>
-                <td id="Egyptian">Siege Workshop</td>
-                <td id="Egyptian">350+70</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">200</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-            </tr>
-            <tr>
-                <td id="Egyptian">Egyptian</td>
-                <td id="Egyptian">Bronze</td>
-                <td id="Egyptian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Academy.PNG" alt="Academy Image"></td>
-                <td id="Egyptian">Academy</td>
-                <td id="Egyptian">350+70</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">150</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-            </tr>
-            <tr>
-                <td id="Egyptian">Egyptian</td>
-                <td id="Egyptian">Iron</td>
-                <td id="Egyptian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Wonder.PNG" alt="Wonder Image"></td>
-                <td id="Egyptian">Wonder</td>
-                <td id="Egyptian">500+100</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian">1000</td>
-                <td id="Egyptian">1000</td>
-                <td id="Egyptian">1000</td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-                <td id="Egyptian"></td>
-            </tr>
-            <tr>
-                <td id="Greek">Greek</td>
-                <td id="Greek">Bronze</td>
-                <td id="Greek"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/GreekTownCenter.PNG" alt="Town Center Image"></td>
-                <td id="Greek">Town Center</td>
-                <td id="Greek">600+120</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek">200</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-            </tr>
-            <tr>
-                <td id="Greek">Greek</td>
-                <td id="Greek">Stone</td>
-                <td id="Greek"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/House.PNG" alt="House Image"></td>
-                <td id="Greek">House</td>
-                <td id="Greek">75+15</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek">30</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-            </tr>
-            <tr>
-                <td id="Greek">Greek</td>
-                <td id="Greek">Stone</td>
-                <td id="Greek"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/GreekBarracks.PNG" alt="Barracks Image"></td>
-                <td id="Greek">Barracks</td>
-                <td id="Greek">350+70</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek">125</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-            </tr>
-            <tr>
-                <td id="Greek">Greek</td>
-                <td id="Greek">Stone</td>
-                <td id="Greek"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Granary.PNG" alt="Granary Image"></td>
-                <td id="Greek">Granary</td>
-                <td id="Greek">350+70</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek">120</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-            </tr>
-            <tr>
-                <td id="Greek">Greek</td>
-                <td id="Greek">Stone</td>
-                <td id="Greek"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/StoragePit.PNG" alt="Storage Pit Image"></td>
-                <td id="Greek">Storage Pit</td>
-                <td id="Greek">350+70</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek">120</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-            </tr>
-            <tr>
-                <td id="Greek">Greek</td>
-                <td id="Greek">Stone</td>
-                <td id="Greek"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Dock.PNG" alt="Dock Image"></td>
-                <td id="Greek">Dock</td>
-                <td id="Greek">350+70</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek">100</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-            </tr>
-            <tr>
-                <td id="Greek">Greek</td>
-                <td id="Greek">Tool</td>
-                <td id="Greek"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/WatchTower.PNG" alt="Watch Tower Image"></td>
-                <td id="Greek">Watch Tower</td>
-                <td id="Greek">125+25</td>
-                <td id="Greek">3+1</td>
-                <td id="Greek">3</td>
-                <td id="Greek">5+3</td>
-                <td id="Greek"></td>
-                <td id="Greek">150</td>
-                <td id="Greek"></td>
-                <td id="Greek">Bronze</td>
-                <td id="Greek"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/SentryTower.PNG" alt="Sentry Tower Image"></td>
-                <td id="Greek">Sentry Tower</td>
-                <td id="Greek">185+37</td>
-                <td id="Greek">3+1</td>
-                <td id="Greek">4</td>
-                <td id="Greek">6+3</td>
-                <td id="Greek">150</td>
-                <td id="Greek">Iron</td>
-                <td id="Greek"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/GreekGuardTower.PNG" alt="Guard Tower Image"></td>
-                <td id="Greek">Guard Tower</td>
-                <td id="Greek">240+48</td>
-                <td id="Greek">6+1</td>
-                <td id="Greek">5</td>
-                <td id="Greek">7+3</td>
-                <td id="Greek">150</td>
-                <td id="Greek">Iron</td>
-                <td id="Greek"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/GreekBallistaTower.PNG" alt="Ballista Tower Image"></td>
-                <td id="Greek">Ballista Tower</td>
-                <td id="Greek">240+48</td>
-                <td id="Greek">20+1</td>
-                <td id="Greek">5</td>
-                <td id="Greek">7+3</td>
-                <td id="Greek">150</td>
-            </tr>
-            <tr>
-                <td id="Greek">Greek</td>
-                <td id="Greek">Tool</td>
-                <td id="Greek"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/SmallWall.PNG" alt="Small Wall Image"></td>
-                <td id="Greek">Small Wall</td>
-                <td id="Greek">200+40</td>
-                <td id="Greek"></td>
-                <td id="Greek">3</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek">5</td>
-                <td id="Greek"></td>
-                <td id="Greek">Bronze</td>
-                <td id="Greek"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/GreekMediumWall.PNG" alt="Medium Wall Image"></td>
-                <td id="Greek">Medium Wall</td>
-                <td id="Greek">300+60</td>
-                <td id="Greek"></td>
-                <td id="Greek">4</td>
-                <td id="Greek"></td>
-                <td id="Greek">5</td>
-                <td id="Greek">Iron</td>
-                <td id="Greek"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/GreekFortifiedWall.PNG" alt="Fortified Wall Image"></td>
-                <td id="Greek">Fortified Wall</td>
-                <td id="Greek">400+80</td>
-                <td id="Greek"></td>
-                <td id="Greek">5</td>
-                <td id="Greek"></td>
-                <td id="Greek">5</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-            </tr>
-            <tr>
-                <td id="Greek">Greek</td>
-                <td id="Greek">Tool</td>
-                <td id="Greek"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/ArcheryRange.PNG" alt="Archery Range Image"></td>
-                <td id="Greek">Archery Range</td>
-                <td id="Greek">350+70</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek">150</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-            </tr>
-            <tr>
-                <td id="Greek">Greek</td>
-                <td id="Greek">Tool</td>
-                <td id="Greek"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Stable.PNG" alt="Stable Image"></td>
-                <td id="Greek">Stable</td>
-                <td id="Greek">350+70</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek">150</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-            </tr>
-            <tr>
-                <td id="Greek">Greek</td>
-                <td id="Greek">Tool</td>
-                <td id="Greek"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Market.PNG" alt="Market Image"></td>
-                <td id="Greek">Market</td>
-                <td id="Greek">350+70</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek">150</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-            </tr>
-            <tr>
-                <td id="Greek">Greek</td>
-                <td id="Greek">Tool</td>
-                <td id="Greek"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Farm.PNG" alt="Farm Image"></td>
-                <td id="Greek">Farm</td>
-                <td id="Greek">50+10</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek">75</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-            </tr>
-            <tr>
-                <td id="Greek">Greek</td>
-                <td id="Greek">Bronze</td>
-                <td id="Greek"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/GreekGovernmentCenter.PNG" alt="Government Center Image"></td>
-                <td id="Greek">Government Center</td>
-                <td id="Greek">350+70</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek">175</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-            </tr>
-            <tr>
-                <td id="Greek">Greek</td>
-                <td id="Greek">Bronze</td>
-                <td id="Greek"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Temple.PNG" alt="Temple Image"></td>
-                <td id="Greek">Temple</td>
-                <td id="Greek">350+70</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek">200</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-            </tr>
-            <tr>
-                <td id="Greek">Greek</td>
-                <td id="Greek">Bronze</td>
-                <td id="Greek"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/SiegeWorkshop.PNG" alt="Siege Workshop Image"></td>
-                <td id="Greek">Siege Workshop</td>
-                <td id="Greek">350+70</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek">200</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-            </tr>
-            <tr>
-                <td id="Greek">Greek</td>
-                <td id="Greek">Bronze</td>
-                <td id="Greek"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/GreekAcademy.PNG" alt="Academy Image"></td>
-                <td id="Greek">Academy</td>
-                <td id="Greek">350+70</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek">150</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-            </tr>
-            <tr>
-                <td id="Greek">Greek</td>
-                <td id="Greek">Iron</td>
-                <td id="Greek"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/GreekWonder.PNG" alt="Wonder Image"></td>
-                <td id="Greek">Wonder</td>
-                <td id="Greek">500+100</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek">1000</td>
-                <td id="Greek">1000</td>
-                <td id="Greek">1000</td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-                <td id="Greek"></td>
-            </tr>
-            <tr>
-                <td id="Babylonian">Babylonian</td>
-                <td id="Babylonian">Bronze</td>
-                <td id="Babylonian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/BabylonianTownCenter.PNG" alt="Town Center Image"></td>
-                <td id="Babylonian">Town Center</td>
-                <td id="Babylonian">600+120</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">200</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-            </tr>
-            <tr>
-                <td id="Babylonian">Babylonian</td>
-                <td id="Babylonian">Stone</td>
-                <td id="Babylonian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/House.PNG" alt="House Image"></td>
-                <td id="Babylonian">House</td>
-                <td id="Babylonian">75+15</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">30</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-            </tr>
-            <tr>
-                <td id="Babylonian">Babylonian</td>
-                <td id="Babylonian">Stone</td>
-                <td id="Babylonian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/BabylonianBarracks.PNG" alt="Barracks Image"></td>
-                <td id="Babylonian">Barracks</td>
-                <td id="Babylonian">350+70</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">125</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-            </tr>
-            <tr>
-                <td id="Babylonian">Babylonian</td>
-                <td id="Babylonian">Stone</td>
-                <td id="Babylonian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Granary.PNG" alt="Granary Image"></td>
-                <td id="Babylonian">Granary</td>
-                <td id="Babylonian">350+70</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">120</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-            </tr>
-            <tr>
-                <td id="Babylonian">Babylonian</td>
-                <td id="Babylonian">Stone</td>
-                <td id="Babylonian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/StoragePit.PNG" alt="Storage Pit Image"></td>
-                <td id="Babylonian">Storage Pit</td>
-                <td id="Babylonian">350+70</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">120</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-            </tr>
-            <tr>
-                <td id="Babylonian">Babylonian</td>
-                <td id="Babylonian">Stone</td>
-                <td id="Babylonian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Dock.PNG" alt="Dock Image"></td>
-                <td id="Babylonian">Dock</td>
-                <td id="Babylonian">350+70</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">100</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-            </tr>
-            <tr>
-                <td id="Babylonian">Babylonian</td>
-                <td id="Babylonian">Tool</td>
-                <td id="Babylonian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/WatchTower.PNG" alt="Watch Tower Image"></td>
-                <td id="Babylonian">Watch Tower</td>
-                <td id="Babylonian">200+40</td>
-                <td id="Babylonian">3+1</td>
-                <td id="Babylonian">3</td>
-                <td id="Babylonian">5+3</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">150</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">Bronze</td>
-                <td id="Babylonian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/SentryTower.PNG" alt="Sentry Tower Image"></td>
-                <td id="Babylonian">Sentry Tower</td>
-                <td id="Babylonian">296+59</td>
-                <td id="Babylonian">4+1</td>
-                <td id="Babylonian">4</td>
-                <td id="Babylonian">6+3</td>
-                <td id="Babylonian">150</td>
-                <td id="Babylonian">Iron</td>
-                <td id="Babylonian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/BabylonianGuardTower.PNG" alt="Guard Tower Image"></td>
-                <td id="Babylonian">Guard Tower</td>
-                <td id="Babylonian">384+76</td>
-                <td id="Babylonian">6+1</td>
-                <td id="Babylonian">5</td>
-                <td id="Babylonian">7+3</td>
-                <td id="Babylonian">150</td>
-                <td id="Babylonian">Iron</td>
-                <td id="Babylonian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/BabylonianBallistaTower.PNG" alt="Ballista Tower Image"></td>
-                <td id="Babylonian">Ballista Tower</td>
-                <td id="Babylonian">384+76</td>
-                <td id="Babylonian">20+1</td>
-                <td id="Babylonian">5</td>
-                <td id="Babylonian">7+3</td>
-                <td id="Babylonian">150</td>
-            </tr>
-            <tr>
-                <td id="Babylonian">Babylonian</td>
-                <td id="Babylonian">Tool</td>
-                <td id="Babylonian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/SmallWall.PNG" alt="Small Wall Image"></td>
-                <td id="Babylonian">Small Wall</td>
-                <td id="Babylonian">320+64</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">3</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">5</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">Bronze</td>
-                <td id="Babylonian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/BabylonianMediumWall.PNG" alt="Medium Wall Image"></td>
-                <td id="Babylonian">Medium Wall</td>
-                <td id="Babylonian">480+96</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">4</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">5</td>
-                <td id="Babylonian">Iron</td>
-                <td id="Babylonian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/BabylonianFortifiedWall.PNG" alt="Fortified Wall Image"></td>
-                <td id="Babylonian">Fortified Wall</td>
-                <td id="Babylonian">640+128</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">5</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-            </tr>
-            <tr>
-                <td id="Babylonian">Babylonian</td>
-                <td id="Babylonian">Tool</td>
-                <td id="Babylonian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/ArcheryRange.PNG" alt="Archery Range Image"></td>
-                <td id="Babylonian">Archery Range</td>
-                <td id="Babylonian">350+70</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">150</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-            </tr>
-            <tr>
-                <td id="Babylonian">Babylonian</td>
-                <td id="Babylonian">Tool</td>
-                <td id="Babylonian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Stable.PNG" alt="Stable Image"></td>
-                <td id="Babylonian">Stable</td>
-                <td id="Babylonian">350+70</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">150</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-            </tr>
-            <tr>
-                <td id="Babylonian">Babylonian</td>
-                <td id="Babylonian">Tool</td>
-                <td id="Babylonian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Market.PNG" alt="Market Image"></td>
-                <td id="Babylonian">Market</td>
-                <td id="Babylonian">350+70</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">150</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-            </tr>
-            <tr>
-                <td id="Babylonian">Babylonian</td>
-                <td id="Babylonian">Tool</td>
-                <td id="Babylonian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Farm.PNG" alt="Farm Image"></td>
-                <td id="Babylonian">Farm</td>
-                <td id="Babylonian">50+10</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">75</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-            </tr>
-            <tr>
-                <td id="Babylonian">Babylonian</td>
-                <td id="Babylonian">Bronze</td>
-                <td id="Babylonian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/BabylonianGovernmentCenter.PNG" alt="Government Center Image"></td>
-                <td id="Babylonian">Government Center</td>
-                <td id="Babylonian">350+70</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">175</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-            </tr>
-            <tr>
-                <td id="Babylonian">Babylonian</td>
-                <td id="Babylonian">Bronze</td>
-                <td id="Babylonian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Temple.PNG" alt="Temple Image"></td>
-                <td id="Babylonian">Temple</td>
-                <td id="Babylonian">350+70</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">200</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-            </tr>
-            <tr>
-                <td id="Babylonian">Babylonian</td>
-                <td id="Babylonian">Bronze</td>
-                <td id="Babylonian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/SiegeWorkshop.PNG" alt="Siege Workshop Image"></td>
-                <td id="Babylonian">Siege Workshop</td>
-                <td id="Babylonian">350+70</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">200</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-            </tr>
-            <tr>
-                <td id="Babylonian">Babylonian</td>
-                <td id="Babylonian">Bronze</td>
-                <td id="Babylonian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/BabylonianAcademy.PNG" alt="Academy Image"></td>
-                <td id="Babylonian">Academy</td>
-                <td id="Babylonian">350+70</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">150</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-            </tr>
-            <tr>
-                <td id="Babylonian">Babylonian</td>
-                <td id="Babylonian">Iron</td>
-                <td id="Babylonian"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/BabylonianWonder.PNG" alt="Wonder Image"></td>
-                <td id="Babylonian">Wonder</td>
-                <td id="Babylonian">500+100</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian">1000</td>
-                <td id="Babylonian">1000</td>
-                <td id="Babylonian">1000</td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-                <td id="Babylonian"></td>
-            </tr>
-            <tr>
-                <td id="Yamato">Yamato</td>
-                <td id="Yamato">Bronze</td>
-                <td id="Yamato"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/YamatoTownCenter.PNG" alt="Town Center Image"></td>
-                <td id="Yamato">Town Center</td>
-                <td id="Yamato">600+120</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato">200</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-            </tr>
-            <tr>
-                <td id="Yamato">Yamato</td>
-                <td id="Yamato">Stone</td>
-                <td id="Yamato"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/House.PNG" alt="House Image"></td>
-                <td id="Yamato">House</td>
-                <td id="Yamato">75+15</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato">30</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-            </tr>
-            <tr>
-                <td id="Yamato">Yamato</td>
-                <td id="Yamato">Stone</td>
-                <td id="Yamato"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/YamatoBarracks.PNG" alt="Barracks Image"></td>
-                <td id="Yamato">Barracks</td>
-                <td id="Yamato">350+70</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato">125</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-            </tr>
-            <tr>
-                <td id="Yamato">Yamato</td>
-                <td id="Yamato">Stone</td>
-                <td id="Yamato"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Granary.PNG" alt="Granary Image"></td>
-                <td id="Yamato">Granary</td>
-                <td id="Yamato">350+70</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato">120</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-            </tr>
-            <tr>
-                <td id="Yamato">Yamato</td>
-                <td id="Yamato">Stone</td>
-                <td id="Yamato"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/StoragePit.PNG" alt="Storage Pit Image"></td>
-                <td id="Yamato">Storage Pit</td>
-                <td id="Yamato">350+70</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato">120</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-            </tr>
-            <tr>
-                <td id="Yamato">Yamato</td>
-                <td id="Yamato">Stone</td>
-                <td id="Yamato"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Dock.PNG" alt="Dock Image"></td>
-                <td id="Yamato">Dock</td>
-                <td id="Yamato">350+70</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato">100</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-            </tr>
-            <tr>
-                <td id="Yamato">Yamato</td>
-                <td id="Yamato">Tool</td>
-                <td id="Yamato"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/WatchTower.PNG" alt="Watch Tower Image"></td>
-                <td id="Yamato">Watch Tower</td>
-                <td id="Yamato">125+25</td>
-                <td id="Yamato">3+1</td>
-                <td id="Yamato">3</td>
-                <td id="Yamato">5+3</td>
-                <td id="Yamato"></td>
-                <td id="Yamato">150</td>
-                <td id="Yamato"></td>
-                <td id="Yamato">Bronze</td>
-                <td id="Yamato"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/SentryTower.PNG" alt="Sentry Tower Image"></td>
-                <td id="Yamato">Sentry Tower</td>
-                <td id="Yamato">185+37</td>
-                <td id="Yamato">4+1</td>
-                <td id="Yamato">4</td>
-                <td id="Yamato">6+3</td>
-                <td id="Yamato">150</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-            </tr>
-            <tr>
-                <td id="Yamato">Yamato</td>
-                <td id="Yamato">Tool</td>
-                <td id="Yamato"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/SmallWall.PNG" alt="Small Wall Image"></td>
-                <td id="Yamato">Small Wall</td>
-                <td id="Yamato">200+40</td>
-                <td id="Yamato"></td>
-                <td id="Yamato">3</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato">5</td>
-                <td id="Yamato"></td>
-                <td id="Yamato">Bronze</td>
-                <td id="Yamato"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/YamatoMediumWall.PNG" alt="Medium Wall Image"></td>
-                <td id="Yamato">Medium Wall</td>
-                <td id="Yamato">300+60</td>
-                <td id="Yamato"></td>
-                <td id="Yamato">4</td>
-                <td id="Yamato"></td>
-                <td id="Yamato">5</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-            </tr>
-            <tr>
-                <td id="Yamato">Yamato</td>
-                <td id="Yamato">Tool</td>
-                <td id="Yamato"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/ArcheryRange.PNG" alt="Archery Range Image"></td>
-                <td id="Yamato">Archery Range</td>
-                <td id="Yamato">350+70</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato">150</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-            </tr>
-            <tr>
-                <td id="Yamato">Yamato</td>
-                <td id="Yamato">Tool</td>
-                <td id="Yamato"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Stable.PNG" alt="Stable Image"></td>
-                <td id="Yamato">Stable</td>
-                <td id="Yamato">350+70</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato">150</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-            </tr>
-            <tr>
-                <td id="Yamato">Yamato</td>
-                <td id="Yamato">Tool</td>
-                <td id="Yamato"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Market.PNG" alt="Market Image"></td>
-                <td id="Yamato">Market</td>
-                <td id="Yamato">350+70</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato">150</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-            </tr>
-            <tr>
-                <td id="Yamato">Yamato</td>
-                <td id="Yamato">Tool</td>
-                <td id="Yamato"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Farm.PNG" alt="Farm Image"></td>
-                <td id="Yamato">Farm</td>
-                <td id="Yamato">50+10</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato">75</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-            </tr>
-            <tr>
-                <td id="Yamato">Yamato</td>
-                <td id="Yamato">Bronze</td>
-                <td id="Yamato"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/YamatoGovernmentCenter.PNG" alt="Government Center Image"></td>
-                <td id="Yamato">Government Center</td>
-                <td id="Yamato">350+70</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato">175</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-            </tr>
-            <tr>
-                <td id="Yamato">Yamato</td>
-                <td id="Yamato">Bronze</td>
-                <td id="Yamato"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Temple.PNG" alt="Temple Image"></td>
-                <td id="Yamato">Temple</td>
-                <td id="Yamato">350+70</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato">200</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-            </tr>
-            <tr>
-                <td id="Yamato">Yamato</td>
-                <td id="Yamato">Bronze</td>
-                <td id="Yamato"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/SiegeWorkshop.PNG" alt="Siege Workshop Image"></td>
-                <td id="Yamato">Siege Workshop</td>
-                <td id="Yamato">350+70</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato">200</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-            </tr>
-            <tr>
-                <td id="Yamato">Yamato</td>
-                <td id="Yamato">Bronze</td>
-                <td id="Yamato"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/YamatoAcademy.PNG" alt="Academy Image"></td>
-                <td id="Yamato">Academy</td>
-                <td id="Yamato">350+70</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato">150</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-            </tr>
-            <tr>
-                <td id="Yamato">Yamato</td>
-                <td id="Yamato">Iron</td>
-                <td id="Yamato"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/YamatoWonder.PNG" alt="Wonder Image"></td>
-                <td id="Yamato">Wonder</td>
-                <td id="Yamato">500+100</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato">1000</td>
-                <td id="Yamato">1000</td>
-                <td id="Yamato">1000</td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-                <td id="Yamato"></td>
-            </tr>
-            <tr>
-                <td id="Hittite">Hittite</td>
-                <td id="Hittite">Bronze</td>
-                <td id="Hittite"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/HittiteTownCenter.PNG" alt="Town Center Image"></td>
-                <td id="Hittite">Town Center</td>
-                <td id="Hittite">600</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite">200</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-            </tr>
-            <tr>
-                <td id="Hittite">Hittite</td>
-                <td id="Hittite">Stone</td>
-                <td id="Hittite"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/House.PNG" alt="House Image"></td>
-                <td id="Hittite">House</td>
-                <td id="Hittite">75</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite">30</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-            </tr>
-            <tr>
-                <td id="Hittite">Hittite</td>
-                <td id="Hittite">Stone</td>
-                <td id="Hittite"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/HittiteBarracks.PNG" alt="Barracks Image"></td>
-                <td id="Hittite">Barracks</td>
-                <td id="Hittite">350</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite">125</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-            </tr>
-            <tr>
-                <td id="Hittite">Hittite</td>
-                <td id="Hittite">Stone</td>
-                <td id="Hittite"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Granary.PNG" alt="Granary Image"></td>
-                <td id="Hittite">Granary</td>
-                <td id="Hittite">350</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite">120</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-            </tr>
-            <tr>
-                <td id="Hittite">Hittite</td>
-                <td id="Hittite">Stone</td>
-                <td id="Hittite"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/StoragePit.PNG" alt="Storage Pit Image"></td>
-                <td id="Hittite">Storage Pit</td>
-                <td id="Hittite">350</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite">120</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-            </tr>
-            <tr>
-                <td id="Hittite">Hittite</td>
-                <td id="Hittite">Stone</td>
-                <td id="Hittite"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Dock.PNG" alt="Dock Image"></td>
-                <td id="Hittite">Dock</td>
-                <td id="Hittite">350</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite">100</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-            </tr>
-            <tr>
-                <td id="Hittite">Hittite</td>
-                <td id="Hittite">Tool</td>
-                <td id="Hittite"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/WatchTower.PNG" alt="Watch Tower Image"></td>
-                <td id="Hittite">Watch Tower</td>
-                <td id="Hittite">125</td>
-                <td id="Hittite">3</td>
-                <td id="Hittite">3</td>
-                <td id="Hittite">5+2</td>
-                <td id="Hittite"></td>
-                <td id="Hittite">150</td>
-                <td id="Hittite"></td>
-                <td id="Hittite">Bronze</td>
-                <td id="Hittite"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/SentryTower.PNG" alt="Sentry Tower Image"></td>
-                <td id="Hittite">Sentry Tower</td>
-                <td id="Hittite">185</td>
-                <td id="Hittite">4</td>
-                <td id="Hittite">3</td>
-                <td id="Hittite">6+2</td>
-                <td id="Hittite">150</td>
-                <td id="Hittite">Iron</td>
-                <td id="Hittite"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/HittiteGuardTower.PNG" alt="Guard Tower Image"></td>
-                <td id="Hittite">Guard Tower</td>
-                <td id="Hittite">240</td>
-                <td id="Hittite">6+1</td>
-                <td id="Hittite">5</td>
-                <td id="Hittite">7+3</td>
-                <td id="Hittite">150</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-            </tr>
-            <tr>
-                <td id="Hittite">Hittite</td>
-                <td id="Hittite">Tool</td>
-                <td id="Hittite"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/SmallWall.PNG" alt="Small Wall Image"></td>
-                <td id="Hittite">Small Wall</td>
-                <td id="Hittite">200</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite">5</td>
-                <td id="Hittite"></td>
-                <td id="Hittite">Bronze</td>
-                <td id="Hittite"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/HittiteMediumWall.PNG" alt="Medium Wall Image"></td>
-                <td id="Hittite">Medium Wall</td>
-                <td id="Hittite">300</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite">5</td>
-                <td id="Hittite">Iron</td>
-                <td id="Hittite"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/HittiteFortifiedWall.PNG" alt="Fortified Wall Image"></td>
-                <td id="Hittite">Fortified Wall</td>
-                <td id="Hittite">400</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite">5</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-            </tr>
-            <tr>
-                <td id="Hittite">Hittite</td>
-                <td id="Hittite">Tool</td>
-                <td id="Hittite"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/ArcheryRange.PNG" alt="Archery Range Image"></td>
-                <td id="Hittite">Archery Range</td>
-                <td id="Hittite">350</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite">150</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-            </tr>
-            <tr>
-                <td id="Hittite">Hittite</td>
-                <td id="Hittite">Tool</td>
-                <td id="Hittite"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Stable.PNG" alt="Stable Image"></td>
-                <td id="Hittite">Stable</td>
-                <td id="Hittite">350</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite">150</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-            </tr>
-            <tr>
-                <td id="Hittite">Hittite</td>
-                <td id="Hittite">Tool</td>
-                <td id="Hittite"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Market.PNG" alt="Market Image"></td>
-                <td id="Hittite">Market</td>
-                <td id="Hittite">350</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite">150</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-            </tr>
-            <tr>
-                <td id="Hittite">Hittite</td>
-                <td id="Hittite">Tool</td>
-                <td id="Hittite"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Farm.PNG" alt="Farm Image"></td>
-                <td id="Hittite">Farm</td>
-                <td id="Hittite">50</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite">75</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-            </tr>
-            <tr>
-                <td id="Hittite">Hittite</td>
-                <td id="Hittite">Bronze</td>
-                <td id="Hittite"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/HittiteGovernmentCenter.PNG" alt="Government Center Image"></td>
-                <td id="Hittite">Government Center</td>
-                <td id="Hittite">350</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite">175</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-            </tr>
-            <tr>
-                <td id="Hittite">Hittite</td>
-                <td id="Hittite">Bronze</td>
-                <td id="Hittite"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/Temple.PNG" alt="Temple Image"></td>
-                <td id="Hittite">Temple</td>
-                <td id="Hittite">350</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite">200</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-            </tr>
-            <tr>
-                <td id="Hittite">Hittite</td>
-                <td id="Hittite">Bronze</td>
-                <td id="Hittite"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/SiegeWorkshop.PNG" alt="Siege Workshop Image"></td>
-                <td id="Hittite">Siege Workshop</td>
-                <td id="Hittite">350</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite">200</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-            </tr>
-            <tr>
-                <td id="Hittite">Hittite</td>
-                <td id="Hittite">Bronze</td>
-                <td id="Hittite"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/HittiteAcademy.PNG" alt="Academy Image"></td>
-                <td id="Hittite">Academy</td>
-                <td id="Hittite">350</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite">150</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-            </tr>
-            <tr>
-                <td id="Hittite">Hittite</td>
-                <td id="Hittite">Iron</td>
-                <td id="Hittite"><img src="../../../css/Images/AgeOfEmpiresImages/AOE1Images/Buildings/HittiteWonder.PNG" alt="Wonder Image"></td>
-                <td id="Hittite">Wonder</td>
-                <td id="Hittite">500+100</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite">1000</td>
-                <td id="Hittite">1000</td>
-                <td id="Hittite">1000</td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
-                <td id="Hittite"></td>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Town Center</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/TownCenter.PNG" alt="Town Center Image"></td>
+                <td id="Celts">Dark</td>
+                <td id="Celts">Castle</td>
+                <td id="Celts">2400+240</td>
+                <td id="Celts">3+3+1</td>
+                <td id="Celts">5+3+1</td>
+                <td id="Celts">5+3</td>
+                <td id="Celts">-</td>
+                <td id="Celts">15</td>
+                <td id="Celts">5</td>
+                <td id="Celts">6</td>
+                <td id="Celts">-</td>
+                <td id="Celts">100</td>
+                <td id="Celts">275</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">House</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/House.PNG" alt="Town Center Image"></td>
+                <td id="Celts">Dark</td>
+                <td id="Celts">-</td>
+                <td id="Celts">550+350+90</td>
+                <td id="Celts">-2+5+1</td>
+                <td id="Celts">7+3+1</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">5</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">25</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">House</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/House.PNG" alt="House Image"></td>
+                <td id="Celts">Dark</td>
+                <td id="Celts">-</td>
+                <td id="Celts">550+350+90</td>
+                <td id="Celts">-2+5+1</td>
+                <td id="Celts">7+3+1</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">5</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">25</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Mill</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Mill.PNG" alt="Mill Image"></td>
+                <td id="Celts">Dark</td>
+                <td id="Celts">-</td>
+                <td id="Celts">600+400+100</td>
+                <td id="Celts">0+3+1</td>
+                <td id="Celts">7+3+1</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">100</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Mining Camp</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/MiningCamp.PNG" alt="Mining Camp Image"></td>
+                <td id="Celts">Dark</td>
+                <td id="Celts">-</td>
+                <td id="Celts">600+400+100</td>
+                <td id="Celts">0+3+1</td>
+                <td id="Celts">7+3+1</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">100</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Lumber Camp</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/LumberCamp.PNG" alt="Lumber Camp Image"></td>
+                <td id="Celts">Dark</td>
+                <td id="Celts">-</td>
+                <td id="Celts">600+400+100</td>
+                <td id="Celts">0+3+1</td>
+                <td id="Celts">7+3+1</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">100</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Dock</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Dock.PNG" alt="Dock Image"></td>
+                <td id="Celts">Dark</td>
+                <td id="Celts">-</td>
+                <td id="Celts">1800+180</td>
+                <td id="Celts">0+3+1</td>
+                <td id="Celts">7+3+1</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">10</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">150</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Fish Trap</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/FishTrap.PNG" alt="Fish Trap Image"></td>
+                <td id="Celts">Feudal</td>
+                <td id="Celts">-</td>
+                <td id="Celts">50</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">100</td>
+                <td id="Celts">Docks</td>
+                <td id="Celts">715</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Farm</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/FishTrap.PNG" alt="Farm Image"></td>
+                <td id="Celts">Dark</td>
+                <td id="Celts">-</td>
+                <td id="Celts">480</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">60</td>
+                <td id="Celts">Mill</td>
+                <td id="Celts">175+75+125</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Blacksmith</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Blacksmith.PNG" alt="Blacksmith Image"></td>
+                <td id="Celts">Feudal</td>
+                <td id="Celts">-</td>
+                <td id="Celts">1800+300+219</td>
+                <td id="Celts">0+3+1</td>
+                <td id="Celts">7+3+1</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">150</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Market</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Market.PNG" alt="Market Image"></td>
+                <td id="Celts">Feudal</td>
+                <td id="Celts">-</td>
+                <td id="Celts">1800+300+219</td>
+                <td id="Celts">1+2+1</td>
+                <td id="Celts">8+2+1</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">10</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">175</td>
+                <td id="Celts">Mill</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Monastry</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Monastry.PNG" alt="Monastery Image"></td>
+                <td id="Celts">Castle</td>
+                <td id="Celts">-</td>
+                <td id="Celts">2100+210</td>
+                <td id="Celts">0+3+1</td>
+                <td id="Celts">7+3+1</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">10</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">175</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">University</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/University.PNG" alt="University Image"></td>
+                <td id="Celts">Castle</td>
+                <td id="Celts">-</td>
+                <td id="Celts">2100+210</td>
+                <td id="Celts">2+1+1</td>
+                <td id="Celts">9+1+1</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">200</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Wonder</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Wonder.PNG" alt="Wonder Image"></td>
+                <td id="Celts">Imperial</td>
+                <td id="Celts">-</td>
+                <td id="Celts">4800+480</td>
+                <td id="Celts">3+1</td>
+                <td id="Celts">10+1</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">1000</td>
+                <td id="Celts">1000</td>
+                <td id="Celts">1000</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Barracks</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Barracks.PNG" alt="Barracks Image"></td>
+                <td id="Celts">Dark</td>
+                <td id="Celts">-</td>
+                <td id="Celts">1200+900+210</td>
+                <td id="Celts">0+3+1</td>
+                <td id="Celts">7+3+1</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">10</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">175</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Archery Range</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/ArcheryRange.PNG" alt="Archery Range Image"></td>
+                <td id="Celts">Feudal</td>
+                <td id="Celts">-</td>
+                <td id="Celts">1500+600+210</td>
+                <td id="Celts">1+2+1</td>
+                <td id="Celts">8+2+1</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">10</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">175</td>
+                <td id="Celts">Barracks</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Stable</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Stable.PNG" alt="Stable Image"></td>
+                <td id="Celts">Feudal</td>
+                <td id="Celts">-</td>
+                <td id="Celts">1500+600+210</td>
+                <td id="Celts">1+2+1</td>
+                <td id="Celts">8+2+1</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">10</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">175</td>
+                <td id="Celts">Barracks</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Siege Workshop</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/SiegeWorkshop.PNG" alt="Siege Workshop Image"></td>
+                <td id="Celts">Castle</td>
+                <td id="Celts">-</td>
+                <td id="Celts">1500+600+210</td>
+                <td id="Celts">1+2+1</td>
+                <td id="Celts">8+2+1</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">10</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">200</td>
+                <td id="Celts">Blacksmith</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Outpost</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Outpost.PNG" alt="Outpost Image"></td>
+                <td id="Celts">Dark</td>
+                <td id="Celts">-</td>
+                <td id="Celts">500+50</td>
+                <td id="Celts">0+1</td>
+                <td id="Celts">0+1</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">5</td>
+                <td id="Celts">25</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Palisade Wall</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/PalisadeWall.PNG" alt="Palisade Wall Image"></td>
+                <td id="Celts">Dark</td>
+                <td id="Celts">-</td>
+                <td id="Celts">150+100</td>
+                <td id="Celts">2</td>
+                <td id="Celts">5</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">2</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Stone Wall</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/StoneWall.PNG" alt="Stone Wall Image"></td>
+                <td id="Celts">Feudal</td>
+                <td id="Celts">-</td>
+                <td id="Celts">1080+720</td>
+                <td id="Celts">8</td>
+                <td id="Celts">10</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">5</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Fortified Wall</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/FortifiedWall.PNG" alt="Fortified Wall Image"></td>
+                <td id="Celts">Castle</td>
+                <td id="Celts">-</td>
+                <td id="Celts">3000</td>
+                <td id="Celts">12</td>
+                <td id="Celts">12</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">5</td>
+                <td id="Celts">-</td>
+                <td id="Celts">Stone Wall</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Watch Tower</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/WatchTower.PNG" alt="Watch Tower Image"></td>
+                <td id="Celts">Feudal</td>
+                <td id="Celts">-</td>
+                <td id="Celts">850+170+102</td>
+                <td id="Celts">1+1</td>
+                <td id="Celts">7+1</td>
+                <td id="Celts">5+4</td>
+                <td id="Celts">-</td>
+                <td id="Celts">5</td>
+                <td id="Celts">-</td>
+                <td id="Celts">8+2</td>
+                <td id="Celts">-</td>
+                <td id="Celts">125</td>
+                <td id="Celts">50</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Guard Tower</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/GuardTower.PNG" alt="Guard Tower Image"></td>
+                <td id="Celts">Castle</td>
+                <td id="Celts">-</td>
+                <td id="Celts">1500+150</td>
+                <td id="Celts">2+1</td>
+                <td id="Celts">8+1</td>
+                <td id="Celts">7+5</td>
+                <td id="Celts">-</td>
+                <td id="Celts">5</td>
+                <td id="Celts">-</td>
+                <td id="Celts">8+2</td>
+                <td id="Celts">-</td>
+                <td id="Celts">125</td>
+                <td id="Celts">50</td>
+                <td id="Celts">Watch Tower</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Keep</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Keep.PNG" alt="Keep Image"></td>
+                <td id="Celts">Imperial</td>
+                <td id="Celts">-</td>
+                <td id="Celts">2250+225</td>
+                <td id="Celts">3+1</td>
+                <td id="Celts">9+1</td>
+                <td id="Celts">8+6</td>
+                <td id="Celts">-</td>
+                <td id="Celts">5</td>
+                <td id="Celts">-</td>
+                <td id="Celts">8+2</td>
+                <td id="Celts">-</td>
+                <td id="Celts">125</td>
+                <td id="Celts">50</td>
+                <td id="Celts">Guard Tower</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Castle</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Castle.PNG" alt="Castle Image"></td>
+                <td id="Celts">Castle</td>
+                <td id="Celts">-</td>
+                <td id="Celts">4800+480+1109</td>
+                <td id="Celts">8+1</td>
+                <td id="Celts">11+1</td>
+                <td id="Celts">11+3</td>
+                <td id="Celts">4</td>
+                <td id="Celts">20</td>
+                <td id="Celts">20</td>
+                <td id="Celts">8+2</td>
+                <td id="Celts">-</td>
+                <td id="Celts">650</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Gate</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Gate.PNG" alt="Gate Image"></td>
+                <td id="Celts">Feudal</td>
+                <td id="Celts">-</td>
+                <td id="Celts">1650+1100+1250</td>
+                <td id="Celts">6</td>
+                <td id="Celts">6</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">30</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Celts">Celts</td>
+                <td id="Celts">Palisade Gate</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/PalisadeGate.PNG" alt="Palisade Gate Image"></td>
+                <td id="Celts">Dark</td>
+                <td id="Celts">-</td>
+                <td id="Celts">240+160</td>
+                <td id="Celts">2</td>
+                <td id="Celts">2</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
+                <td id="Celts">30</td>
+                <td id="Celts">-</td>
+                <td id="Celts">-</td>
             </tr>
         </tbody>
     </table>
@@ -3246,7 +624,7 @@
     <a id="aoea" href="#TechnologyHeader">Scroll Down to Technology Stats</a>
     <input type="text" id="userUnitInput" onkeyup="filterUnit()" placeholder="Search for Factions, Age, Units or Buildings Required">
     <br>
-    <table id="aoeunitsTable" aria-label="Units Stats Table for each Faction">
+    <table id="aoe1unitsTable" aria-label="Units Stats Table for each Faction">
         <tr>
             <th id="aoemainHeading">Faction</th>
             <th id="aoemainHeading">Age</th>
