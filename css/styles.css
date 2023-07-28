@@ -76,24 +76,24 @@ td{
     border: 1px solid black;
 }
 
-#aoe1technologyTable{
+#aoetechnologyTable{
     background-color: black;
     border: 1px solid black;
 }
 
-#aoe1unitsTable{
+#aoeunitsTable{
     background-color: black;
     border: 1px solid black;
 }
 
-#aoe1mainHeading{
+#aoemainHeading{
     background-color: antiquewhite;
     border: 1px solid black;
     font-size: 0.9vw;
     font-weight: bold;
 }
 
-#aoe1subHeading{
+#aoesubHeading{
     background-color: antiquewhite;
     border: 1px solid black;
     font-size: 0.9vw;
@@ -148,6 +148,56 @@ td{
 #Celts{
     background-color: green;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9vw;
+    font-weight: bold;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#Franks{
+    background-color: rgb(31, 78, 120);
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9vw;
+    font-weight: bold;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#Huns{
+    background-color: black;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9vw;
+    font-weight: bold;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#Mongols{
+    background-color: rgb(0, 112, 192);
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9vw;
+    font-weight: bold;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#Saracens{
+    background-color: rgb(58, 56, 56);
+    color: rgb(191, 143, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9vw;
+    font-weight: bold;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#Teutons{
+    background-color: yellow;
+    color: red;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9vw;
     font-weight: bold;
@@ -329,4 +379,40 @@ td{
 #hommA2{
     height: 30%;
     width: 50%;
+}
+
+#statsSearchBars{
+    display: flex;
+    flex-direction: row;
+}
+
+#userCivilisationInput{
+    color: black;
+    font-size: 28%;
+    font-weight: bold;
+    width: 6%;
+}
+
+#userBuildingInput{
+    color: black;
+    font-size: 30%;
+    font-weight: bold;
+    margin-left: 1%;
+    width: 6%;
+}
+
+#userAgeInput{
+    color: black;
+    font-size: 30%;
+    font-weight: bold;
+    margin-left: 12%;
+    width: 4.5%;
+}
+
+#userRequirementsInput{
+    color: black;
+    font-size: 28%;
+    font-weight: bold;
+    margin-left: 55%;
+    width: 7%;
 }

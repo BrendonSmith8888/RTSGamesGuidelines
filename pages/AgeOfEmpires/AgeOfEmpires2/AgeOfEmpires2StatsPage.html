@@ -16,7 +16,12 @@
     <h3 id="Buildings">Buildings</h3>
     <a id="aoea" href="#Units">Scroll Down to Units Stats</a>
     <a id="aoea" href="#TechnologyHeader">Scroll Down to Technology Stats</a>
-    <input type="text" id="userBuildingInput" onkeyup="filterTable()" placeholder="Search for Civilisation">
+    <div id="statsSearchBars">
+    <input type="text" id="userCivilisationInput" onkeyup="filterCivilization()" placeholder="Search for Civilization">
+    <input type="text" id="userBuildingInput" onkeyup="filterBuildings()" placeholder="Search for Building">
+    <input type="text" id="userAgeInput" onkeyup="filterAge()" placeholder="Search for Age">
+    <input type="text" id="userRequirementsInput" onkeyup="filterRequirements()" placeholder="Search for Requirements">
+    </div>
     <br>
     <table id="aoebuildingsTable" aria-label="Buildings Stats Table for each Faction">
         <thead>
@@ -74,26 +79,6 @@
                 <td id="Celts">-</td>
                 <td id="Celts">100</td>
                 <td id="Celts">275</td>
-                <td id="Celts">-</td>
-                <td id="Celts">-</td>
-            </tr>
-            <tr>
-                <td id="Celts">Celts</td>
-                <td id="Celts">House</td>
-                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/House.PNG" alt="Town Center Image"></td>
-                <td id="Celts">Dark</td>
-                <td id="Celts">-</td>
-                <td id="Celts">550+350+90</td>
-                <td id="Celts">-2+5+1</td>
-                <td id="Celts">7+3+1</td>
-                <td id="Celts">-</td>
-                <td id="Celts">-</td>
-                <td id="Celts">-</td>
-                <td id="Celts">5</td>
-                <td id="Celts">-</td>
-                <td id="Celts">-</td>
-                <td id="Celts">-</td>
-                <td id="Celts">25</td>
                 <td id="Celts">-</td>
                 <td id="Celts">-</td>
             </tr>
@@ -207,7 +192,7 @@
                 <td id="Celts">-</td>
                 <td id="Celts">-</td>
                 <td id="Celts">-</td>
-                <td id="Celts">-</td>
+                <td id="Celts">-</td>FarmTrap
                 <td id="Celts">-</td>
                 <td id="Celts">-</td>
                 <td id="Celts">-</td>
@@ -220,7 +205,7 @@
             <tr>
                 <td id="Celts">Celts</td>
                 <td id="Celts">Farm</td>
-                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/FishTrap.PNG" alt="Farm Image"></td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Farm.PNG" alt="Farm Image"></td>
                 <td id="Celts">Dark</td>
                 <td id="Celts">-</td>
                 <td id="Celts">480</td>
@@ -279,8 +264,8 @@
             </tr>
             <tr>
                 <td id="Celts">Celts</td>
-                <td id="Celts">Monastry</td>
-                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Monastry.PNG" alt="Monastery Image"></td>
+                <td id="Celts">Monastery</td>
+                <td id="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Monastery.PNG" alt="Monastery Image"></td>
                 <td id="Celts">Castle</td>
                 <td id="Celts">-</td>
                 <td id="Celts">2100+210</td>
@@ -616,6 +601,2604 @@
                 <td id="Celts">30</td>
                 <td id="Celts">-</td>
                 <td id="Celts">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Town Center</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/TownCenter.PNG" alt="Town Center Image"></td>
+                <td id="Franks">Dark</td>
+                <td id="Franks">Castle</td>
+                <td id="Franks">2400+240+264</td>
+                <td id="Franks">3+3+2</td>
+                <td id="Franks">5+3+2</td>
+                <td id="Franks">5+3</td>
+                <td id="Franks">-</td>
+                <td id="Franks">15</td>
+                <td id="Franks">5</td>
+                <td id="Franks">6</td>
+                <td id="Franks">-</td>
+                <td id="Franks">100</td>
+                <td id="Franks">275</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">House</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/House.PNG" alt="House Image"></td>
+                <td id="Franks">Dark</td>
+                <td id="Franks">-</td>
+                <td id="Franks">550+350+90+99</td>
+                <td id="Franks">-2+5+2</td>
+                <td id="Franks">7+3+2</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">5</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">25</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Mill</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Mill.PNG" alt="Mill Image"></td>
+                <td id="Franks">Dark</td>
+                <td id="Franks">-</td>
+                <td id="Franks">600+400+100+110</td>
+                <td id="Franks">0+3+2</td>
+                <td id="Franks">7+3+2</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">100</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Mining Camp</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/MiningCamp.PNG" alt="Mining Camp Image"></td>
+                <td id="Franks">Dark</td>
+                <td id="Franks">-</td>
+                <td id="Franks">600+400+100+110</td>
+                <td id="Franks">0+3+2</td>
+                <td id="Franks">7+3+2</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">100</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Lumber Camp</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/LumberCamp.PNG" alt="Lumber Camp Image"></td>
+                <td id="Franks">Dark</td>
+                <td id="Franks">-</td>
+                <td id="Franks">600+400+100+100</td>
+                <td id="Franks">0+3+2</td>
+                <td id="Franks">7+3+2</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">100</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Dock</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Dock.PNG" alt="Dock Image"></td>
+                <td id="Franks">Dark</td>
+                <td id="Franks">-</td>
+                <td id="Franks">1800+180+198</td>
+                <td id="Franks">0+3+2</td>
+                <td id="Franks">7+3+2</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">10</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">150</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Fish Trap</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/FishTrap.PNG" alt="Fish Trap Image"></td>
+                <td id="Franks">Feudal</td>
+                <td id="Franks">-</td>
+                <td id="Franks">50</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">100</td>
+                <td id="Franks">Docks</td>
+                <td id="Franks">715</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Farm</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Farm.PNG" alt="Farm Image"></td>
+                <td id="Franks">Dark</td>
+                <td id="Franks">-</td>
+                <td id="Franks">480</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">60</td>
+                <td id="Franks">Mill</td>
+                <td id="Franks">175+75+125+175</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Blacksmith</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Blacksmith.PNG" alt="Blacksmith Image"></td>
+                <td id="Franks">Feudal</td>
+                <td id="Franks">-</td>
+                <td id="Franks">1800+300+210+231</td>
+                <td id="Franks">0+3+2</td>
+                <td id="Franks">7+3+2</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">150</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Market</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Market.PNG" alt="Market Image"></td>
+                <td id="Franks">Feudal</td>
+                <td id="Franks">-</td>
+                <td id="Franks">1800+300+210+231</td>
+                <td id="Franks">1+2+2</td>
+                <td id="Franks">8+2+2</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">10</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">175</td>
+                <td id="Franks">Mill</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Monastery</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Monastery.PNG" alt="Monastery Image"></td>
+                <td id="Franks">Castle</td>
+                <td id="Franks">-</td>
+                <td id="Franks">2100+210+231</td>
+                <td id="Franks">0+3+2</td>
+                <td id="Franks">7+3+2</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">10</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">175</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">University</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/University.PNG" alt="University Image"></td>
+                <td id="Franks">Castle</td>
+                <td id="Franks">-</td>
+                <td id="Franks">2100+210+231</td>
+                <td id="Franks">2+1+2</td>
+                <td id="Franks">9+1+2</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">200</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Wonder</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Wonder.PNG" alt="Wonder Image"></td>
+                <td id="Franks">Imperial</td>
+                <td id="Franks">-</td>
+                <td id="Franks">4800+480+528</td>
+                <td id="Franks">3+2</td>
+                <td id="Franks">10+2</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">1000</td>
+                <td id="Franks">1000</td>
+                <td id="Franks">1000</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Barracks</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Barracks.PNG" alt="Barracks Image"></td>
+                <td id="Franks">Dark</td>
+                <td id="Franks">-</td>
+                <td id="Franks">1200+900+210+231</td>
+                <td id="Franks">0+3+2</td>
+                <td id="Franks">7+3+2</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">10</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">175</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Archery Range</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/ArcheryRange.PNG" alt="Archery Range Image"></td>
+                <td id="Franks">Feudal</td>
+                <td id="Franks">-</td>
+                <td id="Franks">1500+600+210+231</td>
+                <td id="Franks">1+2+2</td>
+                <td id="Franks">8+2+2</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">10</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">175</td>
+                <td id="Franks">Barracks</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Stable</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Stable.PNG" alt="Stable Image"></td>
+                <td id="Franks">Feudal</td>
+                <td id="Franks">-</td>
+                <td id="Franks">1500+600+210+231</td>
+                <td id="Franks">1+2+2</td>
+                <td id="Franks">8+2+2</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">10</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">175</td>
+                <td id="Franks">Barracks</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Siege Workshop</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/SiegeWorkshop.PNG" alt="Siege Workshop Image"></td>
+                <td id="Franks">Castle</td>
+                <td id="Franks">-</td>
+                <td id="Franks">1500+600+210+231</td>
+                <td id="Franks">1+2+2</td>
+                <td id="Franks">8+2+2</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">10</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">200</td>
+                <td id="Franks">Blacksmith</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Outpost</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Outpost.PNG" alt="Outpost Image"></td>
+                <td id="Franks">Dark</td>
+                <td id="Franks">-</td>
+                <td id="Franks">500+50+55</td>
+                <td id="Franks">0+2</td>
+                <td id="Franks">0+2</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">5</td>
+                <td id="Franks">25</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Palisade Wall</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/PalisadeWall.PNG" alt="Palisade Wall Image"></td>
+                <td id="Franks">Dark</td>
+                <td id="Franks">-</td>
+                <td id="Franks">150+100</td>
+                <td id="Franks">2</td>
+                <td id="Franks">5</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">2</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Stone Wall</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/StoneWall.PNG" alt="Stone Wall Image"></td>
+                <td id="Franks">Feudal</td>
+                <td id="Franks">-</td>
+                <td id="Franks">1080+720</td>
+                <td id="Franks">8</td>
+                <td id="Franks">10</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">5</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Fortified Wall</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/FortifiedWall.PNG" alt="Fortified Wall Image"></td>
+                <td id="Franks">Castle</td>
+                <td id="Franks">-</td>
+                <td id="Franks">3000</td>
+                <td id="Franks">12</td>
+                <td id="Franks">12</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">5</td>
+                <td id="Franks">-</td>
+                <td id="Franks">Stone Wall</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Watch Tower</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/WatchTower.PNG" alt="Watch Tower Image"></td>
+                <td id="Franks">Feudal</td>
+                <td id="Franks">-</td>
+                <td id="Franks">850+170+102+112</td>
+                <td id="Franks">1+2</td>
+                <td id="Franks">7+2</td>
+                <td id="Franks">5+4</td>
+                <td id="Franks">-</td>
+                <td id="Franks">5</td>
+                <td id="Franks">-</td>
+                <td id="Franks">8+2</td>
+                <td id="Franks">-</td>
+                <td id="Franks">125</td>
+                <td id="Franks">50</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Guard Tower</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/GuardTower.PNG" alt="Guard Tower Image"></td>
+                <td id="Franks">Castle</td>
+                <td id="Franks">-</td>
+                <td id="Franks">1500+150+165</td>
+                <td id="Franks">2+2</td>
+                <td id="Franks">8+2</td>
+                <td id="Franks">7+5</td>
+                <td id="Franks">-</td>
+                <td id="Franks">5</td>
+                <td id="Franks">-</td>
+                <td id="Franks">8+2</td>
+                <td id="Franks">-</td>
+                <td id="Franks">125</td>
+                <td id="Franks">50</td>
+                <td id="Franks">Watch Tower</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Castle</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Castle.PNG" alt="Castle Image"></td>
+                <td id="Franks">Castle</td>
+                <td id="Franks">-</td>
+                <td id="Franks">4800+480+528+1220</td>
+                <td id="Franks">8+2</td>
+                <td id="Franks">11+2</td>
+                <td id="Franks">11+3</td>
+                <td id="Franks">4</td>
+                <td id="Franks">20</td>
+                <td id="Franks">20</td>
+                <td id="Franks">8+2</td>
+                <td id="Franks">-</td>
+                <td id="Franks">488</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Gate</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Gate.PNG" alt="Gate Image"></td>
+                <td id="Franks">Feudal</td>
+                <td id="Franks">-</td>
+                <td id="Franks">1650+1100+1250</td>
+                <td id="Franks">6</td>
+                <td id="Franks">6</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">30</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Franks">Franks</td>
+                <td id="Franks">Palisade Gate</td>
+                <td id="Franks"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/PalisadeGate.PNG" alt="Palisade Gate Image"></td>
+                <td id="Franks">Dark</td>
+                <td id="Franks">-</td>
+                <td id="Franks">240+160</td>
+                <td id="Franks">2</td>
+                <td id="Franks">2</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+                <td id="Franks">30</td>
+                <td id="Franks">-</td>
+                <td id="Franks">-</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">Town Center</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/TownCenter.PNG" alt="Town Center Image"></td>
+                <td id="Huns">Dark</td>
+                <td id="Huns">Castle</td>
+                <td id="Huns">2400+240</td>
+                <td id="Huns">3+3+1</td>
+                <td id="Huns">5+3+1</td>
+                <td id="Huns">5+4</td>
+                <td id="Huns">-</td>
+                <td id="Huns">15</td>
+                <td id="Huns">-</td>
+                <td id="Huns">6</td>
+                <td id="Huns">-</td>
+                <td id="Huns">100</td>
+                <td id="Huns">275</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">Mill</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Mill.PNG" alt="Mill Image"></td>
+                <td id="Huns">Dark</td>
+                <td id="Huns">-</td>
+                <td id="Huns">600+400+100</td>
+                <td id="Huns">0+3+1</td>
+                <td id="Huns">7+3+1</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">100</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">Mining Camp</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/MiningCamp.PNG" alt="Mining Camp Image"></td>
+                <td id="Huns">Dark</td>
+                <td id="Huns">-</td>
+                <td id="Huns">600+400+100</td>
+                <td id="Huns">0+3+1</td>
+                <td id="Huns">7+3+1</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">100</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">Lumber Camp</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/LumberCamp.PNG" alt="Lumber Camp Image"></td>
+                <td id="Huns">Dark</td>
+                <td id="Huns">-</td>
+                <td id="Huns">600+400+100</td>
+                <td id="Huns">0+3+1</td>
+                <td id="Huns">7+3+1</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">100</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">Dock</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Dock.PNG" alt="Dock Image"></td>
+                <td id="Huns">Dark</td>
+                <td id="Huns">-</td>
+                <td id="Huns">1800+180</td>
+                <td id="Huns">0+3+1</td>
+                <td id="Huns">7+3+1</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">10</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">150</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">Fish Trap</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/FishTrap.PNG" alt="Fish Trap Image"></td>
+                <td id="Huns">Feudal</td>
+                <td id="Huns">-</td>
+                <td id="Huns">50</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">100</td>
+                <td id="Huns">Docks</td>
+                <td id="Huns">715</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">Farm</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Farm.PNG" alt="Farm Image"></td>
+                <td id="Huns">Dark</td>
+                <td id="Huns">-</td>
+                <td id="Huns">480</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">60</td>
+                <td id="Huns">Mill</td>
+                <td id="Huns">175+75+125</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">Blacksmith</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Blacksmith.PNG" alt="Blacksmith Image"></td>
+                <td id="Huns">Feudal</td>
+                <td id="Huns">-</td>
+                <td id="Huns">1800+300+210</td>
+                <td id="Huns">0+3+1</td>
+                <td id="Huns">7+3+1</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">150</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">Market</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Market.PNG" alt="Market Image"></td>
+                <td id="Huns">Feudal</td>
+                <td id="Huns">-</td>
+                <td id="Huns">1800+300+210</td>
+                <td id="Huns">1+2+1</td>
+                <td id="Huns">8+2+1</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">10</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">175</td>
+                <td id="Huns">Mill</td>
+                <td id="Huns">-</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">Monastery</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Monastery.PNG" alt="Monastery Image"></td>
+                <td id="Huns">Castle</td>
+                <td id="Huns">-</td>
+                <td id="Huns">2100+210</td>
+                <td id="Huns">0+3+1</td>
+                <td id="Huns">7+3+1</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">10</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">175</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">University</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/University.PNG" alt="University Image"></td>
+                <td id="Huns">Castle</td>
+                <td id="Huns">-</td>
+                <td id="Huns">2100+210</td>
+                <td id="Huns">2+1+1</td>
+                <td id="Huns">9+1+1</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">200</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">Wonder</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Wonder.PNG" alt="Wonder Image"></td>
+                <td id="Huns">Imperial</td>
+                <td id="Huns">-</td>
+                <td id="Huns">4800+480</td>
+                <td id="Huns">3+1</td>
+                <td id="Huns">10+1</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">1000</td>
+                <td id="Huns">1000</td>
+                <td id="Huns">1000</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">Barracks</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Barracks.PNG" alt="Barracks Image"></td>
+                <td id="Huns">Dark</td>
+                <td id="Huns">-</td>
+                <td id="Huns">1200+900+210</td>
+                <td id="Huns">0+3+1</td>
+                <td id="Huns">7+3+1</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">10</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">175</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">Archery Range</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/ArcheryRange.PNG" alt="Archery Range Image"></td>
+                <td id="Huns">Feudal</td>
+                <td id="Huns">-</td>
+                <td id="Huns">1500+600+210</td>
+                <td id="Huns">1+2+1</td>
+                <td id="Huns">8+2+1</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">10</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">175</td>
+                <td id="Huns">Barracks</td>
+                <td id="Huns">-</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">Stable</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Stable.PNG" alt="Stable Image"></td>
+                <td id="Huns">Feudal</td>
+                <td id="Huns">-</td>
+                <td id="Huns">1500+600+210</td>
+                <td id="Huns">1+2+1</td>
+                <td id="Huns">8+2+1</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">10</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">175</td>
+                <td id="Huns">Barracks</td>
+                <td id="Huns">-</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">Siege Workshop</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/SiegeWorkshop.PNG" alt="Siege Workshop Image"></td>
+                <td id="Huns">Castle</td>
+                <td id="Huns">-</td>
+                <td id="Huns">1500+600+210</td>
+                <td id="Huns">1+2+1</td>
+                <td id="Huns">8+2+1</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">10</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">200</td>
+                <td id="Huns">Blacksmith</td>
+                <td id="Huns">-</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">Outpost</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Outpost.PNG" alt="Outpost Image"></td>
+                <td id="Huns">Dark</td>
+                <td id="Huns">-</td>
+                <td id="Huns">500+50</td>
+                <td id="Huns">0+1</td>
+                <td id="Huns">0+1</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">5</td>
+                <td id="Huns">25</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">Palisade Wall</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/PalisadeWall.PNG" alt="Palisade Wall Image"></td>
+                <td id="Huns">Dark</td>
+                <td id="Huns">-</td>
+                <td id="Huns">150+100</td>
+                <td id="Huns">2</td>
+                <td id="Huns">5</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">2</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">Stone Wall</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/StoneWall.PNG" alt="Stone Wall Image"></td>
+                <td id="Huns">Feudal</td>
+                <td id="Huns">-</td>
+                <td id="Huns">1080+720</td>
+                <td id="Huns">8</td>
+                <td id="Huns">10</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">5</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">Watch Tower</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/WatchTower.PNG" alt="Watch Tower Image"></td>
+                <td id="Huns">Feudal</td>
+                <td id="Huns">-</td>
+                <td id="Huns">850+170+102</td>
+                <td id="Huns">1+1</td>
+                <td id="Huns">7+1</td>
+                <td id="Huns">5+4</td>
+                <td id="Huns">-</td>
+                <td id="Huns">5</td>
+                <td id="Huns">-</td>
+                <td id="Huns">8+3</td>
+                <td id="Huns">-</td>
+                <td id="Huns">125</td>
+                <td id="Huns">50</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">Castle</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Castle.PNG" alt="Castle Image"></td>
+                <td id="Huns">Castle</td>
+                <td id="Huns">-</td>
+                <td id="Huns">4800+480</td>
+                <td id="Huns">8+1</td>
+                <td id="Huns">11+1</td>
+                <td id="Huns">11+4</td>
+                <td id="Huns">4</td>
+                <td id="Huns">20</td>
+                <td id="Huns">-</td>
+                <td id="Huns">8+3</td>
+                <td id="Huns">-</td>
+                <td id="Huns">650</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">Gate</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Gate.PNG" alt="Gate Image"></td>
+                <td id="Huns">Feudal</td>
+                <td id="Huns">-</td>
+                <td id="Huns">1650+1100</td>
+                <td id="Huns">6</td>
+                <td id="Huns">6</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">30</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+            </tr>
+            <tr>
+                <td id="Huns">Huns</td>
+                <td id="Huns">Palisade Gate</td>
+                <td id="Huns"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/PalisadeGate.PNG" alt="Palisade Gate Image"></td>
+                <td id="Huns">Dark</td>
+                <td id="Huns">-</td>
+                <td id="Huns">240+160</td>
+                <td id="Huns">2</td>
+                <td id="Huns">2</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+                <td id="Huns">30</td>
+                <td id="Huns">-</td>
+                <td id="Huns">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Town Center</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/TownCenter.PNG" alt="Town Center Image"></td>
+                <td id="Mongols">Dark</td>
+                <td id="Mongols">Castle</td>
+                <td id="Mongols">2400+240</td>
+                <td id="Mongols">3+3+1</td>
+                <td id="Mongols">5+3+1</td>
+                <td id="Mongols">5</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">15</td>
+                <td id="Mongols">5</td>
+                <td id="Mongols">6</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">100</td>
+                <td id="Mongols">275</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">House</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/House.PNG" alt="House Image"></td>
+                <td id="Mongols">Dark</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">550+350+90</td>
+                <td id="Mongols">-2+5+1</td>
+                <td id="Mongols">7+3+1</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">5</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">25</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Mill</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Mill.PNG" alt="Mill Image"></td>
+                <td id="Mongols">Dark</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">600+400+100</td>
+                <td id="Mongols">0+3+1</td>
+                <td id="Mongols">7+3+1</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">100</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Mining Camp</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/MiningCamp.PNG" alt="Mining Camp Image"></td>
+                <td id="Mongols">Dark</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">600+400+100</td>
+                <td id="Mongols">0+3+1</td>
+                <td id="Mongols">7+3+1</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">100</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Lumber Camp</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/LumberCamp.PNG" alt="Lumber Camp Image"></td>
+                <td id="Mongols">Dark</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">600+400+100</td>
+                <td id="Mongols">0+3+1</td>
+                <td id="Mongols">7+3+1</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">100</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Dock</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Dock.PNG" alt="Dock Image"></td>
+                <td id="Mongols">Dark</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">1800+180</td>
+                <td id="Mongols">0+3+1</td>
+                <td id="Mongols">7+3+1</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">10</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">150</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Fish Trap</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/FishTrap.PNG" alt="Fish Trap Image"></td>
+                <td id="Mongols">Feudal</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">50</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">100</td>
+                <td id="Mongols">Docks</td>
+                <td id="Mongols">715</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Farm</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Farm.PNG" alt="Farm Image"></td>
+                <td id="Mongols">Dark</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">480</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">36</td>
+                <td id="Mongols">Mill</td>
+                <td id="Mongols">175+75+125</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Blacksmith</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Blacksmith.PNG" alt="Blacksmith Image"></td>
+                <td id="Mongols">Feudal</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">1800+300+210</td>
+                <td id="Mongols">0+3+1</td>
+                <td id="Mongols">7+3+1</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">150</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Market</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Market.PNG" alt="Market Image"></td>
+                <td id="Mongols">Feudal</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">1800+300+210</td>
+                <td id="Mongols">1+2+1</td>
+                <td id="Mongols">8+2+1</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">10</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">175</td>
+                <td id="Mongols">Mill</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Monastery</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Monastery.PNG" alt="Monastery Image"></td>
+                <td id="Mongols">Castle</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">2100+210</td>
+                <td id="Mongols">0+3+1</td>
+                <td id="Mongols">7+3+1</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">10</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">175</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">University</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/University.PNG" alt="University Image"></td>
+                <td id="Mongols">Castle</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">2100+210</td>
+                <td id="Mongols">2+1+1</td>
+                <td id="Mongols">9+1+1</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">200</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Wonder</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Wonder.PNG" alt="Wonder Image"></td>
+                <td id="Mongols">Imperial</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">4800+480</td>
+                <td id="Mongols">3+1</td>
+                <td id="Mongols">10+1</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">1000</td>
+                <td id="Mongols">1000</td>
+                <td id="Mongols">1000</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Barracks</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Barracks.PNG" alt="Barracks Image"></td>
+                <td id="Mongols">Dark</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">1200+900+210</td>
+                <td id="Mongols">0+3+1</td>
+                <td id="Mongols">7+3+1</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">10</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">175</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Archery Range</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/ArcheryRange.PNG" alt="Archery Range Image"></td>
+                <td id="Mongols">Feudal</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">1500+600+210</td>
+                <td id="Mongols">1+2+1</td>
+                <td id="Mongols">8+2+1</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">10</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">175</td>
+                <td id="Mongols">Barracks</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Stable</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Stable.PNG" alt="Stable Image"></td>
+                <td id="Mongols">Feudal</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">1500+600+210</td>
+                <td id="Mongols">1+2+1</td>
+                <td id="Mongols">8+2+1</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">10</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">175</td>
+                <td id="Mongols">Barracks</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Siege Workshop</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/SiegeWorkshop.PNG" alt="Siege Workshop Image"></td>
+                <td id="Mongols">Castle</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">1500+600+210</td>
+                <td id="Mongols">1+2+1</td>
+                <td id="Mongols">8+2+1</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">10</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">200</td>
+                <td id="Mongols">Blacksmith</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Outpost</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Outpost.PNG" alt="Outpost Image"></td>
+                <td id="Mongols">Dark</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">500+50</td>
+                <td id="Mongols">0+1</td>
+                <td id="Mongols">0+1</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">5</td>
+                <td id="Mongols">25</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Palisade Wall</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/PalisadeWall.PNG" alt="Palisade Wall Image"></td>
+                <td id="Mongols">Dark</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">150+100</td>
+                <td id="Mongols">2</td>
+                <td id="Mongols">5</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">2</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Stone Wall</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/StoneWall.PNG" alt="Stone Wall Image"></td>
+                <td id="Mongols">Feudal</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">1080+720</td>
+                <td id="Mongols">8</td>
+                <td id="Mongols">10</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">5</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Fortified Wall</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/FortifiedWall.PNG" alt="Fortified Wall Image"></td>
+                <td id="Mongols">Castle</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">3000</td>
+                <td id="Mongols">12</td>
+                <td id="Mongols">12</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">5</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">Stone Wall</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Watch Tower</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/WatchTower.PNG" alt="Watch Tower Image"></td>
+                <td id="Mongols">Feudal</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">850+170+102</td>
+                <td id="Mongols">1+1</td>
+                <td id="Mongols">7+1</td>
+                <td id="Mongols">5+4</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">5</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">8+3</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">125</td>
+                <td id="Mongols">50</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Guard Tower</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/GuardTower.PNG" alt="Guard Tower Image"></td>
+                <td id="Mongols">Castle</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">1500+150</td>
+                <td id="Mongols">2+1</td>
+                <td id="Mongols">8+1</td>
+                <td id="Mongols">7+4</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">5</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">8+3</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">125</td>
+                <td id="Mongols">50</td>
+                <td id="Mongols">Watch Tower</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Castle</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Castle.PNG" alt="Castle Image"></td>
+                <td id="Mongols">Castle</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">4800+1008+581</td>
+                <td id="Mongols">8+1</td>
+                <td id="Mongols">11+1</td>
+                <td id="Mongols">11+4</td>
+                <td id="Mongols">4</td>
+                <td id="Mongols">20</td>
+                <td id="Mongols">20</td>
+                <td id="Mongols">8+3</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">650</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Gate</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Gate.PNG" alt="Gate Image"></td>
+                <td id="Mongols">Feudal</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">1650+1100+1250</td>
+                <td id="Mongols">6</td>
+                <td id="Mongols">6</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">30</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <tr>
+                <td id="Mongols">Mongols</td>
+                <td id="Mongols">Palisade Gate</td>
+                <td id="Mongols"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/PalisadeGate.PNG" alt="Palisade Gate Image"></td>
+                <td id="Mongols">Dark</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">240+160</td>
+                <td id="Mongols">2</td>
+                <td id="Mongols">2</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">30</td>
+                <td id="Mongols">-</td>
+                <td id="Mongols">-</td>
+            </tr>
+            <td id="Saracens">Saracens</td>
+                <td id="Saracens">Town Center</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/TownCenter.PNG" alt="Town Center Image"></td>
+                <td id="Saracens">Dark</td>
+                <td id="Saracens">Castle</td>
+                <td id="Saracens">2400+240</td>
+                <td id="Saracens">3+3+1</td>
+                <td id="Saracens">5+3+1</td>
+                <td id="Saracens">5+4</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">15</td>
+                <td id="Saracens">5</td>
+                <td id="Saracens">6</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">100</td>
+                <td id="Saracens">275</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">House</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/House.PNG" alt="House Image"></td>
+                <td id="Saracens">Dark</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">550+350+90</td>
+                <td id="Saracens">-2+5+1</td>
+                <td id="Saracens">7+3+1</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">5</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">25</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Mill</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Mill.PNG" alt="Mill Image"></td>
+                <td id="Saracens">Dark</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">600+400+100</td>
+                <td id="Saracens">0+3+1</td>
+                <td id="Saracens">7+3+1</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">100</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Mining Camp</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/MiningCamp.PNG" alt="Mining Camp Image"></td>
+                <td id="Saracens">Dark</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">600+400+100</td>
+                <td id="Saracens">0+3+1</td>
+                <td id="Saracens">7+3+1</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">100</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Lumber Camp</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/LumberCamp.PNG" alt="Lumber Camp Image"></td>
+                <td id="Saracens">Dark</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">600+400+100</td>
+                <td id="Saracens">0+3+1</td>
+                <td id="Saracens">7+3+1</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">100</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Dock</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Dock.PNG" alt="Dock Image"></td>
+                <td id="Saracens">Dark</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">1800+180</td>
+                <td id="Saracens">0+3+1</td>
+                <td id="Saracens">7+3+1</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">10</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">150</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Fish Trap</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/FishTrap.PNG" alt="Fish Trap Image"></td>
+                <td id="Saracens">Feudal</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">50</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">100</td>
+                <td id="Saracens">Docks</td>
+                <td id="Saracens">715</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Farm</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Farm.PNG" alt="Farm Image"></td>
+                <td id="Saracens">Dark</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">480</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">60</td>
+                <td id="Saracens">Mill</td>
+                <td id="Saracens">175+75+125</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Blacksmith</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Blacksmith.PNG" alt="Blacksmith Image"></td>
+                <td id="Saracens">Feudal</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">1800+300+219</td>
+                <td id="Saracens">0+3+1</td>
+                <td id="Saracens">7+3+1</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">150</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Market</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Market.PNG" alt="Market Image"></td>
+                <td id="Saracens">Feudal</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">1800+300+219</td>
+                <td id="Saracens">1+2+1</td>
+                <td id="Saracens">8+2+1</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">10</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">175-100</td>
+                <td id="Saracens">Mill</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Monastery</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Monastery.PNG" alt="Monastery Image"></td>
+                <td id="Saracens">Castle</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">2100+210</td>
+                <td id="Saracens">0+3+1</td>
+                <td id="Saracens">7+3+1</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">10</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">175</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">University</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/University.PNG" alt="University Image"></td>
+                <td id="Saracens">Castle</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">2100+210</td>
+                <td id="Saracens">2+1+1</td>
+                <td id="Saracens">9+1+1</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">200</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Wonder</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Wonder.PNG" alt="Wonder Image"></td>
+                <td id="Saracens">Imperial</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">4800+480</td>
+                <td id="Saracens">3+1</td>
+                <td id="Saracens">10+1</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">1000</td>
+                <td id="Saracens">1000</td>
+                <td id="Saracens">1000</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Barracks</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Barracks.PNG" alt="Barracks Image"></td>
+                <td id="Saracens">Dark</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">1200+900+210</td>
+                <td id="Saracens">0+3+1</td>
+                <td id="Saracens">7+3+1</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">10</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">175</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Archery Range</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/ArcheryRange.PNG" alt="Archery Range Image"></td>
+                <td id="Saracens">Feudal</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">1500+600+210</td>
+                <td id="Saracens">1+2+1</td>
+                <td id="Saracens">8+2+1</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">10</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">175</td>
+                <td id="Saracens">Barracks</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Stable</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Stable.PNG" alt="Stable Image"></td>
+                <td id="Saracens">Feudal</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">1500+600+210</td>
+                <td id="Saracens">1+2+1</td>
+                <td id="Saracens">8+2+1</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">10</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">175</td>
+                <td id="Saracens">Barracks</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Siege Workshop</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/SiegeWorkshop.PNG" alt="Siege Workshop Image"></td>
+                <td id="Saracens">Castle</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">1500+600+210</td>
+                <td id="Saracens">1+2+1</td>
+                <td id="Saracens">8+2+1</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">10</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">200</td>
+                <td id="Saracens">Blacksmith</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Outpost</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Outpost.PNG" alt="Outpost Image"></td>
+                <td id="Saracens">Dark</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">500+50</td>
+                <td id="Saracens">0+1</td>
+                <td id="Saracens">0+1</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">5</td>
+                <td id="Saracens">25</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Palisade Wall</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/PalisadeWall.PNG" alt="Palisade Wall Image"></td>
+                <td id="Saracens">Dark</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">150+100</td>
+                <td id="Saracens">2</td>
+                <td id="Saracens">5</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">2</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Stone Wall</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/StoneWall.PNG" alt="Stone Wall Image"></td>
+                <td id="Saracens">Feudal</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">1080+720</td>
+                <td id="Saracens">8</td>
+                <td id="Saracens">10</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">5</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Fortified Wall</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/FortifiedWall.PNG" alt="Fortified Wall Image"></td>
+                <td id="Saracens">Castle</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">3000</td>
+                <td id="Saracens">12</td>
+                <td id="Saracens">12</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">5</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">Stone Wall</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Watch Tower</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/WatchTower.PNG" alt="Watch Tower Image"></td>
+                <td id="Saracens">Feudal</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">850+170+102</td>
+                <td id="Saracens">1+1</td>
+                <td id="Saracens">7+1</td>
+                <td id="Saracens">5+5</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">5</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">8+3</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">125</td>
+                <td id="Saracens">50</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Guard Tower</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/GuardTower.PNG" alt="Guard Tower Image"></td>
+                <td id="Saracens">Castle</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">1500+150</td>
+                <td id="Saracens">2+1</td>
+                <td id="Saracens">8+1</td>
+                <td id="Saracens">7+6</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">5</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">8+3</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">125</td>
+                <td id="Saracens">50</td>
+                <td id="Saracens">Watch Tower</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Keep</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Keep.PNG" alt="Keep Image"></td>
+                <td id="Saracens">Imperial</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">2250+225</td>
+                <td id="Saracens">3+1</td>
+                <td id="Saracens">9+1</td>
+                <td id="Saracens">8+7</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">5</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">8+3</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">125</td>
+                <td id="Saracens">50</td>
+                <td id="Saracens">Guard Tower</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Castle</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Castle.PNG" alt="Castle Image"></td>
+                <td id="Saracens">Castle</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">4800+480+1109</td>
+                <td id="Saracens">8+1</td>
+                <td id="Saracens">11+1</td>
+                <td id="Saracens">11+4</td>
+                <td id="Saracens">4</td>
+                <td id="Saracens">20</td>
+                <td id="Saracens">20</td>
+                <td id="Saracens">8+3</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">650</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Gate</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Gate.PNG" alt="Gate Image"></td>
+                <td id="Saracens">Feudal</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">1650+1100+1250</td>
+                <td id="Saracens">6</td>
+                <td id="Saracens">6</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">30</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <tr>
+                <td id="Saracens">Saracens</td>
+                <td id="Saracens">Palisade Gate</td>
+                <td id="Saracens"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/PalisadeGate.PNG" alt="Palisade Gate Image"></td>
+                <td id="Saracens">Dark</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">240+160</td>
+                <td id="Saracens">2</td>
+                <td id="Saracens">2</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">30</td>
+                <td id="Saracens">-</td>
+                <td id="Saracens">-</td>
+            </tr>
+            <td id="Teutons">Teutons</td>
+                <td id="Teutons">Town Center</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/TownCenter.PNG" alt="Town Center Image"></td>
+                <td id="Teutons">Dark</td>
+                <td id="Teutons">Castle</td>
+                <td id="Teutons">2400+240</td>
+                <td id="Teutons">3+3+1</td>
+                <td id="Teutons">5+3+1</td>
+                <td id="Teutons">5+4</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">15+10</td>
+                <td id="Teutons">5</td>
+                <td id="Teutons">6</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">100</td>
+                <td id="Teutons">275</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">House</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/House.PNG" alt="House Image"></td>
+                <td id="Teutons">Dark</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">550+350+90</td>
+                <td id="Teutons">-2+5+1</td>
+                <td id="Teutons">7+3+1</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">5</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">25</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Mill</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Mill.PNG" alt="Mill Image"></td>
+                <td id="Teutons">Dark</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">600+400+100</td>
+                <td id="Teutons">0+3+1</td>
+                <td id="Teutons">7+3+1</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">100</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Mining Camp</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/MiningCamp.PNG" alt="Mining Camp Image"></td>
+                <td id="Teutons">Dark</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">600+400+100</td>
+                <td id="Teutons">0+3+1</td>
+                <td id="Teutons">7+3+1</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">100</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Lumber Camp</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/LumberCamp.PNG" alt="Lumber Camp Image"></td>
+                <td id="Teutons">Dark</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">600+400+100</td>
+                <td id="Teutons">0+3+1</td>
+                <td id="Teutons">7+3+1</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">100</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Dock</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Dock.PNG" alt="Dock Image"></td>
+                <td id="Teutons">Dark</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">1800+180</td>
+                <td id="Teutons">0+3+1</td>
+                <td id="Teutons">7+3+1</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">10</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">150</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Fish Trap</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/FishTrap.PNG" alt="Fish Trap Image"></td>
+                <td id="Teutons">Feudal</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">50</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">100</td>
+                <td id="Teutons">Docks</td>
+                <td id="Teutons">715</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Farm</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Farm.PNG" alt="Farm Image"></td>
+                <td id="Teutons">Dark</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">480</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">60-24</td>
+                <td id="Teutons">Mill</td>
+                <td id="Teutons">175+75+125+175</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Blacksmith</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Blacksmith.PNG" alt="Blacksmith Image"></td>
+                <td id="Teutons">Feudal</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">1800+300+219</td>
+                <td id="Teutons">0+3+1</td>
+                <td id="Teutons">7+3+1</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">150</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Market</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Market.PNG" alt="Market Image"></td>
+                <td id="Teutons">Feudal</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">1800+300+219</td>
+                <td id="Teutons">1+2+1</td>
+                <td id="Teutons">8+2+1</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">10</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">175-100</td>
+                <td id="Teutons">Mill</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Monastery</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Monastery.PNG" alt="Monastery Image"></td>
+                <td id="Teutons">Castle</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">2100+210</td>
+                <td id="Teutons">0+3+1</td>
+                <td id="Teutons">7+3+1</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">10</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">175</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">University</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/University.PNG" alt="University Image"></td>
+                <td id="Teutons">Castle</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">2100+210</td>
+                <td id="Teutons">2+1+1</td>
+                <td id="Teutons">9+1+1</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">200</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Wonder</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Wonder.PNG" alt="Wonder Image"></td>
+                <td id="Teutons">Imperial</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">4800+480</td>
+                <td id="Teutons">3+1</td>
+                <td id="Teutons">10+1</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">1000</td>
+                <td id="Teutons">1000</td>
+                <td id="Teutons">1000</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Barracks</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Barracks.PNG" alt="Barracks Image"></td>
+                <td id="Teutons">Dark</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">1200+900+210</td>
+                <td id="Teutons">0+3+1</td>
+                <td id="Teutons">7+3+1</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">10</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">175</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Archery Range</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/ArcheryRange.PNG" alt="Archery Range Image"></td>
+                <td id="Teutons">Feudal</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">1500+600+210</td>
+                <td id="Teutons">1+2+1</td>
+                <td id="Teutons">8+2+1</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">10</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">175</td>
+                <td id="Teutons">Barracks</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Stable</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Stable.PNG" alt="Stable Image"></td>
+                <td id="Teutons">Feudal</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">1500+600+210</td>
+                <td id="Teutons">1+2+1</td>
+                <td id="Teutons">8+2+1</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">10</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">175</td>
+                <td id="Teutons">Barracks</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Siege Workshop</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/SiegeWorkshop.PNG" alt="Siege Workshop Image"></td>
+                <td id="Teutons">Castle</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">1500+600+210</td>
+                <td id="Teutons">1+2+1</td>
+                <td id="Teutons">8+2+1</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">10</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">200</td>
+                <td id="Teutons">Blacksmith</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Outpost</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Outpost.PNG" alt="Outpost Image"></td>
+                <td id="Teutons">Dark</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">500+50</td>
+                <td id="Teutons">0+1</td>
+                <td id="Teutons">0+1</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">5</td>
+                <td id="Teutons">25</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Palisade Wall</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/PalisadeWall.PNG" alt="Palisade Wall Image"></td>
+                <td id="Teutons">Dark</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">150+100</td>
+                <td id="Teutons">2</td>
+                <td id="Teutons">5</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">2</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Stone Wall</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/StoneWall.PNG" alt="Stone Wall Image"></td>
+                <td id="Teutons">Feudal</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">1080+720</td>
+                <td id="Teutons">8</td>
+                <td id="Teutons">10</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">5</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Fortified Wall</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/FortifiedWall.PNG" alt="Fortified Wall Image"></td>
+                <td id="Teutons">Castle</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">3000</td>
+                <td id="Teutons">12</td>
+                <td id="Teutons">12</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">5</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">Stone Wall</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Watch Tower</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/WatchTower.PNG" alt="Watch Tower Image"></td>
+                <td id="Teutons">Feudal</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">850+170+102</td>
+                <td id="Teutons">1+1</td>
+                <td id="Teutons">7+1</td>
+                <td id="Teutons">5+5</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">5+5</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">8+3</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">125</td>
+                <td id="Teutons">50</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Guard Tower</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/GuardTower.PNG" alt="Guard Tower Image"></td>
+                <td id="Teutons">Castle</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">1500+150</td>
+                <td id="Teutons">2+1</td>
+                <td id="Teutons">8+1</td>
+                <td id="Teutons">7+6</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">5+5</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">8+3</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">125</td>
+                <td id="Teutons">50</td>
+                <td id="Teutons">Watch Tower</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Keep</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Keep.PNG" alt="Keep Image"></td>
+                <td id="Teutons">Imperial</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">2250+225</td>
+                <td id="Teutons">3+1</td>
+                <td id="Teutons">9+1</td>
+                <td id="Teutons">8+7</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">5+5</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">8+3</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">125</td>
+                <td id="Teutons">50</td>
+                <td id="Teutons">Guard Tower</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Bombard Keep</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/BombardTower.PNG" alt="Bombard Tower Image"></td>
+                <td id="Teutons">Imperial</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">2220+222</td>
+                <td id="Teutons">3+1</td>
+                <td id="Teutons">9+1</td>
+                <td id="Teutons">120+3</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">5+5</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">8+2</td>
+                <td id="Teutons">100</td>
+                <td id="Teutons">125</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">Keep</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Castle</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Castle.PNG" alt="Castle Image"></td>
+                <td id="Teutons">Castle</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">4800+480+1109</td>
+                <td id="Teutons">8+1</td>
+                <td id="Teutons">11+1</td>
+                <td id="Teutons">11+4</td>
+                <td id="Teutons">4</td>
+                <td id="Teutons">20</td>
+                <td id="Teutons">20</td>
+                <td id="Teutons">8+3</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">650</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Gate</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Gate.PNG" alt="Gate Image"></td>
+                <td id="Teutons">Feudal</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">1650+1100+1250</td>
+                <td id="Teutons">6</td>
+                <td id="Teutons">6</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">30</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+            </tr>
+            <tr>
+                <td id="Teutons">Teutons</td>
+                <td id="Teutons">Palisade Gate</td>
+                <td id="Teutons"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/PalisadeGate.PNG" alt="Palisade Gate Image"></td>
+                <td id="Teutons">Dark</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">240+160</td>
+                <td id="Teutons">2</td>
+                <td id="Teutons">2</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">30</td>
+                <td id="Teutons">-</td>
+                <td id="Teutons">-</td>
             </tr>
         </tbody>
     </table>
