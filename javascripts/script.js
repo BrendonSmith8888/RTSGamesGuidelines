@@ -1,8 +1,28 @@
 function filterCivilization() {
   let input, filter, table, tr, td, i;
-  input = document.getElementById("userCivilisationInput");
+  input = document.getElementById("userCivilizationInput");
   filter = input.value.toUpperCase();
   table = document.getElementById("aoebuildingsTable");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      }
+      else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
+function filterCivilizationUnits() {
+  let input, filter, table, tr, td, i;
+  input = document.getElementById("userCivilizationUnitsInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("aoeunitsTable");
   tr = table.getElementsByTagName("tr");
 
   for (i = 0; i < tr.length; i++) {
@@ -38,6 +58,26 @@ function filterBuildings() {
   }
 }
 
+function aoe1filterBuildings() {
+  let input, filter, table, tr, td, i;
+  input = document.getElementById("aoe1userBuildingInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("aoebuildingsTable");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[3];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      }
+      else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
 function filterAge() {
   let input, filter, table, tr, td, i;
   input = document.getElementById("userAgeInput");
@@ -46,10 +86,49 @@ function filterAge() {
   tr = table.getElementsByTagName("tr");
 
   for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[3];
-    td1 = tr[i].getElementsByTagName("td")[4];
+    td = tr[i].getElementsByTagName("td")[1];
     if (td) {
-      if (td.innerHTML.toUpperCase().indexOf(filter) > -1 || td1.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      }
+      else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
+function aoe1filterAge() {
+  let input, filter, table, tr, td, i;
+  input = document.getElementById("aoe1userAgeInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("aoebuildingsTable");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      }
+      else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
+function aoe1filterAgeUnits() {
+  let input, filter, table, tr, td, i;
+  input = document.getElementById("aoe1userAgeUnitsInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("aoeunitsTable");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
         tr[i].style.display = "";
       }
       else {
@@ -68,6 +147,26 @@ function filterRequirements() {
 
   for (i = 0; i < tr.length; i++) {
     td = tr[i].getElementsByTagName("td")[16];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      }
+      else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
+function aoe1filterRequirementsUnits() {
+  let input, filter, table, tr, td, i;
+  input = document.getElementById("aoe1userRequirementsUnitsInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("aoeunitsTable");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[14];
     if (td) {
       if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
         tr[i].style.display = "";
@@ -117,6 +216,28 @@ function filterUnit() {
     }
   }
 }
+
+function aoe1filterUnit() {
+  let input, filter, table, tr, td, td1, td2, td3, td4, td5, td6, td7, td8, td9, i;
+  input = document.getElementById("aoe1userUnitInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("aoeunitsTable");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[3];
+    if (td) {
+      if (
+        td.innerHTML.toUpperCase().indexOf(filter) > -1  
+      ) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
 
 function filterTechnology() {
   let input, filter, table, tr, td, td1, td2, td3, td4, td5, td6, td7, i;

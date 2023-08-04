@@ -386,7 +386,14 @@ td{
     flex-direction: row;
 }
 
-#userCivilisationInput{
+#userCivilizationInput{
+    color: black;
+    font-size: 28%;
+    font-weight: bold;
+    width: 6%;
+}
+
+#userCivilizationUnitsInput{
     color: black;
     font-size: 28%;
     font-weight: bold;
@@ -415,4 +422,59 @@ td{
     font-weight: bold;
     margin-left: 55%;
     width: 7%;
+}
+
+#aoe1userCivilizationInput{
+    color: black;
+    font-size: 28%;
+    font-weight: bold;
+    width: 6%;
+}
+
+#aoe1userBuildingInput{
+    color: black;
+    font-size: 30%;
+    font-weight: bold;
+    margin-left: 12%;
+    width: 6%;
+}
+
+#aoe1userAgeInput{
+    color: black;
+    font-size: 30%;
+    font-weight: bold;
+    margin-left: 2%;
+    width: 3.3%;
+}
+
+#aoe1userAgeUnitsInput{
+    color: black;
+    font-size: 30%;
+    font-weight: bold;
+    margin-left: 2%;
+    width: 3.3%;
+}
+
+#aoe1userRequirementsInput{
+    color: black;
+    font-size: 28%;
+    font-weight: bold;
+    margin-left: 53%;
+    width: 7%;
+}
+
+#aoe1userRequirementsUnitsInput{
+    color: black;
+    font-size: 28%;
+    font-weight: bold;
+    margin-left: 60%;
+    width: 7%;
+}
+
+#aoe1userUnitInput{
+    color: black;
+    font-size: 30%;
+    font-weight: bold;
+    margin-left: 12%;
+    width: 6%;
 }
