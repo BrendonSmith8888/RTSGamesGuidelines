@@ -4296,11 +4296,17 @@
     <h3 id="TechnologyHeader">Technology</h3>
     <a id="aoea" href="#Buildings">Scroll Up to Buildings Stats</a>
     <a id="aoea" href="#Units">Scroll Up to Units Stats</a>
-    <input type="text" id="userTechnologyInput" onkeyup="filterTechnology()" placeholder="Search for Civilization, Age, Technology or Buildings Required">
+    <div id="statsSearchBars">
+        <input type="text" id="userCivilizationTechnologyInput" onkeyup="filterCivilizationTechnology()" placeholder="Search Civilization">
+        <input type="text" id="aoe1userAgeTechnologyInput" onkeyup="aoe1filterAgeTechnology()" placeholder="Search Age">
+        <input type="text" id="aoe1userTechnologyInput" onkeyup="aoe1filterTechnology()" placeholder="Search Technology">
+        <input type="text" id="aoe1userRequirementsTechnologyInput" onkeyup="aoe1filterRequirementsTechnology()"
+            placeholder="Search Requirements">
+    </div>
     <br>
     <table id="aoetechnologyTable" aria-label="Technology Stats Table for each Faction">
         <tr>
-            <th id="aoemainHeading" colspan="5">Faction</th>
+            <th id="aoemainHeading" colspan="5">Civilization</th>
             <th id="aoemainHeading">Age</th>
             <th id="aoemainHeading">Image</th>
             <th id="aoemainHeading">Technology</th>
