@@ -6,7 +6,6 @@ a {
     text-decoration: none;
 }
 
-
 body{
     background-color: antiquewhite;
     display: flex;
@@ -386,129 +385,98 @@ td{
     flex-direction: row;
 }
 
-#userCivilizationInput{
+#userCivilizationBuildingInput{
     color: black;
-    font-size: 28%;
+    font-size: 35%;
     font-weight: bold;
-    width: 6%;
+    margin-left: 10%;
+    width: 7.4%;
 }
 
 #userCivilizationUnitsInput{
     color: black;
-    font-size: 28%;
+    font-size: 35%;
     font-weight: bold;
-    width: 6%;
+    margin-left: 10%;
+    width: 7.4%;
 }
 
 #userCivilizationTechnologyInput{
     color: black;
-    font-size: 28%;
+    font-size: 35%;
     font-weight: bold;
-    margin-left: 5%;
-    width: 6%;
+    margin-left: 10%;
+    width: 7.4%;
+}
+
+#userAgeBuildingInput{
+    color: black;
+    font-size: 35%;
+    font-weight: bold;
+    margin-left: 10%;
+    width: 5%;
+}
+
+#userAgeUnitsInput{
+    color: black;
+    font-size: 35%;
+    font-weight: bold;
+    margin-left: 10%;
+    width: 5%;
+}
+
+#userAgeTechnologyInput{
+    color: black;
+    font-size: 35%;
+    font-weight: bold;
+    margin-left: 10%;
+    width: 5%;
+}
+
+#userRequirementsBuildingInput{
+    color: black;
+    font-size: 35%;
+    font-weight: bold;
+    margin-left: 10%;
+    width: 11.5%;
+}
+
+#userRequirementsUnitsInput{
+    color: black;
+    font-size: 35%;
+    font-weight: bold;
+    margin-left: 10%;
+    width: 11.5%;
+}
+
+#userRequirementsTechnologyInput{
+    color: black;
+    font-size: 35%;
+    font-weight: bold;
+    margin-left: 10%;
+    width: 11.5%;
 }
 
 #userBuildingInput{
     color: black;
-    font-size: 30%;
+    font-size: 35%;
     font-weight: bold;
-    margin-left: 1%;
-    width: 6%;
-}
-
-#userAgeInput{
-    color: black;
-    font-size: 30%;
-    font-weight: bold;
-    margin-left: 12%;
-    width: 4.5%;
-}
-
-#userRequirementsInput{
-    color: black;
-    font-size: 28%;
-    font-weight: bold;
-    margin-left: 55%;
+    margin-left: 10%;
     width: 7%;
 }
 
-#aoe1userCivilizationInput{
+#userUnitInput{
     color: black;
-    font-size: 28%;
+    font-size: 35%;
     font-weight: bold;
-    width: 6%;
+    margin-left: 10%;
+    width: 7.8%;
 }
 
-
-#aoe1userBuildingInput{
+#userTechnologyInput{
     color: black;
-    font-size: 30%;
+    font-size: 35%;
     font-weight: bold;
-    margin-left: 12%;
-    width: 6%;
-}
-
-#aoe1userAgeInput{
-    color: black;
-    font-size: 30%;
-    font-weight: bold;
-    margin-left: 2%;
-    width: 3.3%;
-}
-
-#aoe1userAgeUnitsInput{
-    color: black;
-    font-size: 30%;
-    font-weight: bold;
-    margin-left: 2%;
-    width: 3.3%;
-}
-
-#aoe1userAgeTechnologyInput{
-    color: black;
-    font-size: 25%;
-    font-weight: bold;
-    margin-left: 7%;
-    width: 3.2%;
-}
-
-#aoe1userRequirementsInput{
-    color: black;
-    font-size: 28%;
-    font-weight: bold;
-    margin-left: 53%;
-    width: 7%;
-}
-
-#aoe1userRequirementsUnitsInput{
-    color: black;
-    font-size: 28%;
-    font-weight: bold;
-    margin-left: 60%;
-    width: 7%;
-}
-
-#aoe1userRequirementsTechnologyInput{
-    color: black;
-    font-size: 25%;
-    font-weight: bold;
-    margin-left: 1%;
-    width: 5.2%;
-}
-
-
-#aoe1userUnitInput{
-    color: black;
-    font-size: 30%;
-    font-weight: bold;
-    margin-left: 12%;
-    width: 6%;
-}
-
-#aoe1userTechnologyInput{
-    color: black;
-    font-size: 25%;
-    font-weight: bold;
-    margin-left: 5%;
-    width: 5%;
+    margin-left: 10%;
+    width: 7.8%;
 }
