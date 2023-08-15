@@ -188,7 +188,7 @@ function aoe2filterAgeUnits() {
   tr = table.getElementsByTagName("tr");
 
   for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[1];
+    td = tr[i].getElementsByTagName("td")[3];
     if (td) {
       if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
         tr[i].style.display = "";
@@ -220,13 +220,13 @@ function aoe1filterRequirementsUnits() {
 
 function aoe2filterRequirementsUnits() {
   let input, filter, table, tr, td, i;
-  input = document.getElementById("aoe1userRequirementsUnitsInput");
+  input = document.getElementById("userRequirementsUnitsInput");
   filter = input.value.toUpperCase();
   table = document.getElementById("aoeunitsTable");
   tr = table.getElementsByTagName("tr");
 
   for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[14];
+    td = tr[i].getElementsByTagName("td")[17];
     if (td) {
       if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
         tr[i].style.display = "";
@@ -258,13 +258,13 @@ function aoe1filterUnit() {
 
 function aoe2filterUnit() {
   let input, filter, table, tr, td, i;
-  input = document.getElementById("aoe1userUnitInput");
+  input = document.getElementById("userUnitInput");
   filter = input.value.toUpperCase();
   table = document.getElementById("aoeunitsTable");
   tr = table.getElementsByTagName("tr");
 
   for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[3];
+    td = tr[i].getElementsByTagName("td")[1];
     if (td) {
       if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
         tr[i].style.display = "";
