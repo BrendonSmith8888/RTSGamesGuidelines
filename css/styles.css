@@ -28,6 +28,10 @@ p{
     text-align: justify;
 }
 
+table{
+    background-color: black;
+}
+
 td{
     background-color: antiquewhite;
     border: 1px solid black;
@@ -35,7 +39,16 @@ td{
     font-weight: bold;
 }
 
-#aoea {
+th{
+    border: 1px solid black;
+}
+
+thead{
+    background-color: antiquewhite;
+    font-size: 0.9vw;
+}
+
+.aoea {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1vw;
@@ -71,35 +84,25 @@ td{
 }
 
 #aoebuildingsTable{
-    background-color: black;
     border: 1px solid black;
 }
 
 #aoetechnologyTable{
-    background-color: black;
     border: 1px solid black;
 }
 
 #aoeunitsTable{
-    background-color: black;
     border: 1px solid black;
 }
 
-#aoemainHeading{
+.aoeTableHeadings{
     background-color: antiquewhite;
     border: 1px solid black;
     font-size: 0.9vw;
     font-weight: bold;
 }
 
-#aoesubHeading{
-    background-color: antiquewhite;
-    border: 1px solid black;
-    font-size: 0.9vw;
-    font-weight: bold;
-}
-
-#Babylonian{
+.Babylonian{
     background-color: green;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9vw;
@@ -108,7 +111,7 @@ td{
     text-align: center;
 }
 
-#Egyptian{
+.Egyptian{
     background-color: red;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9vw;
@@ -117,7 +120,7 @@ td{
     text-align: center;
 }
 
-#Greek{
+.Greek{
     background-color: blue;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9vw;
@@ -126,7 +129,7 @@ td{
     text-align: center;
 }
 
-#Hittite{
+.Hittite{
     background-color: orangered;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9vw;
@@ -135,7 +138,7 @@ td{
     text-align: center;
 }
 
-#Yamato{
+.Yamato{
     background-color: yellow;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9vw;
@@ -144,7 +147,7 @@ td{
     text-align: center;
 }
 
-#Celts{
+.Celts{
     background-color: green;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -154,7 +157,7 @@ td{
     text-align: center;
 }
 
-#Franks{
+.Franks{
     background-color: rgb(31, 78, 120);
     color: yellow;
     font-family: Arial, Helvetica, sans-serif;
@@ -164,7 +167,7 @@ td{
     text-align: center;
 }
 
-#Huns{
+.Huns{
     background-color: black;
     color: red;
     font-family: Arial, Helvetica, sans-serif;
@@ -174,7 +177,7 @@ td{
     text-align: center;
 }
 
-#Mongols{
+.Mongols{
     background-color: rgb(0, 112, 192);
     color: yellow;
     font-family: Arial, Helvetica, sans-serif;
@@ -184,7 +187,7 @@ td{
     text-align: center;
 }
 
-#Saracens{
+.Saracens{
     background-color: rgb(58, 56, 56);
     color: rgb(191, 143, 0);
     font-family: Arial, Helvetica, sans-serif;
@@ -194,7 +197,7 @@ td{
     text-align: center;
 }
 
-#Teutons{
+.Teutons{
     background-color: yellow;
     color: red;
     font-family: Arial, Helvetica, sans-serif;
@@ -204,13 +207,17 @@ td{
     text-align: center;
 }
 
-#Technology{
+.Technology{
     background-color: antiquewhite;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9vw;
     font-weight: bold;
     padding: 15px 0;
     text-align: center;
+}
+
+.Technology img{
+    width: 95%
 }
 
 #indeximg{
@@ -321,10 +328,6 @@ td{
     width: 80%;
 }
 
-#aoeTechnologyImage{
-    width: 95%;
-}
-
 #dowList{
     align-items: center;
     cursor: pointer;
@@ -380,7 +383,7 @@ td{
     width: 50%;
 }
 
-#statsSearchBars{
+.statsSearchBars{
     display: flex;
     flex-direction: row;
 }
