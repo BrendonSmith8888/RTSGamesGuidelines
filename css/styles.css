@@ -51,9 +51,10 @@ thead{
 .aoea {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1vw;
+    font-size: 2vw;
     font-weight: bold;
     margin-bottom: 3%;
+    margin-top: 5%;
     text-decoration: none;
 }
 
@@ -69,16 +70,16 @@ thead{
     text-align: center;
 }
 
-#aoeHPa {
+.aoeHPa {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 2vw;
     font-weight: bold;
-    margin-top: 10%;
+    margin-top: 5%;
     text-decoration: none;
 }
 
-#aoeHPa:hover{
+.aoeHPa:hover{
     transform: scale(1.1);
     transition: 1s;
 }
@@ -217,113 +218,70 @@ thead{
 }
 
 .Technology img{
+    height:auto;
     width: 95%
 }
 
-#indeximg{
-    height: 90%;
+.indeximg{
+    height: 100%;
     width: 100%;
 }
 
-#indexli:hover{
+.indexli:hover{
     transform: scale(1.1);
     transition: 1s;
 }
 
-#indexli{
+.indexli{
     background-color: black;
     cursor: pointer;
     display: flex;
     flex-direction: row;
-    height: 8vh;
+    height: auto;
     list-style: none;
     justify-content: center;
     margin-bottom:5%;
     margin-top:5%;
-    width: 40vw;
+    width: 90%;
 }
 
-#aoeCPImage1{
-    height: 90%;
-    width: 94%;
-}
-
-#aoeCPImage2{
-    height: 120%;
-    width: 75%;
-}
-
-#aoeCPImage3{
-    height: 100%;
+.aoeCPImage{
+    height: auto;
     width: 100%;
 }
 
 #aoeCPList{
     align-items: center;
-    /* background-color: black; */
-    cursor: pointer;
     display: flex;
     flex-direction: column;
     list-style: none;
-    margin-bottom: 5%;
-    margin-top: 5%;
 }
 
-#aoeCPList1{
+.aoeCPListItems{
     cursor: pointer;
-    display: flex;
-    flex-direction: row;
     list-style: none;
-    justify-content: center;
     margin-bottom:5%;
+    width: 100%;
 }
 
-#aoeCPList2{
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: center;
-    margin-bottom:20%;
-}
-
-#aoeCPList3{
-    cursor: pointer;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: center;
-    margin-bottom:5%;
-}
-
-#aoeCPList1:hover{
+.aoeCPListItems:hover{
     transform: scale(1.1);
     transition: 1s; 
 }
 
-#aoeCPList2:hover{
-    transform: scale(1.1);
-    transition: 1s; 
-}
-
-#aoeCPList3:hover{
-    transform: scale(1.1);
-    transition: 1s; 
-}
-
-#aoeRevealledMaps{
-    height: 50%;
+.aoeRevealledMaps{
+    height: auto;
     margin-bottom: 3%;
     margin-top: 3%;
     width: 50%;
 }
 
-#aoeRevealledMaps:hover{
+.aoeRevealledMaps:hover{
     transform: scale(1.2);
     transition: 1s; 
 }
 
-#aoeObjectivesList{
+.aoeObjectivesList{
     text-align: left;
     width: 80%;
 }
@@ -358,6 +316,7 @@ thead{
     display: flex;
     flex-direction: column;
     text-align: center;
+    width:100%;
 }
 
 #hommList{
