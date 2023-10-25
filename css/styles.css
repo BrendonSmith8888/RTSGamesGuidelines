@@ -48,6 +48,13 @@ thead{
     font-size: 0.9vw;
 }
 
+.tableHeadings{
+    background-color: antiquewhite;
+    border: 1px solid black;
+    font-size: 0.9vw;
+    font-weight: bold;
+}
+
 .aoea {
     color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -340,6 +347,10 @@ thead{
     flex-direction: column;
     text-align: center;
     width:100%;
+}
+
+#hommArtefactsTable{
+    border: 1px solid black;
 }
 
 #hommList{

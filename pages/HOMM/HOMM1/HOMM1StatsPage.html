@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heroes of Might and Magic I - Stats Page</title>
+    <link rel="stylesheet" href="../../../css/styles.css">
+    <script src="../../../javascripts/script.js"></script>
+</head>
+
+<body>
+    <h2>Stats Section</h2>
+    <a class="aoea" href="../HOMM1/HOMM1HomePage.html">Heroes of Might and Magic I - Home Page</a>
+    <h3 id="Artefacts">Artefacts</h3>
+    <a class="aoea" href="#Buildings">Scroll Down to Buildings Stats</a>
+    <a class="aoea" href="#Spells">Scroll Down to Spells Stats</a>
+    <a class="aoea" href="#Units">Scroll Down to Units Stats</a>
+    <div class="statsSearchBars">
+        <!-- <input type="text" id="userCivilizationBuildingInput" onkeyup="filterCivilizationBuilding()"
+            placeholder="Search for Civilization">
+        <input type="text" id="userBuildingInput" onkeyup="aoe2filterBuildings()" placeholder="Search for Building">
+        <input type="text" id="userAgeBuildingInput" onkeyup="aoe2filterAgeBuilding()" placeholder="Search for Age">
+        <input type="text" id="userRequirementsBuildingInput" onkeyup="aoe2filterRequirementsBuilding()"
+            placeholder="Search for Building Requirements"> -->
+    </div>
+    <br>
+    <table id="hommArtefactsTable" aria-label="Artefacts Stats Table">
+        <thead>
+            <tr>
+                <th class="tableHeadings">Artefact</th>
+                <th class="tableHeadings">Image</th>
+                <th class="tableHeadings">Attack Skill</th>
+                <th class="tableHeadings">Catapult</th>
+                <th class="tableHeadings">Defence Skill</th>
+                <th class="tableHeadings">Knowledge</th>
+                <th class="tableHeadings">Luck</th>
+                <th class="tableHeadings">Morale</th>
+                <th colspan="2" class="tableHeadings">Movement</th>
+                <th class="tableHeadings">Resource</th>
+                <th class="tableHeadings">Spellpower</th>
+            </tr>
+            <tr>
+                <th class="tableHeadings"></th>
+                <th class="tableHeadings"></th>
+                <th class="tableHeadings"></th>
+                <th class="tableHeadings">Fires Twice</th>
+                <th class="tableHeadings"></th>
+                <th class="tableHeadings"></th>
+                <th class="tableHeadings"></th>
+                <th class="tableHeadings"></th>
+                <th class="tableHeadings">Land</th>
+                <th class="tableHeadings">Sea</th>
+                <th class="tableHeadings">Gold</th>
+                <th class="tableHeadings"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Arcane Necklace of Magic</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/ArcaneNecklace.PNG" alt="Arcane Necklace"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Armored Gauntlets of Protection</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/ArmoredGauntlets.PNG" alt="Armored Gauntlets"></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ballista of Quickness</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/Ballista.PNG" alt="Ballista"></td>
+                <td></td>
+                <td>X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Caster's Bracelet of Magic</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/CastersBracelet.PNG" alt="Caster's Bracelet"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Defender's Helm of Protection</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/DefendersHelm.PNG" alt="Defender's Helm"></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Divine Breastplate of Protection</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/DivineBreastplate.PNG" alt="Divine Breastplate Image"></td>
+                <td></td>
+                <td></td>
+                <td>3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Dragon Sword of Dominion</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/DragonSword.PNG" alt="Dragon Sword Image"></td>
+                <td>3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Endless Bag of Gold</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/EndlessBagOfGold.PNG" alt="Endless Bag of Gold Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>750</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Endless Purse of Gold</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/EndlessPurseOfGold.PNG" alt="Endless Purse of Gold Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>500</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Endless Sack of Gold</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/EndlessSackOfGold.PNG" alt="Endless Sack of Gold Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1000</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Fizbin of Misfortune</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/Fizbin.PNG" alt="Fizbin Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>-2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Foremost Scroll of Knowledge</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/ForemostScroll.PNG" alt="Formost Scroll Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Four-Leaf Clover</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/FourLeafClover.PNG" alt="Four-Leaf Clover Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Gambler's Lucky Coin</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/GamblersLuckyCoin.PNG" alt="Gambler's Luck Coin Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Giant Flail of Dominion</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/GiantFlail.PNG" alt="Giant Flail Image"></td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Golden Horshoe</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/Horsehoe.PNG" alt="Golden Horsehoe Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Lucky Rabbit's Foot</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/RabbitsFoot.PNG" alt="Rabbit's Foot Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Mage's Ring of Power</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/MagesRing.PNG" alt="Mage's Ring Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Major Scroll of Knowledge</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/MajorScroll.PNG" alt="Major Scroll Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Medal of Courage</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/MedalOfCourage.PNG" alt="Medal of Courage Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Medal of Distinction</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/MedalOfDistinction.PNG" alt="Medal of Distinction Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Medal of Honor</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/MedalOfHonor.PNG" alt="Medal of Honor Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Medal of Valor</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/MedalOfValor.PNG" alt="Medal of Valor Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Minor Scroll of Knowledge</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/MinorScroll.PNG" alt="Minor Scroll Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Nomad Boots of Mobility</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/NomadBoots.PNG" alt="Nomad Boots Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Increases</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Power Axe of Dominion</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/PowerAxe.PNG" alt="Power Axe of Dominion Image"></td>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Sailor's Astrolabeof Mobility</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/Astrolabe.PNG" alt="Astrolabe Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Increases</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Stealth Shield of Protection</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/StealthShield.PNG" alt="Stealth Shield Image"></td>
+                <td></td>
+                <td></td>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Superior Scroll of Knowledge</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/SuperiorScroll.PNG" alt="Superior Scroll Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Thunder Mace of Dominion</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/ThunderMace.PNG" alt="Thunder Mace Image"></td>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Traveler's Boots of Mobility</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/TravelersBoots.PNG" alt="Traveler's Boots Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Increases</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>True Compass of Mobility</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/Compass.PNG" alt="Compass Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Increases</td>
+                <td>Increases</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ultimate Book of Knowledge</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/UltimateBook.PNG" alt="Ultimate Book Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>12</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ultimate Cloak of Protection</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/UltimateCloak.PNG" alt="Ultimate Cloak Image"></td>
+                <td></td>
+                <td></td>
+                <td>12</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ultimate Sword of Dominion</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/UltimateSword.PNG" alt="Ultimate Sword Image"></td>
+                <td>12</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Ultimate Wand of Magic</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/UltimateWand.PNG" alt="Ultimate Wand Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>Witch's Broach of Magic</td>
+                <td><img src="../../../css/Images/HOMMImages/HOMM1/Artefacts/WitchesBroach.PNG" alt="Witch's Broach Image"></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>3</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
