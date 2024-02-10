@@ -309,9 +309,10 @@ thead{
 }
 
 .aoeObjectivesList{
-    border-bottom: 0.2em solid rgb(47, 39, 39);
+    border-bottom: 0.2em solid rgb(108, 91, 91);
     border-radius: 1em;
-    border-top: 0.2em solid rgb(47, 39, 39);
+    border-top: 0.2em solid rgb(108, 91, 91);
+    margin-bottom: 0.5%;
     text-align: left;
     width: 100%;
 }
