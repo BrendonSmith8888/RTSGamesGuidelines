@@ -9,5 +9,598 @@
     <link rel="stylesheet" href="../../../css/styles.css">
     <script src="../../../javascripts/script.js"></script>
 </head>
-    <p>Still under Development</p>
+<h2>Stats Section</h2>
+<a class="aoea" href="../AgeOfEmpires3/AgeOfEmpires3HomePage.html">Age of Empires 3 - Home Page</a>
+<h3 id="Buildings">Buildings</h3>
+<a class="aoea" href="#Units">Scroll Down to Units Stats</a>
+<a class="aoea" href="#TechnologyHeader">Scroll Down to Technology Stats</a>
+<div class="statsSearchBars">
+    <input type="text" id="userCivilizationBuildingInput" onkeyup="filterCivilizationBuilding()"
+        placeholder="Search for Civilization">
+    <input type="text" id="userBuildingInput" onkeyup="aoe3filterBuildings()" placeholder="Search for Building">
+    <input type="text" id="userAgeBuildingInput" onkeyup="aoe3filterAgeBuilding()" placeholder="Search for Age">
+    <input type="text" id="userRequirementsBuildingInput" onkeyup="aoe3filterRequirementsBuilding()"
+        placeholder="Search for Building Requirements">
+</div>
+<br>
+<table id="aoebuildingsTable" aria-label="Buildings Stats Table for each Faction">
+    <thead>
+        <tr>
+            <th class="aoeTableHeadings">Civilization</th>
+            <th class="aoeTableHeadings">Building</th>
+            <th class="aoeTableHeadings">Image</th>
+            <th colspan="2" class="aoeTableHeadings">Age</th>
+            <th class="aoeTableHeadings">Hit Points</th>
+            <th colspan="2" class="aoeTableHeadings">Armor</th>
+            <th colspan="2" class="aoeTableHeadings">Attack Strength</th>
+            <th class="aoeTableHeadings">Garrison</th>
+            <th class="aoeTableHeadings">Population</th>
+            <th class="aoeTableHeadings">Range</th>
+            <th colspan="3" class="aoeTableHeadings">Cost</th>
+            <th class="aoeTableHeadings">Requirements</th>
+            <th class="aoeTableHeadings">Resources</th>
+        </tr>
+        <tr>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings">Normal</th>
+            <th class="aoeTableHeadings">Pierced</th>
+            <th class="aoeTableHeadings">Attack</th>
+            <th class="aoeTableHeadings">No. of Shots</th>
+            <th class="aoeTableHeadings">Max</th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings">Gold</th>
+            <th class="aoeTableHeadings">Stone</th>
+            <th class="aoeTableHeadings">Wood</th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings">Food</th>
+        </tr>
+        <!-- Celt Buildings -->
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Town Center</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/TownCenter.PNG" alt="Town Center Image"></td>
+            <td class="Celts">Dark</td>
+            <td class="Celts">Castle</td>
+            <td class="Celts">2400+240</td>
+            <td class="Celts">3+3+1</td>
+            <td class="Celts">5+3+1</td>
+            <td class="Celts">5+3</td>
+            <td class="Celts">-</td>
+            <td class="Celts">15</td>
+            <td class="Celts">5</td>
+            <td class="Celts">6</td>
+            <td class="Celts">-</td>
+            <td class="Celts">100</td>
+            <td class="Celts">275</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">House</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/House.PNG" alt="House Image"></td>
+            <td class="Celts">Dark</td>
+            <td class="Celts">-</td>
+            <td class="Celts">550+350+90</td>
+            <td class="Celts">-2+5+1</td>
+            <td class="Celts">7+3+1</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">5</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">25</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Mill</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Mill.PNG" alt="Mill Image"></td>
+            <td class="Celts">Dark</td>
+            <td class="Celts">-</td>
+            <td class="Celts">600+400+100</td>
+            <td class="Celts">0+3+1</td>
+            <td class="Celts">7+3+1</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">100</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Mining Camp</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/MiningCamp.PNG" alt="Mining Camp Image"></td>
+            <td class="Celts">Dark</td>
+            <td class="Celts">-</td>
+            <td class="Celts">600+400+100</td>
+            <td class="Celts">0+3+1</td>
+            <td class="Celts">7+3+1</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">100</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Lumber Camp</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/LumberCamp.PNG" alt="Lumber Camp Image"></td>
+            <td class="Celts">Dark</td>
+            <td class="Celts">-</td>
+            <td class="Celts">600+400+100</td>
+            <td class="Celts">0+3+1</td>
+            <td class="Celts">7+3+1</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">100</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Dock</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Dock.PNG" alt="Dock Image"></td>
+            <td class="Celts">Dark</td>
+            <td class="Celts">-</td>
+            <td class="Celts">1800+180</td>
+            <td class="Celts">0+3+1</td>
+            <td class="Celts">7+3+1</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">10</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">150</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Fish Trap</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/FishTrap.PNG" alt="Fish Trap Image"></td>
+            <td class="Celts">Feudal</td>
+            <td class="Celts">-</td>
+            <td class="Celts">50</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">100</td>
+            <td class="Celts">Docks</td>
+            <td class="Celts">715</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Farm</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Farm.PNG" alt="Farm Image"></td>
+            <td class="Celts">Dark</td>
+            <td class="Celts">-</td>
+            <td class="Celts">480</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">60</td>
+            <td class="Celts">Mill</td>
+            <td class="Celts">175+75+125</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Blacksmith</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Blacksmith.PNG" alt="Blacksmith Image"></td>
+            <td class="Celts">Feudal</td>
+            <td class="Celts">-</td>
+            <td class="Celts">1800+300+219</td>
+            <td class="Celts">0+3+1</td>
+            <td class="Celts">7+3+1</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">150</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Market</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Market.PNG" alt="Market Image"></td>
+            <td class="Celts">Feudal</td>
+            <td class="Celts">-</td>
+            <td class="Celts">1800+300+219</td>
+            <td class="Celts">1+2+1</td>
+            <td class="Celts">8+2+1</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">10</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">175</td>
+            <td class="Celts">Mill</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Monastery</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Monastery.PNG" alt="Monastery Image"></td>
+            <td class="Celts">Castle</td>
+            <td class="Celts">-</td>
+            <td class="Celts">2100+210</td>
+            <td class="Celts">0+3+1</td>
+            <td class="Celts">7+3+1</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">10</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">175</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">University</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/University.PNG" alt="University Image"></td>
+            <td class="Celts">Castle</td>
+            <td class="Celts">-</td>
+            <td class="Celts">2100+210</td>
+            <td class="Celts">2+1+1</td>
+            <td class="Celts">9+1+1</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">200</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Wonder</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Wonder.PNG" alt="Wonder Image"></td>
+            <td class="Celts">Imperial</td>
+            <td class="Celts">-</td>
+            <td class="Celts">4800+480</td>
+            <td class="Celts">3+1</td>
+            <td class="Celts">10+1</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">1000</td>
+            <td class="Celts">1000</td>
+            <td class="Celts">1000</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Barracks</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Barracks.PNG" alt="Barracks Image"></td>
+            <td class="Celts">Dark</td>
+            <td class="Celts">-</td>
+            <td class="Celts">1200+900+210</td>
+            <td class="Celts">0+3+1</td>
+            <td class="Celts">7+3+1</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">10</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">175</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Archery Range</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/ArcheryRange.PNG" alt="Archery Range Image"></td>
+            <td class="Celts">Feudal</td>
+            <td class="Celts">-</td>
+            <td class="Celts">1500+600+210</td>
+            <td class="Celts">1+2+1</td>
+            <td class="Celts">8+2+1</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">10</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">175</td>
+            <td class="Celts">Barracks</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Stables</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Stables.PNG" alt="Stables Image"></td>
+            <td class="Celts">Feudal</td>
+            <td class="Celts">-</td>
+            <td class="Celts">1500+600+210</td>
+            <td class="Celts">1+2+1</td>
+            <td class="Celts">8+2+1</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">10</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">175</td>
+            <td class="Celts">Barracks</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Siege Workshop</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/SiegeWorkshop.PNG" alt="Siege Workshop Image"></td>
+            <td class="Celts">Castle</td>
+            <td class="Celts">-</td>
+            <td class="Celts">1500+600+210</td>
+            <td class="Celts">1+2+1</td>
+            <td class="Celts">8+2+1</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">10</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">200</td>
+            <td class="Celts">Blacksmith</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Outpost</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Outpost.PNG" alt="Outpost Image"></td>
+            <td class="Celts">Dark</td>
+            <td class="Celts">-</td>
+            <td class="Celts">500+50</td>
+            <td class="Celts">0+1</td>
+            <td class="Celts">0+1</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">5</td>
+            <td class="Celts">25</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Palisade Wall</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/PalisadeWall.PNG" alt="Palisade Wall Image"></td>
+            <td class="Celts">Dark</td>
+            <td class="Celts">-</td>
+            <td class="Celts">150+100</td>
+            <td class="Celts">2</td>
+            <td class="Celts">5</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">2</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Stone Wall</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/StoneWall.PNG" alt="Stone Wall Image"></td>
+            <td class="Celts">Feudal</td>
+            <td class="Celts">-</td>
+            <td class="Celts">1080+720</td>
+            <td class="Celts">8</td>
+            <td class="Celts">10</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">5</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Fortified Wall</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/FortifiedWall.PNG" alt="Fortified Wall Image"></td>
+            <td class="Celts">Castle</td>
+            <td class="Celts">-</td>
+            <td class="Celts">3000</td>
+            <td class="Celts">12</td>
+            <td class="Celts">12</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">5</td>
+            <td class="Celts">-</td>
+            <td class="Celts">Stone Wall</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Watch Tower</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/WatchTower.PNG" alt="Watch Tower Image"></td>
+            <td class="Celts">Feudal</td>
+            <td class="Celts">-</td>
+            <td class="Celts">850+170+102</td>
+            <td class="Celts">1+1</td>
+            <td class="Celts">7+1</td>
+            <td class="Celts">5+4</td>
+            <td class="Celts">-</td>
+            <td class="Celts">5</td>
+            <td class="Celts">-</td>
+            <td class="Celts">8+2</td>
+            <td class="Celts">-</td>
+            <td class="Celts">125</td>
+            <td class="Celts">50</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Guard Tower</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/GuardTower.PNG" alt="Guard Tower Image"></td>
+            <td class="Celts">Castle</td>
+            <td class="Celts">-</td>
+            <td class="Celts">1500+150</td>
+            <td class="Celts">2+1</td>
+            <td class="Celts">8+1</td>
+            <td class="Celts">7+5</td>
+            <td class="Celts">-</td>
+            <td class="Celts">5</td>
+            <td class="Celts">-</td>
+            <td class="Celts">8+2</td>
+            <td class="Celts">-</td>
+            <td class="Celts">125</td>
+            <td class="Celts">50</td>
+            <td class="Celts">Watch Tower</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Keep</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Keep.PNG" alt="Keep Image"></td>
+            <td class="Celts">Imperial</td>
+            <td class="Celts">-</td>
+            <td class="Celts">2250+225</td>
+            <td class="Celts">3+1</td>
+            <td class="Celts">9+1</td>
+            <td class="Celts">8+6</td>
+            <td class="Celts">-</td>
+            <td class="Celts">5</td>
+            <td class="Celts">-</td>
+            <td class="Celts">8+2</td>
+            <td class="Celts">-</td>
+            <td class="Celts">125</td>
+            <td class="Celts">50</td>
+            <td class="Celts">Guard Tower</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Castle</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Castle.PNG" alt="Castle Image"></td>
+            <td class="Celts">Castle</td>
+            <td class="Celts">-</td>
+            <td class="Celts">4800+480+1109</td>
+            <td class="Celts">8+1</td>
+            <td class="Celts">11+1</td>
+            <td class="Celts">11+3</td>
+            <td class="Celts">4</td>
+            <td class="Celts">20</td>
+            <td class="Celts">20</td>
+            <td class="Celts">8+2</td>
+            <td class="Celts">-</td>
+            <td class="Celts">650</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Gate</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Gate.PNG" alt="Gate Image"></td>
+            <td class="Celts">Feudal</td>
+            <td class="Celts">-</td>
+            <td class="Celts">1650+1100+1250</td>
+            <td class="Celts">6</td>
+            <td class="Celts">6</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">30</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+        </tr>
+        <tr>
+            <td class="Celts">Celts</td>
+            <td class="Celts">Palisade Gate</td>
+            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/PalisadeGate.PNG" alt="Palisade Gate Image"></td>
+            <td class="Celts">Dark</td>
+            <td class="Celts">-</td>
+            <td class="Celts">240+160</td>
+            <td class="Celts">2</td>
+            <td class="Celts">2</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+            <td class="Celts">30</td>
+            <td class="Celts">-</td>
+            <td class="Celts">-</td>
+        </tr>
+    </thead>
+</table>
 </html>
