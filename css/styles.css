@@ -108,6 +108,8 @@ thead{
     font-weight: bold;
 }
 
+/* AOE3 Civilizations*/
+
 .Babylonian{
     background-color: green;
     font-family: Arial, Helvetica, sans-serif;
@@ -152,6 +154,8 @@ thead{
     padding: 15px 0;
     text-align: center;
 }
+
+/* AOE2 Civilizations*/
 
 .Celts{
     background-color: green;
@@ -206,6 +210,46 @@ thead{
 .Teutons{
     background-color: yellow;
     color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9vw;
+    font-weight: bold;
+    padding: 15px 0;
+    text-align: center;
+}
+
+/* AOE3 Civilizations*/
+
+.Aztecs{
+    background-color: red;
+    color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9vw;
+    font-weight: bold;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.British{
+    background-color: blue;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9vw;
+    font-weight: bold;
+    padding: 15px 0;
+    text-align: center;
+}
+.Chinese{
+    background-color: yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9vw;
+    font-weight: bold;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.KoSJ{
+    background-color: #002060;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9vw;
     font-weight: bold;

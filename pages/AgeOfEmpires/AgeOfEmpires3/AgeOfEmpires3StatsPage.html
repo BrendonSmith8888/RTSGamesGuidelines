@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Age of Empires III Stats Page</title>
     <link rel="stylesheet" href="../../../css/styles.css">
-    <script src="../../../javascripts/script.js"></script>
+    <script src="../../../scripts/script.js"></script>
 </head>
 <h2>Stats Section</h2>
 <a class="aoea" href="../AgeOfEmpires3/AgeOfEmpires3HomePage.html">Age of Empires 3 - Home Page</a>
@@ -19,8 +19,8 @@
         placeholder="Search for Civilization">
     <input type="text" id="userBuildingInput" onkeyup="aoe3filterBuildings()" placeholder="Search for Building">
     <input type="text" id="userAgeBuildingInput" onkeyup="aoe3filterAgeBuilding()" placeholder="Search for Age">
-    <input type="text" id="userRequirementsBuildingInput" onkeyup="aoe3filterRequirementsBuilding()"
-        placeholder="Search for Building Requirements">
+    <!-- <input type="text" id="userRequirementsBuildingInput" onkeyup="aoe3filterRequirementsBuilding()"
+        placeholder="Search for Building Requirements"> -->
 </div>
 <br>
 <table id="aoebuildingsTable" aria-label="Buildings Stats Table for each Faction">
@@ -29,16 +29,15 @@
             <th class="aoeTableHeadings">Civilization</th>
             <th class="aoeTableHeadings">Building</th>
             <th class="aoeTableHeadings">Image</th>
-            <th colspan="2" class="aoeTableHeadings">Age</th>
+            <th class="aoeTableHeadings">Age</th>
             <th class="aoeTableHeadings">Hit Points</th>
-            <th colspan="2" class="aoeTableHeadings">Armor</th>
-            <th colspan="2" class="aoeTableHeadings">Attack Strength</th>
-            <th class="aoeTableHeadings">Garrison</th>
+            <th class="aoeTableHeadings">Resistance</th>
+            <th class="aoeTableHeadings" colspan="4">Anti Ship Attack</th>
+            <th class="aoeTableHeadings" colspan="9">Bombard Attack</th>
+            <th class="aoeTableHeadings" colspan="7">Ranged Attack</th>
+            <th class="aoeTableHeadings" colspan="3">Cost</th>
             <th class="aoeTableHeadings">Population</th>
-            <th class="aoeTableHeadings">Range</th>
-            <th colspan="3" class="aoeTableHeadings">Cost</th>
-            <th class="aoeTableHeadings">Requirements</th>
-            <th class="aoeTableHeadings">Resources</th>
+            <th class="aoeTableHeadings" colspan="2">Limit</th>
         </tr>
         <tr>
             <th class="aoeTableHeadings"></th>
@@ -46,561 +45,2272 @@
             <th class="aoeTableHeadings"></th>
             <th class="aoeTableHeadings"></th>
             <th class="aoeTableHeadings"></th>
-            <th class="aoeTableHeadings"></th>
-            <th class="aoeTableHeadings">Normal</th>
-            <th class="aoeTableHeadings">Pierced</th>
-            <th class="aoeTableHeadings">Attack</th>
-            <th class="aoeTableHeadings">No. of Shots</th>
-            <th class="aoeTableHeadings">Max</th>
-            <th class="aoeTableHeadings"></th>
-            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings">Damage</th>
+            <th class="aoeTableHeadings">Damage</th>
+            <th class="aoeTableHeadings">Range</th>
+            <th class="aoeTableHeadings">Rate of Fire</th>
+            <th class="aoeTableHeadings">Bonus Damage</th>
+            <th class="aoeTableHeadings">Damage</th>
+            <th class="aoeTableHeadings">Area</th>
+            <th class="aoeTableHeadings">Range</th>
+            <th class="aoeTableHeadings">Rate of Fire</th>
+            <th class="aoeTableHeadings" colspan="5">Bonus vs</th>
+            <th class="aoeTableHeadings">Damage</th>
+            <th class="aoeTableHeadings">Range</th>
+            <th class="aoeTableHeadings">Rate of Fire</th>
+            <th class="aoeTableHeadings" colspan="4">Bonus Damage</th>
+            <th class="aoeTableHeadings">Food</th>
             <th class="aoeTableHeadings">Gold</th>
-            <th class="aoeTableHeadings">Stone</th>
             <th class="aoeTableHeadings">Wood</th>
             <th class="aoeTableHeadings"></th>
-            <th class="aoeTableHeadings">Food</th>
-        </tr>
-        <!-- Aztec Buildings -->
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Town Center</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/TownCenter.PNG" alt="Town Center Image"></td>
-            <td class="Celts">Dark</td>
-            <td class="Celts">Castle</td>
-            <td class="Celts">2400+240</td>
-            <td class="Celts">3+3+1</td>
-            <td class="Celts">5+3+1</td>
-            <td class="Celts">5+3</td>
-            <td class="Celts">-</td>
-            <td class="Celts">15</td>
-            <td class="Celts">5</td>
-            <td class="Celts">6</td>
-            <td class="Celts">-</td>
-            <td class="Celts">100</td>
-            <td class="Celts">275</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
+            <th class="aoeTableHeadings" colspan="2">No. of</th>
         </tr>
         <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">House</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/House.PNG" alt="House Image"></td>
-            <td class="Celts">Dark</td>
-            <td class="Celts">-</td>
-            <td class="Celts">550+350+90</td>
-            <td class="Celts">-2+5+1</td>
-            <td class="Celts">7+3+1</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">5</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">25</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Mill</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Mill.PNG" alt="Mill Image"></td>
-            <td class="Celts">Dark</td>
-            <td class="Celts">-</td>
-            <td class="Celts">600+400+100</td>
-            <td class="Celts">0+3+1</td>
-            <td class="Celts">7+3+1</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">100</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Mining Camp</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/MiningCamp.PNG" alt="Mining Camp Image"></td>
-            <td class="Celts">Dark</td>
-            <td class="Celts">-</td>
-            <td class="Celts">600+400+100</td>
-            <td class="Celts">0+3+1</td>
-            <td class="Celts">7+3+1</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">100</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Lumber Camp</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/LumberCamp.PNG" alt="Lumber Camp Image"></td>
-            <td class="Celts">Dark</td>
-            <td class="Celts">-</td>
-            <td class="Celts">600+400+100</td>
-            <td class="Celts">0+3+1</td>
-            <td class="Celts">7+3+1</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">100</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Dock</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Dock.PNG" alt="Dock Image"></td>
-            <td class="Celts">Dark</td>
-            <td class="Celts">-</td>
-            <td class="Celts">1800+180</td>
-            <td class="Celts">0+3+1</td>
-            <td class="Celts">7+3+1</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">10</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">150</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Fish Trap</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/FishTrap.PNG" alt="Fish Trap Image"></td>
-            <td class="Celts">Feudal</td>
-            <td class="Celts">-</td>
-            <td class="Celts">50</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">100</td>
-            <td class="Celts">Docks</td>
-            <td class="Celts">715</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Farm</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Farm.PNG" alt="Farm Image"></td>
-            <td class="Celts">Dark</td>
-            <td class="Celts">-</td>
-            <td class="Celts">480</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">60</td>
-            <td class="Celts">Mill</td>
-            <td class="Celts">175+75+125</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Blacksmith</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Blacksmith.PNG" alt="Blacksmith Image"></td>
-            <td class="Celts">Feudal</td>
-            <td class="Celts">-</td>
-            <td class="Celts">1800+300+219</td>
-            <td class="Celts">0+3+1</td>
-            <td class="Celts">7+3+1</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">150</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Market</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Market.PNG" alt="Market Image"></td>
-            <td class="Celts">Feudal</td>
-            <td class="Celts">-</td>
-            <td class="Celts">1800+300+219</td>
-            <td class="Celts">1+2+1</td>
-            <td class="Celts">8+2+1</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">10</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">175</td>
-            <td class="Celts">Mill</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Monastery</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Monastery.PNG" alt="Monastery Image"></td>
-            <td class="Celts">Castle</td>
-            <td class="Celts">-</td>
-            <td class="Celts">2100+210</td>
-            <td class="Celts">0+3+1</td>
-            <td class="Celts">7+3+1</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">10</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">175</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">University</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/University.PNG" alt="University Image"></td>
-            <td class="Celts">Castle</td>
-            <td class="Celts">-</td>
-            <td class="Celts">2100+210</td>
-            <td class="Celts">2+1+1</td>
-            <td class="Celts">9+1+1</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">200</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Wonder</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Wonder.PNG" alt="Wonder Image"></td>
-            <td class="Celts">Imperial</td>
-            <td class="Celts">-</td>
-            <td class="Celts">4800+480</td>
-            <td class="Celts">3+1</td>
-            <td class="Celts">10+1</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">1000</td>
-            <td class="Celts">1000</td>
-            <td class="Celts">1000</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Barracks</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Barracks.PNG" alt="Barracks Image"></td>
-            <td class="Celts">Dark</td>
-            <td class="Celts">-</td>
-            <td class="Celts">1200+900+210</td>
-            <td class="Celts">0+3+1</td>
-            <td class="Celts">7+3+1</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">10</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">175</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Archery Range</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/ArcheryRange.PNG" alt="Archery Range Image"></td>
-            <td class="Celts">Feudal</td>
-            <td class="Celts">-</td>
-            <td class="Celts">1500+600+210</td>
-            <td class="Celts">1+2+1</td>
-            <td class="Celts">8+2+1</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">10</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">175</td>
-            <td class="Celts">Barracks</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Stables</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Stables.PNG" alt="Stables Image"></td>
-            <td class="Celts">Feudal</td>
-            <td class="Celts">-</td>
-            <td class="Celts">1500+600+210</td>
-            <td class="Celts">1+2+1</td>
-            <td class="Celts">8+2+1</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">10</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">175</td>
-            <td class="Celts">Barracks</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Siege Workshop</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/SiegeWorkshop.PNG" alt="Siege Workshop Image"></td>
-            <td class="Celts">Castle</td>
-            <td class="Celts">-</td>
-            <td class="Celts">1500+600+210</td>
-            <td class="Celts">1+2+1</td>
-            <td class="Celts">8+2+1</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">10</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">200</td>
-            <td class="Celts">Blacksmith</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Outpost</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Outpost.PNG" alt="Outpost Image"></td>
-            <td class="Celts">Dark</td>
-            <td class="Celts">-</td>
-            <td class="Celts">500+50</td>
-            <td class="Celts">0+1</td>
-            <td class="Celts">0+1</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">5</td>
-            <td class="Celts">25</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Palisade Wall</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/PalisadeWall.PNG" alt="Palisade Wall Image"></td>
-            <td class="Celts">Dark</td>
-            <td class="Celts">-</td>
-            <td class="Celts">150+100</td>
-            <td class="Celts">2</td>
-            <td class="Celts">5</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">2</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Stone Wall</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/StoneWall.PNG" alt="Stone Wall Image"></td>
-            <td class="Celts">Feudal</td>
-            <td class="Celts">-</td>
-            <td class="Celts">1080+720</td>
-            <td class="Celts">8</td>
-            <td class="Celts">10</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">5</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Fortified Wall</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/FortifiedWall.PNG" alt="Fortified Wall Image"></td>
-            <td class="Celts">Castle</td>
-            <td class="Celts">-</td>
-            <td class="Celts">3000</td>
-            <td class="Celts">12</td>
-            <td class="Celts">12</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">5</td>
-            <td class="Celts">-</td>
-            <td class="Celts">Stone Wall</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Watch Tower</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/WatchTower.PNG" alt="Watch Tower Image"></td>
-            <td class="Celts">Feudal</td>
-            <td class="Celts">-</td>
-            <td class="Celts">850+170+102</td>
-            <td class="Celts">1+1</td>
-            <td class="Celts">7+1</td>
-            <td class="Celts">5+4</td>
-            <td class="Celts">-</td>
-            <td class="Celts">5</td>
-            <td class="Celts">-</td>
-            <td class="Celts">8+2</td>
-            <td class="Celts">-</td>
-            <td class="Celts">125</td>
-            <td class="Celts">50</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Guard Tower</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/GuardTower.PNG" alt="Guard Tower Image"></td>
-            <td class="Celts">Castle</td>
-            <td class="Celts">-</td>
-            <td class="Celts">1500+150</td>
-            <td class="Celts">2+1</td>
-            <td class="Celts">8+1</td>
-            <td class="Celts">7+5</td>
-            <td class="Celts">-</td>
-            <td class="Celts">5</td>
-            <td class="Celts">-</td>
-            <td class="Celts">8+2</td>
-            <td class="Celts">-</td>
-            <td class="Celts">125</td>
-            <td class="Celts">50</td>
-            <td class="Celts">Watch Tower</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Keep</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Keep.PNG" alt="Keep Image"></td>
-            <td class="Celts">Imperial</td>
-            <td class="Celts">-</td>
-            <td class="Celts">2250+225</td>
-            <td class="Celts">3+1</td>
-            <td class="Celts">9+1</td>
-            <td class="Celts">8+6</td>
-            <td class="Celts">-</td>
-            <td class="Celts">5</td>
-            <td class="Celts">-</td>
-            <td class="Celts">8+2</td>
-            <td class="Celts">-</td>
-            <td class="Celts">125</td>
-            <td class="Celts">50</td>
-            <td class="Celts">Guard Tower</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Castle</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Castle.PNG" alt="Castle Image"></td>
-            <td class="Celts">Castle</td>
-            <td class="Celts">-</td>
-            <td class="Celts">4800+480+1109</td>
-            <td class="Celts">8+1</td>
-            <td class="Celts">11+1</td>
-            <td class="Celts">11+3</td>
-            <td class="Celts">4</td>
-            <td class="Celts">20</td>
-            <td class="Celts">20</td>
-            <td class="Celts">8+2</td>
-            <td class="Celts">-</td>
-            <td class="Celts">650</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Gate</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/Gate.PNG" alt="Gate Image"></td>
-            <td class="Celts">Feudal</td>
-            <td class="Celts">-</td>
-            <td class="Celts">1650+1100+1250</td>
-            <td class="Celts">6</td>
-            <td class="Celts">6</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">30</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-        </tr>
-        <tr>
-            <td class="Celts">Celts</td>
-            <td class="Celts">Palisade Gate</td>
-            <td class="Celts"><img src="../../../css/Images/AgeOfEmpiresImages/AOE2Images/Buildings/PalisadeGate.PNG" alt="Palisade Gate Image"></td>
-            <td class="Celts">Dark</td>
-            <td class="Celts">-</td>
-            <td class="Celts">240+160</td>
-            <td class="Celts">2</td>
-            <td class="Celts">2</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
-            <td class="Celts">30</td>
-            <td class="Celts">-</td>
-            <td class="Celts">-</td>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings">Siege</th>
+            <th class="aoeTableHeadings">Siege</th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings">Siege Unit</th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings">Artillery</th>
+            <th class="aoeTableHeadings">Cavalry</th>
+            <th class="aoeTableHeadings">Shock Infantry</th>
+            <th class="aoeTableHeadings">Siege Unit</th>
+            <th class="aoeTableHeadings">Villager</th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings">Cavalry</th>
+            <th class="aoeTableHeadings">Shock Infantry</th>
+            <th class="aoeTableHeadings">Siege Unit</th>
+            <th class="aoeTableHeadings">Villager</th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings"></th>
+            <th class="aoeTableHeadings">Buildings</th>
+            <th class="aoeTableHeadings">Gatherers</th>
         </tr>
     </thead>
+    <tbody>
+        <!-- Aztec Buildings -->
+        <tr>
+            <td class="Aztecs">Aztecs</td>
+            <td class="Aztecs">Community Plaza</td>
+            <td class="Aztecs"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/CommunityPlaza.PNG"
+                    alt="Community Plaza Image"></td>
+            <td class="Aztecs">Exploration</td>
+            <td class="Aztecs">1200</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">100</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+        </tr>
+        <tr>
+            <td class="Aztecs">Aztecs</td>
+            <td class="Aztecs">Dock</td>
+            <td class="Aztecs"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Dock.PNG"
+                    alt="Dock Image"></td>
+            <td class="Aztecs">Exploration</td>
+            <td class="Aztecs">2500</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">200</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+        </tr>
+        <tr>
+            <td class="Aztecs">Aztecs</td>
+            <td class="Aztecs">Estate</td>
+            <td class="Aztecs"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Estate.PNG"
+                    alt="Estate Image"></td>
+            <td class="Aztecs">Fortress</td>
+            <td class="Aztecs">3500</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">600</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">10</td>
+        </tr>
+        <tr>
+            <td class="Aztecs">Aztecs</td>
+            <td class="Aztecs">Farm</td>
+            <td class="Aztecs"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Farm.PNG"
+                    alt="Farm Image"></td>
+            <td class="Aztecs">Exploration</td>
+            <td class="Aztecs">2500</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">400</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">10</td>
+        </tr>
+        <tr>
+            <td class="Aztecs">Aztecs</td>
+            <td class="Aztecs">House</td>
+            <td class="Aztecs"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/House.PNG"
+                    alt="House Image"></td>
+            <td class="Aztecs">Exploration</td>
+            <td class="Aztecs">1200</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">100</td>
+            <td class="Aztecs">10</td>
+            <td class="Aztecs">20</td>
+            <td class="Aztecs">-</td>
+        </tr>
+        <tr>
+            <td class="Aztecs">Aztecs</td>
+            <td class="Aztecs">Market</td>
+            <td class="Aztecs"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Market.PNG"
+                    alt="Market Image"></td>
+            <td class="Aztecs">Exploration</td>
+            <td class="Aztecs">2000</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">100</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+        </tr>
+        <tr>
+            <td class="Aztecs">Aztecs</td>
+            <td class="Aztecs">Native Embassy</td>
+            <td class="Aztecs"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/NativeEmbassy.PNG"
+                    alt="Native Embassy Image"></td>
+            <td class="Aztecs">Exploration</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">100</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+        </tr>
+        <tr>
+            <td class="Aztecs">Aztecs</td>
+            <td class="Aztecs">Nobles' Hut</td>
+            <td class="Aztecs"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/NoblesHut.PNG"
+                    alt="Nobles' Hut Image"></td>
+            <td class="Aztecs">Fortress</td>
+            <td class="Aztecs">3000+300</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">110</td>
+            <td class="Aztecs">40</td>
+            <td class="Aztecs">3</td>
+            <td class="Aztecs">0.5</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">49</td>
+            <td class="Aztecs">24</td>
+            <td class="Aztecs">3</td>
+            <td class="Aztecs">1.5</td>
+            <td class="Aztecs">1.3</td>
+            <td class="Aztecs">0.5</td>
+            <td class="Aztecs">0.25</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">100</td>
+            <td class="Aztecs">200</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+        </tr>
+        <tr>
+            <td class="Aztecs">Aztecs</td>
+            <td class="Aztecs">Town Center</td>
+            <td class="Aztecs"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/TownCenter.PNG"
+                    alt="Town Center Image"></td>
+            <td class="Aztecs">Exploration</td>
+            <td class="Aztecs">6500</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">75</td>
+            <td class="Aztecs">40</td>
+            <td class="Aztecs">3</td>
+            <td class="Aztecs">0.5</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">500</td>
+            <td class="Aztecs">10</td>
+            <td class="Aztecs">1</td>
+            <td class="Aztecs">-</td>
+        </tr>
+        <tr>
+            <td class="Aztecs">Aztecs</td>
+            <td class="Aztecs">Trading Post</td>
+            <td class="Aztecs"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/TradingPost.PNG"
+                    alt="Trading Post Image"></td>
+            <td class="Aztecs">Exploration</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">200</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+        </tr>
+        <tr>
+            <td class="Aztecs">Aztecs</td>
+            <td class="Aztecs">Wall</td>
+            <td class="Aztecs"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Wall.PNG"
+                    alt="Wall Image"></td>
+            <td class="Aztecs">Exploration</td>
+            <td class="Aztecs">1000+6500</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">6</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+        </tr>
+        <tr>
+            <td class="Aztecs">Aztecs</td>
+            <td class="Aztecs">War Hut</td>
+            <td class="Aztecs"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/WarHut.PNG"
+                    alt="War Hut Image"></td>
+            <td class="Aztecs">Exploration</td>
+            <td class="Aztecs">2000+800</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">100+10</td>
+            <td class="Aztecs">40</td>
+            <td class="Aztecs">3</td>
+            <td class="Aztecs">0.5</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">30+12</td>
+            <td class="Aztecs">24</td>
+            <td class="Aztecs">3</td>
+            <td class="Aztecs">1.5</td>
+            <td class="Aztecs">1.3</td>
+            <td class="Aztecs">0.5</td>
+            <td class="Aztecs">0.25</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">250</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+            <td class="Aztecs">-</td>
+        </tr>
+        <!-- British Buildings -->
+        <tr>
+            <td class="British">British</td>
+            <td class="British">Arsenal</td>
+            <td class="British"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Arsenal.PNG"
+                    alt="Arsenal Image"></td>
+            <td class="British">Fortress</td>
+            <td class="British">3000</td>
+            <td class="British">20%</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">250</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+        </tr>
+        <tr>
+            <td class="British">British</td>
+            <td class="British">Artilary Foundry</td>
+            <td class="British"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/ArtilleryFoundry.PNG"
+                    alt="Artilary Foundry Image"></td>
+            <td class="British">Commerce</td>
+            <td class="British">2500</td>
+            <td class="British">20%</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">250</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+        </tr>
+        <tr>
+            <td class="British">British</td>
+            <td class="British">Barracks</td>
+            <td class="British"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Barracks.PNG"
+                    alt="Barracks Image"></td>
+            <td class="British">Commerce</td>
+            <td class="British">2500</td>
+            <td class="British">20%</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">200</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+        </tr>
+        <tr>
+            <td class="British">British</td>
+            <td class="British">Capitol</td>
+            <td class="British"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Capitol.PNG"
+                    alt="Capitol Image"></td>
+            <td class="British">Imperial</td>
+            <td class="British">5000</td>
+            <td class="British">20%</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">300</td>
+            <td class="British">-</td>
+            <td class="British">1</td>
+            <td class="British">-</td>
+        </tr>
+        <tr>
+            <td class="British">British</td>
+            <td class="British">Church</td>
+            <td class="British"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Church.PNG"
+                    alt="Church Image"></td>
+            <td class="British">Commerce</td>
+            <td class="British">1500</td>
+            <td class="British">20%</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">150</td>
+            <td class="British">-</td>
+            <td class="British">1</td>
+            <td class="British">-</td>
+        </tr>
+        <tr>
+            <td class="British">British</td>
+            <td class="British">Dock</td>
+            <td class="British"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Dock.PNG"
+                    alt="Dock Image"></td>
+            <td class="British">Exploration</td>
+            <td class="British">2500</td>
+            <td class="British">20%</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">200</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+        </tr>
+        <tr>
+            <td class="British">British</td>
+            <td class="British">Estate</td>
+            <td class="British"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Estate.PNG"
+                    alt="Estate Image"></td>
+            <td class="British">Fortress</td>
+            <td class="British">3500</td>
+            <td class="British">20%</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">600</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">10</td>
+        </tr>
+        <tr>
+            <td class="British">British</td>
+            <td class="British">Factory</td>
+            <td class="British"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Factory.PNG"
+                    alt="Factory Image"></td>
+            <td class="British">Industrial</td>
+            <td class="British">5000</td>
+            <td class="British">20%</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">400</td>
+            <td class="British">200</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+        </tr>
+        <tr>
+            <td class="British">British</td>
+            <td class="British">Fort</td>
+            <td class="British"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Fort.PNG"
+                    alt="Fort Image"></td>
+            <td class="British">Fortress</td>
+            <td class="British">9000+4500</td>
+            <td class="British">20%</td>
+            <td class="British">300+150</td>
+            <td class="British">40</td>
+            <td class="British">3</td>
+            <td class="British">0.5</td>
+            <td class="British">150+75</td>
+            <td class="British">3</td>
+            <td class="British">26+6</td>
+            <td class="British">3</td>
+            <td class="British">0.75</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">0.5</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">500</td>
+            <td class="British">600</td>
+            <td class="British">-</td>
+            <td class="British">1</td>
+            <td class="British">-</td>
+        </tr>
+        <tr>
+            <td class="British">British</td>
+            <td class="British">Gate</td>
+            <td class="British"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/"
+                    alt="Gate Image"></td>
+            <td class="British">Commerce</td>
+            <td class="British">1000+6500</td>
+            <td class="British">20%</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">50</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+        </tr>
+        <tr>
+            <td class="British">British</td>
+            <td class="British">Livestock Pen</td>
+            <td class="British"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/LivestockPen.PNG"
+                    alt="Livestock Pen Image"></td>
+            <td class="British">Exploration</td>
+            <td class="British">1200</td>
+            <td class="British">20%</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">150</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">10</td>
+        </tr>
+        <tr>
+            <td class="British">British</td>
+            <td class="British">Manor House</td>
+            <td class="British"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/ManorHouse.PNG"
+                    alt="Manor House Image"></td>
+            <td class="British">Exploration</td>
+            <td class="British">1800</td>
+            <td class="British">20%</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">140</td>
+            <td class="British">10</td>
+            <td class="British">20</td>
+            <td class="British">-</td>
+        </tr>
+        <tr>
+            <td class="British">British</td>
+            <td class="British">Market</td>
+            <td class="British"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Market.PNG"
+                    alt="Market Image"></td>
+            <td class="British">Exploration</td>
+            <td class="British">2000</td>
+            <td class="British">20%</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">100</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+        </tr>
+        <tr>
+            <td class="British">British</td>
+            <td class="British">Mill</td>
+            <td class="British"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Mill.PNG"
+                    alt="Mill Image"></td>
+            <td class="British">Exploration</td>
+            <td class="British">2500</td>
+            <td class="British">20%</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">400</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">10</td>
+        </tr>
+        <tr>
+            <td class="British">British</td>
+            <td class="British">Native Embassy</td>
+            <td class="British"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/NativeEmbassy.PNG"
+                    alt="Native Embassy Image"></td>
+            <td class="British">Exploration</td>
+            <td class="British">2500</td>
+            <td class="British">20%</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">100</td>
+            <td class="British">-</td>
+            <td class="British">3</td>
+            <td class="British">-</td>
+        </tr>
+        <tr>
+            <td class="British">British</td>
+            <td class="British">Outpost</td>
+            <td class="British"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Outpost.PNG"
+                    alt="Outpost Image"></td>
+            <td class="British">Exploration</td>
+            <td class="British">2000+1000</td>
+            <td class="British">20%</td>
+            <td class="British">100+100</td>
+            <td class="British">40</td>
+            <td class="British">3</td>
+            <td class="British">0.5</td>
+            <td class="British">60</td>
+            <td class="British">3</td>
+            <td class="British">24</td>
+            <td class="British">3</td>
+            <td class="British">-</td>
+            <td class="British">1.5</td>
+            <td class="British">1.3</td>
+            <td class="British">0.5</td>
+            <td class="British">0.25</td>
+            <td class="British">30+15</td>
+            <td class="British">24</td>
+            <td class="British">3</td>
+            <td class="British">1.5</td>
+            <td class="British">1.3</td>
+            <td class="British">0.5</td>
+            <td class="British">0.25</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">250</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+        </tr>
+        <tr>
+            <td class="British">British</td>
+            <td class="British">Stable</td>
+            <td class="British"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Stable.PNG"
+                    alt="Stable Image"></td>
+            <td class="British">Commerce</td>
+            <td class="British">2500</td>
+            <td class="British">20%</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">200</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+        </tr>
+        <tr>
+            <td class="British">British</td>
+            <td class="British">Tavern</td>
+            <td class="British"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Tavern.PNG"
+                    alt="Tavern Image"></td>
+            <td class="British">Commerce</td>
+            <td class="British">3000</td>
+            <td class="British">20%</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">200</td>
+            <td class="British">-</td>
+            <td class="British">1</td>
+            <td class="British">-</td>
+        </tr>
+        <tr>
+            <td class="British">British</td>
+            <td class="British">Town Center</td>
+            <td class="British"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/TownCenter.PNG"
+                    alt="Town Center Image"></td>
+            <td class="British">Exploration</td>
+            <td class="British">6500</td>
+            <td class="British">20%</td>
+            <td class="British">75</td>
+            <td class="British">40</td>
+            <td class="British">3</td>
+            <td class="British">0.5</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">500</td>
+            <td class="British">10</td>
+            <td class="British">3</td>
+            <td class="British">-</td>
+        </tr>
+        <tr>
+            <td class="British">British</td>
+            <td class="British">Trading Post</td>
+            <td class="British"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/TradingPost.PNG"
+                    alt="Trading Post Image"></td>
+            <td class="British">Exploration</td>
+            <td class="British">2500</td>
+            <td class="British">20%</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">200</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+        </tr>
+        <tr>
+            <td class="British">British</td>
+            <td class="British">Wall</td>
+            <td class="British"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Wall.PNG"
+                    alt="Wall Image"></td>
+            <td class="British">Exploration</td>
+            <td class="British">1000+6500</td>
+            <td class="British">20%</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">10</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+            <td class="British">-</td>
+        </tr>
+        <!-- Chinese Buildings -->
+        <tr>
+            <td class="Chinese">Chinese</td>
+            <td class="Chinese">Castle</td>
+            <td class="Chinese"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Castle.PNG"
+                    alt="Castle Image"></td>
+            <td class="Chinese">Exploration</td>
+            <td class="Chinese">3000+1800</td>
+            <td class="Chinese">20%</td>
+            <td class="Chinese">100+100</td>
+            <td class="Chinese">40</td>
+            <td class="Chinese">3</td>
+            <td class="Chinese">0.5</td>
+            <td class="Chinese">60</td>
+            <td class="Chinese">3</td>
+            <td class="Chinese">24</td>
+            <td class="Chinese">3</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">1.5</td>
+            <td class="Chinese">1.3</td>
+            <td class="Chinese">0.5</td>
+            <td class="Chinese">0.25</td>
+            <td class="Chinese">30+18</td>
+            <td class="Chinese">24</td>
+            <td class="Chinese">3</td>
+            <td class="Chinese">1.5</td>
+            <td class="Chinese">1.3</td>
+            <td class="Chinese">0.5</td>
+            <td class="Chinese">0.25</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">50</td>
+            <td class="Chinese">250</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+        </tr>
+        <tr>
+            <td class="Chinese">Chinese</td>
+            <td class="Chinese">Confucian Academy</td>
+            <td class="Chinese"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/ConfucianAcademy.PNG"
+                    alt="Confucian Academy Image"></td>
+            <td class="Chinese">Exploration</td>
+            <td class="Chinese">5000</td>
+            <td class="Chinese">20%</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">800</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+        </tr>
+        <tr>
+            <td class="Chinese">Chinese</td>
+            <td class="Chinese">Consulate</td>
+            <td class="Chinese"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Consulate.PNG"
+                    alt="Consulate Image"></td>
+            <td class="Chinese">Exploration</td>
+            <td class="Chinese">3500</td>
+            <td class="Chinese">20%</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">200</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">1</td>
+            <td class="Chinese">-</td>
+        </tr>
+        <tr>
+            <td class="Chinese">Chinese</td>
+            <td class="Chinese">Dock</td>
+            <td class="Chinese"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Dock.PNG"
+                    alt="Dock Image"></td>
+            <td class="Chinese">Exploration</td>
+            <td class="Chinese">2500</td>
+            <td class="Chinese">20%</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">200</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+        </tr>
+        <tr>
+            <td class="Chinese">Chinese</td>
+            <td class="Chinese">Gate</td>
+            <td class="Chinese"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/"
+                    alt="Gate Image"></td>
+            <td class="Chinese">Commerce</td>
+            <td class="Chinese">7500</td>
+            <td class="Chinese">20%</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">50</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+        </tr>
+        <tr>
+            <td class="Chinese">Chinese</td>
+            <td class="Chinese">Market</td>
+            <td class="Chinese"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Market.PNG"
+                    alt="Market Image"></td>
+            <td class="Chinese">Exploration</td>
+            <td class="Chinese">2000</td>
+            <td class="Chinese">20%</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">100</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+        </tr>
+        <tr>
+            <td class="Chinese">Chinese</td>
+            <td class="Chinese">Monastery</td>
+            <td class="Chinese"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Monastery.PNG"
+                    alt="Monastery Image"></td>
+            <td class="Chinese">Exploration</td>
+            <td class="Chinese">3000</td>
+            <td class="Chinese">20%</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">225</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">1</td>
+            <td class="Chinese">-</td>
+        </tr>
+        <tr>
+            <td class="Chinese">Chinese</td>
+            <td class="Chinese">Native Embassy</td>
+            <td class="Chinese"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/NativeEmbassy.PNG"
+                    alt="Native Embassy Image"></td>
+            <td class="Chinese">Exploration</td>
+            <td class="Chinese">2500</td>
+            <td class="Chinese">20%</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">100</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">3</td>
+            <td class="Chinese">-</td>
+        </tr>
+        <tr>
+            <td class="Chinese">Chinese</td>
+            <td class="Chinese">Porcelain Tower</td>
+            <td class="Chinese"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/PorcelainTower.PNG"
+                    alt="Porcelain Tower Image"></td>
+            <td class="Chinese">Commerce</td>
+            <td class="Chinese">5000</td>
+            <td class="Chinese">20%</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">800</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+        </tr>
+        <tr>
+            <td class="Chinese">Chinese</td>
+            <td class="Chinese">Rice Paddy</td>
+            <td class="Chinese"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/RicePaddy.PNG"
+                    alt="Rice Paddy Image"></td>
+            <td class="Chinese">Exploration</td>
+            <td class="Chinese">2500</td>
+            <td class="Chinese">20%</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">400</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">10</td>
+        </tr>
+        <tr>
+            <td class="Chinese">Chinese</td>
+            <td class="Chinese">Summer Palace</td>
+            <td class="Chinese"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/SummerPalace.PNG"
+                    alt="Summer Palace Image"></td>
+            <td class="Chinese">Fortress</td>
+            <td class="Chinese">5000</td>
+            <td class="Chinese">20%</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">800</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+        </tr>
+        <tr>
+            <td class="Chinese">Chinese</td>
+            <td class="Chinese">Temple of Heaven</td>
+            <td class="Chinese"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/TempleOfHeaven.PNG"
+                    alt="TEmple of Heaven Image"></td>
+            <td class="Chinese">Industrial</td>
+            <td class="Chinese">5000</td>
+            <td class="Chinese">20%</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">800</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+        </tr>
+        <tr>
+            <td class="Chinese">Chinese</td>
+            <td class="Chinese">Town Center</td>
+            <td class="Chinese"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/TownCenter.PNG"
+                    alt="Town Center Image"></td>
+            <td class="Chinese">Exploration</td>
+            <td class="Chinese">6500</td>
+            <td class="Chinese">20%</td>
+            <td class="Chinese">75</td>
+            <td class="Chinese">40</td>
+            <td class="Chinese">3</td>
+            <td class="Chinese">0.5</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">500</td>
+            <td class="Chinese">10</td>
+            <td class="Chinese">3</td>
+            <td class="Chinese">-</td>
+        </tr>
+        <tr>
+            <td class="Chinese">Chinese</td>
+            <td class="Chinese">Trading Post</td>
+            <td class="Chinese"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/TradingPost2.PNG"
+                    alt="Trading Post Image"></td>
+            <td class="Chinese">Exploration</td>
+            <td class="Chinese">2500</td>
+            <td class="Chinese">20%</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">200</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+        </tr>
+        <tr>
+            <td class="Chinese">Chinese</td>
+            <td class="Chinese">Village</td>
+            <td class="Chinese"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Village.PNG"
+                    alt="Village Image"></td>
+            <td class="Chinese">Exploration</td>
+            <td class="Chinese">2000</td>
+            <td class="Chinese">20%</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">180</td>
+            <td class="Chinese">20</td>
+            <td class="Chinese">7</td>
+            <td class="Chinese">-</td>
+        </tr>
+        <tr>
+            <td class="Chinese">Chinese</td>
+            <td class="Chinese">Wall</td>
+            <td class="Chinese"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Wall.PNG"
+                    alt="Wall Image"></td>
+            <td class="Chinese">Exploration</td>
+            <td class="Chinese">1000+6500</td>
+            <td class="Chinese">20%</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">6</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+        </tr>
+        <tr>
+            <td class="Chinese">Chinese</td>
+            <td class="Chinese">War Academy</td>
+            <td class="Chinese"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/WarAcademy.PNG"
+                    alt="War Academy Image"></td>
+            <td class="Chinese">Commerce</td>
+            <td class="Chinese">2500</td>
+            <td class="Chinese">20%</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">200</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+        </tr>
+        <tr>
+            <td class="Chinese">Chinese</td>
+            <td class="Chinese">White Pagoda</td>
+            <td class="Chinese"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/WhitePagoda.PNG"
+                    alt="White Pagoda Image"></td>
+            <td class="Chinese">Imperial</td>
+            <td class="Chinese">5000</td>
+            <td class="Chinese">20%</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">800</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+            <td class="Chinese">-</td>
+        </tr>
+        <!-- Knights of Saint John Buildings -->
+        <tr>
+            <td class="KoSJ">Knights of Saint John</td>
+            <td class="KoSJ">Artilary Foundry</td>
+            <td class="KoSJ"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/ArtilleryFoundry.PNG"
+                    alt="Artilary Foundry Image"></td>
+            <td class="KoSJ">Commerce</td>
+            <td class="KoSJ">2500</td>
+            <td class="KoSJ">20%</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">250</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+        </tr>
+        <tr>
+            <td class="KoSJ">Knights of Saint John</td>
+            <td class="KoSJ">Barracks</td>
+            <td class="KoSJ"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Barracks.PNG"
+                    alt="Barracks Image"></td>
+            <td class="KoSJ">Commerce</td>
+            <td class="KoSJ">2500</td>
+            <td class="KoSJ">20%</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">200</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+        </tr>
+        <tr>
+            <td class="KoSJ">Knights of Saint John</td>
+            <td class="KoSJ">Church</td>
+            <td class="KoSJ"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Church.PNG"
+                    alt="Church Image"></td>
+            <td class="KoSJ">Commerce</td>
+            <td class="KoSJ">1500</td>
+            <td class="KoSJ">20%</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">150</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">1</td>
+            <td class="KoSJ">-</td>
+        </tr>
+        <tr>
+            <td class="KoSJ">Knights of Saint John</td>
+            <td class="KoSJ">Dock</td>
+            <td class="KoSJ"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Dock.PNG"
+                    alt="Dock Image"></td>
+            <td class="KoSJ">Exploration</td>
+            <td class="KoSJ">2500</td>
+            <td class="KoSJ">20%</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">200</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+        </tr>
+        <tr>
+            <td class="KoSJ">Knights of Saint John</td>
+            <td class="KoSJ">House</td>
+            <td class="KoSJ"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/House.PNG"
+                    alt="House Image"></td>
+            <td class="KoSJ">Exploration</td>
+            <td class="KoSJ">1200</td>
+            <td class="KoSJ">20%</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">100</td>
+            <td class="KoSJ">10</td>
+            <td class="KoSJ">20</td>
+            <td class="KoSJ">-</td>
+        </tr>
+        <tr>
+            <td class="KoSJ">Knights of Saint John</td>
+            <td class="KoSJ">Livestock Pen</td>
+            <td class="KoSJ"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/LivestockPen.PNG"
+                    alt="Livestock Pen Image"></td>
+            <td class="KoSJ">Exploration</td>
+            <td class="KoSJ">1200</td>
+            <td class="KoSJ">20%</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">150</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">10</td>
+        </tr>
+        <tr>
+            <td class="KoSJ">Knights of Saint John</td>
+            <td class="KoSJ">Market</td>
+            <td class="KoSJ"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Market.PNG"
+                    alt="Market Image"></td>
+            <td class="KoSJ">Exploration</td>
+            <td class="KoSJ">2000</td>
+            <td class="KoSJ">20%</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">100</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+        </tr>
+        <tr>
+            <td class="KoSJ">Knights of Saint John</td>
+            <td class="KoSJ">Mill</td>
+            <td class="KoSJ"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Mill.PNG"
+                    alt="Mill Image"></td>
+            <td class="KoSJ">Exploration</td>
+            <td class="KoSJ">2500</td>
+            <td class="KoSJ">20%</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">400</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">10</td>
+        </tr>
+        <tr>
+            <td class="KoSJ">Knights of Saint John</td>
+            <td class="KoSJ">Outpost</td>
+            <td class="KoSJ"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Outpost.PNG"
+                    alt="Outpost Image"></td>
+            <td class="KoSJ">Exploration</td>
+            <td class="KoSJ">2000+1000</td>
+            <td class="KoSJ">20%</td>
+            <td class="KoSJ">100+100</td>
+            <td class="KoSJ">40</td>
+            <td class="KoSJ">3</td>
+            <td class="KoSJ">0.5</td>
+            <td class="KoSJ">60</td>
+            <td class="KoSJ">3</td>
+            <td class="KoSJ">24</td>
+            <td class="KoSJ">3</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">1.5</td>
+            <td class="KoSJ">1.3</td>
+            <td class="KoSJ">0.5</td>
+            <td class="KoSJ">0.25</td>
+            <td class="KoSJ">30+15</td>
+            <td class="KoSJ">24</td>
+            <td class="KoSJ">3</td>
+            <td class="KoSJ">1.5</td>
+            <td class="KoSJ">1.3</td>
+            <td class="KoSJ">0.5</td>
+            <td class="KoSJ">0.25</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">250</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+        </tr>
+        <tr>
+            <td class="KoSJ">Knights of Saint John</td>
+            <td class="KoSJ">Stable</td>
+            <td class="KoSJ"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Stable.PNG"
+                    alt="Stable Image"></td>
+            <td class="KoSJ">Commerce</td>
+            <td class="KoSJ">2500</td>
+            <td class="KoSJ">20%</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">200</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+        </tr>
+        <tr>
+            <td class="KoSJ">Knights of Saint John</td>
+            <td class="KoSJ">Town Center</td>
+            <td class="KoSJ"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/TownCenter.PNG"
+                    alt="Town Center Image"></td>
+            <td class="KoSJ">Exploration</td>
+            <td class="KoSJ">6500</td>
+            <td class="KoSJ">20%</td>
+            <td class="KoSJ">75</td>
+            <td class="KoSJ">40</td>
+            <td class="KoSJ">3</td>
+            <td class="KoSJ">0.5</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">500</td>
+            <td class="KoSJ">10</td>
+            <td class="KoSJ">3</td>
+            <td class="KoSJ">-</td>
+        </tr>
+        <tr>
+            <td class="KoSJ">Knights of Saint John</td>
+            <td class="KoSJ">Wall</td>
+            <td class="KoSJ"><img src="../../../css/Images/AgeOfEmpiresImages/AOE3Images/Buildings/Wall.PNG"
+                    alt="Wall Image"></td>
+            <td class="KoSJ">Exploration</td>
+            <td class="KoSJ">1000+6500</td>
+            <td class="KoSJ">20%</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">10</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+            <td class="KoSJ">-</td>
+        </tr>
+    </tbody>
 </table>
+
 </html>
