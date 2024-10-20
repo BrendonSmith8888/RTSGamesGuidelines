@@ -179,6 +179,66 @@ function aoe3filterBuildings() {
   }
 }
 
+//Search Ceremonies
+
+function filterCivilizationCeremony() {
+  let input, filter, table, tr, td, i;
+  input = document.getElementById("userCivilizationCeremonyInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("aoeceremoniesTable");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
+function aoe3filterAgeCeremony() {
+  let input, filter, table, tr, td, td2, i;
+  input = document.getElementById("userAgeCeremonyInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("aoeceremoniesTable");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[3];
+    td2 = tr[i].getElementsByTagName("td")[4];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1 || td2.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
+function aoe3filterCeremony() {
+  let input, filter, table, tr, td, i;
+  input = document.getElementById("userCeremonyInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("aoeceremoniesTable");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
 // Search Units
 
 function filterCivilizationUnits() {
