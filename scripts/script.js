@@ -179,7 +179,7 @@ function aoe3filterBuildings() {
   }
 }
 
-//Search Ceremonies
+// Search Ceremonies
 
 function filterCivilizationCeremony() {
   let input, filter, table, tr, td, i;
@@ -229,6 +229,65 @@ function aoe3filterCeremony() {
 
   for (i = 0; i < tr.length; i++) {
     td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
+// Search Civilization Bonuses
+function filterCivilizationCivBonus() {
+  let input, filter, table, tr, td, i;
+  input = document.getElementById("userCivilizationCivBonusInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("aoecivBonusTable");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
+// Search Heroes
+function filterCivilizationHeroes() {
+  let input, filter, table, tr, td, i;
+  input = document.getElementById("userCivilizationHeroesInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("aoeheroesTable");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+
+function aoe1filterHero() {
+  let input, filter, table, tr, td, i;
+  input = document.getElementById("userHeroInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("aoeheroesTable");
+  tr = table.getElementsByTagName("tr");
+
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[3];
     if (td) {
       if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
         tr[i].style.display = "";
