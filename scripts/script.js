@@ -608,3 +608,42 @@ function aoe2filterTechnology() {
     }
   }
 }
+
+function dow1loadbuildings() {
+  $.ajax({
+    url: "php/DOW1Buildings.php",
+    method: "GET",
+    dataType: "json",
+    success: function (response) {
+      if (response.status.code === "200") {
+        $("#buildingsTableBody").empty();
+        response.data.forEach((building) => {
+          console.log(building);
+          $("#buildingsTableBody").append(`
+            <tr>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${building.Faction}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${building.Building}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${building.HitPoints}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${building.CostRequisition}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${building.CostPower}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${building.CostOrkSupply}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${building.Limit}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${building.CapInfantry}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${building.CapVehicle}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${building.RequiredBuildings1}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${building.RequiredBuildings2}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${building.RequiredTechnologies}</td>
+            </tr>
+          `);
+        });
+      }
+    },
+    error: function (jqXHR, textStatus, errorThrown) {
+      console.log("AJAX request failed:", textStatus, errorThrown);
+    },
+  });
+}
+
+$(document).ready(function () {
+  dow1loadbuildings();
+});
