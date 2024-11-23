@@ -21,7 +21,9 @@
 		exit;
 	}	
 
-	$query = 'SELECT * FROM buildings';
+	$query = 'SELECT Faction, Building, `Hit Points` as HitPoints,  `Cost Requisition` as CostRequisition,  `Cost Power` as CostPower,
+	`Cost Ork Supply` as CostOrkSupply,  `Limit`, `Cap Infantry` as CapInfantry,  `Cap Vehicle` as CapVehicle,  
+	`Required Buildings 1` as RequiredBuildings1, `Required Buildings 2` as RequiredBuildings2, `Required Technologies` as RequiredTechnologies FROM buildings';
 
 	$result = $conn->query($query);
 	

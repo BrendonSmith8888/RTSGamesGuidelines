@@ -611,7 +611,7 @@ function aoe2filterTechnology() {
 
 function dow1loadbuildings() {
   $.ajax({
-    url: "php/DOW1Buildings.php",
+    url: "../../../php/DOW1Buildings.php",
     method: "GET",
     dataType: "json",
     success: function (response) {
@@ -640,6 +640,7 @@ function dow1loadbuildings() {
     },
     error: function (jqXHR, textStatus, errorThrown) {
       console.log("AJAX request failed:", textStatus, errorThrown);
+      console.log("Response Text:", jqXHR.responseText);
     },
   });
 }
