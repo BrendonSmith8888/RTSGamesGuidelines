@@ -305,26 +305,26 @@ thead{
     width: 90%;
 }
 
-.aoeCPImage{
+.CPImage{
     height: auto;
     width: 100%;
 }
 
-#aoeCPList{
+#CPList{
     align-items: center;
     display: flex;
     flex-direction: column;
     list-style: none;
 }
 
-.aoeCPListItems{
+.CPListItems{
     cursor: pointer;
     list-style: none;
     margin-bottom:5%;
     width: 100%;
 }
 
-.aoeCPListItems:hover{
+.CPListItems:hover{
     transform: scale(1.1);
     transition: 1s; 
 }
