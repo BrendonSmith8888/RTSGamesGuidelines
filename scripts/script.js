@@ -759,7 +759,7 @@ function homm1loadArtefacts(){
         response.data.forEach((homm1) => {
           $("#artefactsTableBody").append(`
             <tr>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Artefact}</td>
+              <td class="text-nowrap d-none d-md-table-cell">${homm1.Artefact}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Attack}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Catapult_Fires_Twice}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Defence}</td>

@@ -28,7 +28,7 @@
 	`Income - Wood` As Income_Wood, Luck,  Morale, `Movement - Sea` as `Movement_Sea`, `Pay Freedom` As Pay_Freedom, Population, 
 	`Required Buildings 1` as `Required_Buildings1`, `Required Buildings 2` as `Required_Buildings2`, `Spells - Level 1` as Spells_L1,
 	`Spells - Level 2` as Spells_L2, `Spells - Level 3` as Spells_L3, `Spells - Level 4` as Spells_L4, `Transports to Different Location` As Transports_to_Different_Location,
-	`Units - Recruitment` As Units_Recruitment FROM buildings ORDER BY Buildings';
+	`Units - Recruitment` As Units_Recruitment FROM buildings ORDER BY Class, Buildings';
 
 	$result = $conn->query($query);
 	
