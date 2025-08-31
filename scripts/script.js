@@ -794,7 +794,7 @@ function homm1loadBuildings(){
             <tr>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Faction}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Class}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Buildings}</td>
+              <td class="align-left text-nowrap d-none d-md-table-cell">${homm1.Buildings}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Cost_Gold}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Cost_Wood}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Cost_Ore}</td>
