@@ -644,99 +644,163 @@ function aoe2filterTechnology() {
 //   // });
 // }
 
-function dow1loadbuildings() {
-  $.ajax({
-    url: "../../../php/DOW1Buildings.php",
-    method: "GET",
-    dataType: "json",
-    success: function (response) {
-      if (response.status.code === "200") {
-        $("#buildingsTableBody").empty();
-        response.data.forEach((building) => {
-          $("#buildingsTableBody").append(`
-            <tr>
-              <td class="text-start text-nowrap">${building.Faction}</td>
-              <td class="text-start text-nowrap">${building.Building}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${building.HitPoints}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${building.CostRequisition}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${building.CostPower}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${building.CostOrkSupply}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${building.Limit}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${building.CapInfantry}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${building.CapVehicle}</td>
-              <td class="text-start text-nowrap">${building.RequiredBuildings1}</td>
-              <td class="text-start text-nowrap">${building.RequiredBuildings2}</td>
-              <td class="text-start text-nowrap">${building.RequiredTechnologies}</td>
-            </tr>
-          `);
-        });
-      }
-    },
-    error: function (jqXHR, textStatus, errorThrown) {
-      console.log("AJAX request failed:", textStatus, errorThrown);
-    },
-  });
-}
+// function dow1loadbuildings() {
+//   $.ajax({
+//     url: "../../../php/DOW1Buildings.php",
+//     method: "GET",
+//     dataType: "json",
+//     success: function (response) {
+//       if (response.status.code === "200") {
+//         $("#buildingsTableBody").empty();
+//         response.data.forEach((building) => {
+//           $("#buildingsTableBody").append(`
+//             <tr>
+//               <td class="text-start text-nowrap">${building.Faction}</td>
+//               <td class="text-start text-nowrap">${building.Building}</td>
+//               <td class="align-middle text-nowrap d-none d-md-table-cell">${building.HitPoints}</td>
+//               <td class="align-middle text-nowrap d-none d-md-table-cell">${building.CostRequisition}</td>
+//               <td class="align-middle text-nowrap d-none d-md-table-cell">${building.CostPower}</td>
+//               <td class="align-middle text-nowrap d-none d-md-table-cell">${building.CostOrkSupply}</td>
+//               <td class="align-middle text-nowrap d-none d-md-table-cell">${building.Limit}</td>
+//               <td class="align-middle text-nowrap d-none d-md-table-cell">${building.CapInfantry}</td>
+//               <td class="align-middle text-nowrap d-none d-md-table-cell">${building.CapVehicle}</td>
+//               <td class="text-start text-nowrap">${building.RequiredBuildings1}</td>
+//               <td class="text-start text-nowrap">${building.RequiredBuildings2}</td>
+//               <td class="text-start text-nowrap">${building.RequiredTechnologies}</td>
+//             </tr>
+//           `);
+//         });
+//       }
+//     },
+//     error: function (jqXHR, textStatus, errorThrown) {
+//       console.log("AJAX request failed:", textStatus, errorThrown);
+//     },
+//   });
+// }
 
-function dow1loadHW() {
-  $.ajax({
-    url: "../../../php/DOW1HW.php",
-    method: "GET",
-    dataType: "json",
-    success: function (response) {
-      if (response.status.code === "200") {
-        $("#heavyweaponsTableBody").empty();
-        response.data.forEach((hw) => {
-          $("#heavyweaponsTableBody").append(`
-            <tr>
-              <td class="text-start text-nowrap">${hw.Faction}</td>
-              <td class="text-start text-nowrap">${hw.HeavyWeapon}</td>
-              <td class="text-start text-nowrap">${hw.Unit1}</td>
-              <td class="text-start text-nowrap">${hw.Unit2}</td>
-              <td class="text-start text-nowrap">${hw.Unit3}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.CostRequisition}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.CostPower}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.DamageMeleeMin}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.DamageMeleeMax}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.DamageRangeMin}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.DamageRangeMax}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.RangeLong}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.RangeMedium}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.RangeShort}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.EffectiveAgainstBuildings}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.EffectiveAgainstHeavyInfantry}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.EffectiveAgainstInfantry}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.EffectiveAgainstMorale}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.EffectiveAgainstVehicles}</td>
-              <td class="text-start text-nowrap">${hw.RequiredBuildings1}</td>
-              <td class="text-start text-nowrap">${hw.RequiredBuildings2}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.RequiredCostOrkSupply}</td>
-              <td class="text-start text-nowrap">${hw.RequiredTechnologies}</td>
-            </tr>
-          `);
-        });
-      }
-    },
-    error: function (jqXHR, textStatus, errorThrown) {
-      console.log("AJAX request failed:", textStatus, errorThrown);
-    },
-  });
-}
-
-$(document).ready(function () {
-  // dow1loadabilities();
-  dow1loadbuildings();
-  dow1loadHW();
-});
+// function dow1loadHW() {
+//   $.ajax({
+//     url: "../../../php/DOW1HW.php",
+//     method: "GET",
+//     dataType: "json",
+//     success: function (response) {
+//       if (response.status.code === "200") {
+//         $("#heavyweaponsTableBody").empty();
+//         response.data.forEach((hw) => {
+//           $("#heavyweaponsTableBody").append(`
+//             <tr>
+//               <td class="text-start text-nowrap">${hw.Faction}</td>
+//               <td class="text-start text-nowrap">${hw.HeavyWeapon}</td>
+//               <td class="text-start text-nowrap">${hw.Unit1}</td>
+//               <td class="text-start text-nowrap">${hw.Unit2}</td>
+//               <td class="text-start text-nowrap">${hw.Unit3}</td>
+//               <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.CostRequisition}</td>
+//               <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.CostPower}</td>
+//               <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.DamageMeleeMin}</td>
+//               <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.DamageMeleeMax}</td>
+//               <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.DamageRangeMin}</td>
+//               <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.DamageRangeMax}</td>
+//               <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.RangeLong}</td>
+//               <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.RangeMedium}</td>
+//               <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.RangeShort}</td>
+//               <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.EffectiveAgainstBuildings}</td>
+//               <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.EffectiveAgainstHeavyInfantry}</td>
+//               <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.EffectiveAgainstInfantry}</td>
+//               <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.EffectiveAgainstMorale}</td>
+//               <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.EffectiveAgainstVehicles}</td>
+//               <td class="text-start text-nowrap">${hw.RequiredBuildings1}</td>
+//               <td class="text-start text-nowrap">${hw.RequiredBuildings2}</td>
+//               <td class="align-middle text-nowrap d-none d-md-table-cell">${hw.RequiredCostOrkSupply}</td>
+//               <td class="text-start text-nowrap">${hw.RequiredTechnologies}</td>
+//             </tr>
+//           `);
+//         });
+//       }
+//     },
+//     error: function (jqXHR, textStatus, errorThrown) {
+//       console.log("AJAX request failed:", textStatus, errorThrown);
+//     },
+//   });
+// }
 
 // $("#abilitiesBtn").click(function () {
 //   dow1loadabilities();
 // });
 
-$("#buildingBtn").click(function () {
-  dow1loadbuildings();
+// $("#buildingBtn").click(function () {
+//   dow1loadbuildings();
+// });
+
+// $("#heavyweaponsBtn").click(function () {
+//   dow1loadHW();
+// });
+
+
+$(document).ready(function () {
+  // dow1loadabilities();
+  // dow1loadbuildings();
+  // dow1loadHW();
+  homm1loadArtefacts();
+  homm1loadBuildings();
+  homm1loadSpells();
+  homm1loadUnits();
 });
 
-$("#heavyweaponsBtn").click(function () {
-  dow1loadHW();
+//HOMM1
+
+function homm1loadArtefacts(){
+   $.ajax({
+    url: "../../../../php/HOMM1Artefacts.php",
+    method: "GET",
+    dataType: "json",
+    success: function (response) {
+      if (response.status.code === "200") {
+        $("#artefactsTableBody").empty();
+        response.data.forEach((homm1) => {
+          $("#artefactsTableBody").append(`
+            <tr>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Artefact}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Attack}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Catapult_Fires_Twice}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Defence}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Knowledge}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Luck}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Morale}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Movement_Land}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Movement_Sea}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Resource_Gold}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Spellpower}</td>
+            </tr>
+          `);
+        });
+      }
+    },
+    error: function (jqXHR, textStatus, errorThrown) {
+      console.log("AJAX request failed:", textStatus, errorThrown);
+    },
+  });
+}
+
+function homm1loadBuildings(){}
+
+function homm1loadSpells(){}
+
+function homm1loadUnits(){}
+
+
+$("#artefactsBtn").click(function () {
+  homm1loadArtefacts();
 });
+
+$("#buildingsBtn").click(function () {
+  homm1loadBuildings();
+});
+
+$("#spellsBtn").click(function () {
+  homm1loadSpells();
+});
+
+$("#unitsBtn").click(function () {
+  homm1loadUnits();
+});
+

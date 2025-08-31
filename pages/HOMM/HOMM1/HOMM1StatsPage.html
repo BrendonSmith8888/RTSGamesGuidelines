@@ -5,28 +5,328 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heroes of Might and Magic I - Stats Page</title>
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="../../../css/styles.css">
-    <script src="../../../javascripts/script.js"></script>
+    <title>Heroes of Might and Magic I - Stats Page</title>
 </head>
 
 <body>
     <h2>Stats Section</h2>
     <a class="aoea" href="../HOMM1/HOMM1HomePage.html">Heroes of Might and Magic I - Home Page</a>
-    <h3 id="Artefacts">Artefacts</h3>
-    <a class="aoea" href="#Buildings">Scroll Down to Buildings Stats</a>
-    <a class="aoea" href="#Spells">Scroll Down to Spells Stats</a>
-    <a class="aoea" href="#Units">Scroll Down to Units Stats</a>
-    <div class="statsSearchBars">
-        <!-- <input type="text" id="userCivilizationBuildingInput" onkeyup="filterCivilizationBuilding()"
-            placeholder="Search for Civilization">
-        <input type="text" id="userBuildingInput" onkeyup="aoe2filterBuildings()" placeholder="Search for Building">
-        <input type="text" id="userAgeBuildingInput" onkeyup="aoe2filterAgeBuilding()" placeholder="Search for Age">
-        <input type="text" id="userRequirementsBuildingInput" onkeyup="aoe2filterRequirementsBuilding()"
-            placeholder="Search for Building Requirements"> -->
-    </div>
-    <br>
-    <table id="hommArtefactsTable" aria-label="Artefacts Stats Table">
+    <section>
+        <div class="appHeader">
+            <div class="row">
+                <div class="col">
+                    <input id="searchInp" class="form-control mb-3" placeholder="search">
+                </div>
+            </div>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="artefactsBtn" data-bs-toggle="tab"
+                        data-bs-target="#artefacts-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                        aria-selected="true">
+                        <i class="fa-solid fa-shield"></i><span class="d-none d-sm-block">Artefacts</span>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="buildingsBtn" data-bs-toggle="tab" data-bs-target="#buildings-tab-pane"
+                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                        <i class="fa fa-building fa-lg fa-fw"></i><span class="d-none d-sm-block">Buildings</span>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="spellsBtn" data-bs-toggle="tab" data-bs-target="#spells-tab-pane"
+                        type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i><span class="d-none d-sm-block">Spells</span>
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="unitsBtn" data-bs-toggle="tab" data-bs-target="#units-tab-pane"
+                        type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+                        <i class="fa-solid fa-people-group"></i><span class="d-none d-sm-block">Units</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div class="tab-content bg-white">
+            <div class="tab-pane show active" id="artefacts-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <table class="table table-hover">
+                    <tbody id="artefactsTableBody">
+                        <tr>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane show active" id="buildings-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <table class="table table-hover">
+                    <tbody id="buildingsTableBody">
+                        <tr>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane show active" id="spells-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <table class="table table-hover">
+                    <tbody id="spellsTableBody">
+                        <tr>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="tab-pane show active" id="units-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">
+                <table class="table table-hover">
+                    <tbody id="unitsTableBody">
+                        <tr>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                            <td class="align-middle text-nowrap d-none d-md-table-cell">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- <table id="hommArtefactsTable" aria-label="Artefacts Stats Table">
         <thead>
             <tr>
                 <th class="tableHeadings">Artefact</th>
@@ -576,7 +876,10 @@
                 <td>3</td>
             </tr>
         </tbody>
-    </table>
+    </table>-->
+    <script src="../../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../scripts/script.js"></script>
 </body>
 
 </html>
