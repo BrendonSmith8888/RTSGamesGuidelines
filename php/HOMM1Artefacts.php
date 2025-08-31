@@ -21,9 +21,9 @@
 		exit;
 	}	
 
-	$query = 'SELECT Artefact, Attack, `Catapult - Fires Twice` as `Catapult_Fires_Twice`,  Defence,  Knowledge,
-	Luck,  Morale, `Movement - Land` as `Movement_Land`,  `Movement - Sea` as `Movement_Sea`,  
-	`Resource - Gold` as `Resource_Gold`, Spellpower FROM artefacts ORDER BY `Artefact`';
+	$query = 'SELECT Artefact as Artefact, Attack As Attack, `Catapult - Fires Twice` as `Catapult_Fires_Twice`,  Defence As Defence,  
+	Knowledge as Knowledge, Luck as Luck,  Morale as Morale, `Movement - Land` as `Movement_Land`,  `Movement - Sea` as `Movement_Sea`,  
+	`Resource - Gold` as `Resource_Gold`, Spellpower as Spellpower FROM artefacts ORDER BY Artefact';
 
 	$result = $conn->query($query);
 	

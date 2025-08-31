@@ -750,7 +750,7 @@ $(document).ready(function () {
 
 function homm1loadArtefacts(){
    $.ajax({
-    url: "../../../../php/HOMM1Artefacts.php",
+    url: "../../../php/HOMM1Artefacts.php",
     method: "GET",
     dataType: "json",
     success: function (response) {
