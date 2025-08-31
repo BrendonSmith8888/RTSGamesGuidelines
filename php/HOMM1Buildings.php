@@ -24,8 +24,8 @@
 	$query = 'SELECT Faction, Class, Buildings,  `Cost - Gold` As Cost_Gold, `Cost - Wood` As Cost_Wood, `Cost - Ore` As Cost_Ore,
 	`Cost - Crystal` As Cost_Crystal, `Cost - Gems` As Cost_Gems, `Cost - Mercury` As Cost_Mercury, `Cost - Sulphur` As Cost_Sulphur,
 	`Reveals Ancient Map` as Reveals_Ancient_Map, Artefacts,  Experience, `Income - Crystal` As Income_Crystal, `Income - Gems` As Income_Gems, 
-	`Income - Gold` As Income_Gold, `Income - Mercury` As Income_Mercury, `Income - Ore` As Income_Ore, `Income - Sulphur` As Income_Sulphur,
-	`Income - Wood` As Income_Wood, Luck,  Morale, `Movement - Sea` as `Movement_Sea`, `Pay Freedom` As Pay_Freedom, Population, 
+	`Income - Gold` As `Income_Gold`, `Income - Mercury` As Income_Mercury, `Income - Ore` As Income_Ore, `Income - Sulphur` As Income_Sulphur,
+	`Income - Wood` As `Income_Wood`, Luck,  Morale, `Movement - Sea` as `Movement_Sea`, `Pay Freedom` As `Pay_Freedom`, Population, `Player Rankings` As Player_Rankings,
 	`Required Buildings 1` as `Required_Buildings1`, `Required Buildings 2` as `Required_Buildings2`, `Spells - Level 1` as Spells_L1,
 	`Spells - Level 2` as Spells_L2, `Spells - Level 3` as Spells_L3, `Spells - Level 4` as Spells_L4, `Transports to Different Location` As Transports_to_Different_Location,
 	`Units - Recruitment` As Units_Recruitment FROM buildings ORDER BY Class, Buildings';

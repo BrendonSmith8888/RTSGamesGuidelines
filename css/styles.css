@@ -43,9 +43,25 @@ th{
     border: 1px solid black;
 }
 
+.thead-font td{
+    background-color: rgb(159, 152, 48);
+    font-size: 1.2vw;
+    position: sticky;
+    top: 0;
+}
 thead{
     background-color: antiquewhite;
     font-size: 0.9vw;
+}
+
+thead td:first-child {
+  left: 0;
+  z-index: 1;
+}
+
+tbody td:first-child {
+  left: 0;
+  position: sticky;
 }
 
 .sectionScrolling{
@@ -403,10 +419,6 @@ thead{
     flex-direction: column;
     text-align: center;
     width:100%;
-}
-
-#hommArtefactsTable{
-    border: 1px solid black;
 }
 
 #hommList{

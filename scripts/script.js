@@ -759,7 +759,7 @@ function homm1loadArtefacts(){
         response.data.forEach((homm1) => {
           $("#artefactsTableBody").append(`
             <tr>
-              <td class="text-nowrap d-none d-md-table-cell">${homm1.Artefact}</td>
+              <td class="align-middle text-start d-none d-md-table-cell">${homm1.Artefact}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Attack}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Catapult_Fires_Twice}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Defence}</td>
@@ -794,7 +794,7 @@ function homm1loadBuildings(){
             <tr>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Faction}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Class}</td>
-              <td class="align-left text-nowrap d-none d-md-table-cell">${homm1.Buildings}</td>
+              <td class="align-middle text-start d-none d-md-table-cell">${homm1.Buildings}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Cost_Gold}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Cost_Wood}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Cost_Ore}</td>
@@ -809,6 +809,7 @@ function homm1loadBuildings(){
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Income_Gems}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Income_Gold}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Income_Mercury}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Income_Ore}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Income_Sulphur}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Income_Wood}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Luck}</td>
@@ -817,14 +818,14 @@ function homm1loadBuildings(){
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Pay_Freedom}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Player_Rankings}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Population}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Required_Buildings1}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Required_Buildings2}</td>
+              <td class="align-middle text-start d-none d-md-table-cell">${homm1.Required_Buildings1}</td>
+              <td class="align-middle text-start d-none d-md-table-cell">${homm1.Required_Buildings2}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Spells_L1}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Spells_L2}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Spells_L3}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Spells_L4}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Transports_to_Different_Location}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Units_Recruitment}</td>
+              <td class="align-middle text-start d-none d-md-table-cell">${homm1.Units_Recruitment}</td>
             </tr>
           `);
         });
@@ -836,7 +837,67 @@ function homm1loadBuildings(){
   });
 }
 
-function homm1loadSpells(){}
+function homm1loadSpells(){
+  $.ajax({
+    url: "../../../php/HOMM1Spells.php",
+    method: "GET",
+    dataType: "json",
+    success: function (response) {
+      if (response.status.code === "200") {
+        $("#spellsTableBody").empty();
+        response.data.forEach((homm1) => {
+          $("#spellsTableBody").append(`
+            <tr>
+              <td class="align-middle text-start d-none d-md-table-cell">${homm1.Spell}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Level}</td>
+              <td class="align-middle text-start d-none d-md-table-cell">${homm1.Type}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Target_All_Heroes}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Target_Enemy_Heroes}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Target_Hexes}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Target_Map}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Target_No}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Target_All_Units}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Target_Ally_Units}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Target_Enemy_Units}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Target_Injured_Units}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Target_Undead}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Duration_Days}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Duration_Rounds}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Duration_Spell_Power}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Action_Random}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Action_Unit_Chosen}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Damage_Spell}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Damage_Units}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Defence}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Enemy_Hero_Army_Size}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Enemy_Hero_Stats}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Immunity_Magic}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Location_Artefacts}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Location_Heroes}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Location_Mines}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Location_Resources}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Location_Teleports_Map}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Location_Teleports_Town}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Location_Town}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Location_World}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Retaliation}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Speed}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Spells_All}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Spells_Negative}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Summons_Boat}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Units_Injured_Hit_Points}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Units_Move_Hex}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Units_Undead}</td>
+            </tr>
+          `);
+        });
+      }
+    },
+    error: function (jqXHR, textStatus, errorThrown) {
+      console.log("AJAX request failed:", textStatus, errorThrown);
+    },
+  });
+}
 
 function homm1loadUnits(){}
 
