@@ -954,19 +954,19 @@ function homm1loadUnits(){
 }
 
 
-$("#artefactsBtn").click(function () {
+$("#homm1artefactsBtn").click(function () {
   homm1loadArtefacts();
 });
 
-$("#buildingsBtn").click(function () {
+$("#homm1buildingsBtn").click(function () {
   homm1loadBuildings();
 });
 
-$("#spellsBtn").click(function () {
+$("#homm1spellsBtn").click(function () {
   homm1loadSpells();
 });
 
-$("#unitsBtn").click(function () {
+$("#homm1unitsBtn").click(function () {
   homm1loadUnits();
 });
 
