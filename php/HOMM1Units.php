@@ -21,14 +21,15 @@
 		exit;
 	}	
 
-	$query = 'SELECT Faction, Class, Buildings,  `Cost - Gold` As Cost_Gold, `Cost - Wood` As Cost_Wood, `Cost - Ore` As Cost_Ore,
-	`Cost - Crystal` As Cost_Crystal, `Cost - Gems` As Cost_Gems, `Cost - Mercury` As Cost_Mercury, `Cost - Sulphur` As Cost_Sulphur,
-	`Reveals Ancient Map` as Reveals_Ancient_Map, Artefacts,  Experience, `Income - Crystal` As Income_Crystal, `Income - Gems` As Income_Gems, 
-	`Income - Gold` As `Income_Gold`, `Income - Mercury` As Income_Mercury, `Income - Ore` As Income_Ore, `Income - Sulphur` As Income_Sulphur,
-	`Income - Wood` As `Income_Wood`, Luck,  Morale, `Movement - Sea` as `Movement_Sea`, `Pay Freedom` As `Pay_Freedom`, Population, `Player Rankings` As Player_Rankings,
-	`Required Buildings 1` as `Required_Buildings1`, `Required Buildings 2` as `Required_Buildings2`, `Spells - Level 1` as Spells_L1,
-	`Spells - Level 2` as Spells_L2, `Spells - Level 3` as Spells_L3, `Spells - Level 4` as Spells_L4, `Transports to Different Location` As Transports_to_Different_Location,
-	`Units - Recruitment` As Units_Recruitment FROM buildings ORDER BY Class, Buildings';
+	$query = 'SELECT Faction, Class, Unit,  `Cost - Crystal` As Cost_Crystal, `Cost - Gem` As Cost_Gem, `Cost - Gold` As Cost_Gold,
+	`Cost - Mercury` As Cost_Mercury, `Cost - Sulphur` As Cost_Sulphur, `Cost - Wood` As Cost_Wood, Population, Attack, Defence, Shots, 
+	`Damage - Min` As Damage_Min, `Damage - Max` As Damage_Max, `Hit Points` As Hit_Points, `Speed - Turn` As Speed_Turn, 
+	`Speed - Fly` As Speed_Fly, Morale, Luck, Tier, `Specialty - Attacks Adjacent` As Attacks_Adjacent, 
+	`Specialty - Attacks Chance of Halving Unit Stack` As Attacks_Halved, `Specialty - Attacks Hex` As Attacks_Hex, 
+	`Specialty - Attacks Twice` As Attacks_Twice, `Specialty - Chance of Blinding` As Blind, `Specialty - Enemy Cannot Retaliate` As `Enemy_Retaliate`, 
+	`Specialty - Killed Unit Joins Ghost Stack` As `Attacks_Ghost`, `Specialty - Magic Resistance` As Magic_Resistance,
+	`Specialty - Chance of Paralyse` as Paralyse, `Specialty - Regenerates` as Regenerates, `Specialty - Unlimited Retaliation` as Unlimited_Retaliation
+	 FROM units ORDER BY Class, Unit';
 
 	$result = $conn->query($query);
 	

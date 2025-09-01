@@ -906,44 +906,42 @@ function homm1loadUnits(){
     dataType: "json",
     success: function (response) {
       if (response.status.code === "200") {
-        $("#buildingsTableBody").empty();
+        $("#unitsTableBody").empty();
         response.data.forEach((homm1) => {
-          $("#buildingsTableBody").append(`
+          $("#unitsTableBody").append(`
             <tr>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Faction}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Class}</td>
-              <td class="align-middle text-start d-none d-md-table-cell">${homm1.Buildings}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Cost_Gold}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Cost_Wood}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Cost_Ore}</td>
+              <td class="align-middle text-start d-none d-md-table-cell">${homm1.Unit}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Cost_Crystal}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Cost_Gems}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Cost_Gem}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Cost_Gold}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Cost_Mercury}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Cost_Sulphur}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Reveals_Ancient_Map}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Artefacts}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Experience}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Income_Crystal}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Income_Gems}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Income_Gold}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Income_Mercury}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Income_Ore}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Income_Sulphur}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Income_Wood}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Luck}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Morale}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Movement_Sea}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Pay_Freedom}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Player_Rankings}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Cost_Wood}</td>
               <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Population}</td>
-              <td class="align-middle text-start d-none d-md-table-cell">${homm1.Required_Buildings1}</td>
-              <td class="align-middle text-start d-none d-md-table-cell">${homm1.Required_Buildings2}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Spells_L1}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Spells_L2}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Spells_L3}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Spells_L4}</td>
-              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Transports_to_Different_Location}</td>
-              <td class="align-middle text-start d-none d-md-table-cell">${homm1.Units_Recruitment}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Attack}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Defence}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Shots}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Damage_Min}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Damage_Max}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Hit_Points}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Speed_Turn}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Speed_Fly}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Morale}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Luck}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Tier}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Attacks_Adjacent}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Attacks_Halved}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Attacks_Hex}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Attacks_Twice}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Blind}</td>
+              <td class="align-middle text-start d-none d-md-table-cell">${homm1.Enemy_Retaliate}</td>
+              <td class="align-middle text-start d-none d-md-table-cell">${homm1.Attacks_Ghost}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Magic_Resistance}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Paralyse}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Regenerates}</td>
+              <td class="align-middle text-nowrap d-none d-md-table-cell">${homm1.Unlimited_Retaliation}</td>
             </tr>
           `);
         });
